@@ -11,7 +11,7 @@
         gap: 80px;
     }
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon {
-        width: calc(33.33% - 80px);
+        width: calc(100% / {{ section.settings.show_count }} - 80px);
         text-align: center;
     }
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon-image {
@@ -104,6 +104,30 @@
             ],
             "default": "no",
             "label": "Color gradient"
+        },
+        {
+            "type": "select",
+            "id": "show_count",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "1"
+                },
+                {
+                    "value": "2",
+                    "label": "2"
+                },
+                {
+                    "value": "3",
+                    "label": "3"
+                },
+                {
+                    "value": "4",
+                    "label": "4"
+                }
+            ],
+            "default": "3",
+            "label": "Show count"
         },
         {
             "type": "range",
