@@ -22,4 +22,14 @@
     padding: 20px 40px;
     background-color: var(--color-base-background-2);
 }
+
+.color-accent-2 .site-button_outline {
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: var(--font-heading-family);
+    padding: 20px 40px;
+    background-color: rgb(var(--color-base-accent-2));
+}
 /* End common style css */
