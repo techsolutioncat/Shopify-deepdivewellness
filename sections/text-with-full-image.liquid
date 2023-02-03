@@ -1,0 +1,216 @@
+{% style %}
+    #shopify-section-{{ section.id }} .section-content{
+        background: {{ section.settings.color }};
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    #shopify-section-{{ section.id }} .text__content.text_align-left { text-align: left; }
+    #shopify-section-{{ section.id }} .text__content.text_align-center { text-align: center; }
+    #shopify-section-{{ section.id }} .text__content.text_align-right { text-align: right; }
+    #shopify-section-{{ section.id }} .image__wrap { margin-top: 50px; }
+    #shopify-section-{{ section.id }} .image__wrap.H-large { height: 660px; }
+    #shopify-section-{{ section.id }} .image__wrap.H-medium { height: 570px; }
+    #shopify-section-{{ section.id }} .image__wrap.H-small { height: 350px; }
+    #shopify-section-{{ section.id }} .image__wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    #shopify-section-{{ section.id }} .image__wrap img.mobile { display: none; }
+    @media (max-width: 780px) {
+        #shopify-section-{{ section.id }} .image__wrap img.desktop { display: none; }
+        #shopify-section-{{ section.id }} .image__wrap img.mobile { display: block; }
+        #shopify-section-{{ section.id }} .image__wrap.H-large,
+        #shopify-section-{{ section.id }} .image__wrap.H-medium,
+        #shopify-section-{{ section.id }} .image__wrap.H-small
+        {
+            height: 350px;
+        }
+    }
+{% endstyle %}
+
+<div class="section-content">
+    <div class="page-width">
+        <div class="text__content text_align-{{ section.settings.desktop_content_alignment }}">
+            {% if section.settings.heading != blank %}
+                <h2 class="image-with-text__heading {{ section.settings.heading_size }}">
+                    {{ section.settings.heading | escape }}
+                </h2>
+            {% endif %}
+            {% if section.settings.caption != blank %}
+                <p class="image-with-text__text image-with-text__text--caption {{ section.settings.text_style }} {{ section.settings.text_style }}--{{ section.settings.text_size }} {{ section.settings.text_style }}" {{ section.shopify_attributes }}>{{ section.settings.caption | escape }}</p>
+            {% endif %}
+        </div>
+        <div class="image__wrap H-{{ section.settings.height }}">
+            {% if section.settings.image != blank %}
+                <img class="desktop" src="{{ section.settings.image | image_url: width: 2000 }}">
+            {% endif %}
+            {% if section.settings.mob_image != blank %}
+                <img class="mobile" src="{{ section.settings.mob_image | image_url: width: 2000 }}">
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text with full image",
+  "class": "section",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+        "type": "image_picker",
+        "id": "mob_image",
+        "label": "Mobile image"
+    },
+    {
+        "type": "color",
+        "id": "color",
+        "default": "transparent",
+        "label": "Background color"
+    },
+    {
+        "type": "select",
+        "id": "height",
+        "options": [
+            {
+                "value": "small",
+                "label": "Small"
+            },
+            {
+                "value": "medium",
+                "label": "Medium"
+            },
+            {
+                "value": "large",
+                "label": "Large"
+            }
+        ],
+        "default": "medium",
+        "label": "t:sections.image-with-text.settings.height.label"
+    },
+    {
+        "type": "select",
+        "id": "desktop_content_alignment",
+        "options": [
+            {
+                "value": "left",
+                "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
+            },
+            {
+                "value": "center",
+                "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
+            },
+            {
+                "value": "right",
+                "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
+            }
+        ],
+        "default": "left",
+        "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
+    },
+    {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+    },
+    {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+    },
+    {
+        "type": "header",
+        "content": "Section text"
+    },
+    {
+        "type": "text",
+        "id": "heading",
+        "default": "Image with text",
+        "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+    },
+    {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+            {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+            }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+    },
+    {
+        "type": "text",
+        "id": "caption",
+        "default": "Add a tagline",
+        "label": "t:sections.image-with-text.blocks.caption.settings.text.label"
+    },
+    {
+        "type": "select",
+        "id": "text_style",
+        "options": [
+            {
+              "value": "subtitle",
+              "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__1.label"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__2.label"
+            }
+        ],
+          "default": "caption-with-letter-spacing",
+          "label": "t:sections.image-with-text.blocks.caption.settings.text_style.label"
+    },
+    {
+        "type": "select",
+        "id": "text_size",
+        "options": [
+            {
+              "value": "small",
+              "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__3.label"
+            }
+        ],
+        "default": "medium",
+        "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text with full image"
+    }
+  ]
+}
+{% endschema %}
