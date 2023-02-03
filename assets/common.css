@@ -1,0 +1,25 @@
+/* Begin common style css */
+.site-button {
+    background-color: rgb(var(--color-base-accent-2));
+    box-shadow: 3px 6px 30px rgba(1, 185, 197, 0.41);
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: var(--font-heading-family);
+    padding: 20px 40px;
+}
+.button:not([disabled]):hover:after,
+.site-button::after,
+.site-button_outline::after
+{
+    box-shadow: none;
+}
+.site-button_outline {
+    color: rgb(var(--color-base-accent-2));
+    border: solid 1px rgb(var(--color-base-accent-2));
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: var(--font-heading-family);
+    padding: 20px 40px;
+    background-color: var(--color-base-background-2);
+}
+/* End common style css */

@@ -24,6 +24,27 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .footer-Subscribe #ContactFooter {
+    margin: 0px;
+  }
+  .footer-Subscribe #ContactFooter .field:after {
+    box-shadow: none;
+  }
+  .footer-Subscribe #ContactFooter .field #NewsletterForm--footer {
+    border-radius: 40px;
+    border: solid 1px;
+  }
+  .footer-Subscribe #ContactFooter #Subscribe {
+    background: #fff;
+    border-radius: 40px;
+    height: 41px;
+    right: 3px;
+    top: 3px;
+    width: 100px;
+  }
+  .footer-Subscribe #ContactFooter #Subscribe span {
+    color: #000;
+  }
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
@@ -92,10 +113,10 @@
                                 required
                               >
                               <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                                {{ 'newsletter.label' | t }}
+                                Your Email here
                               </label>
                               <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                                {% render 'icon-arrow' %}
+                                <span class="h4">Subscribe</span>
                               </button>
                             </div>
                             {%- if form.errors -%}
