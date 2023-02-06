@@ -11,6 +11,10 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .main-product-caption a {
+    text-decoration: none;
+    color: ;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -117,7 +121,8 @@
                   {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
                 </div>
                 {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                  <div class="product__tax caption rte">
+                  {% comment %}<div class="product__tax caption rte">{% endcomment %}
+                  <div class="h3 main-product-caption">
                     {%- if shop.taxes_included -%}
                       {{ 'products.product.include_taxes' | t }}
                     {%- endif -%}
@@ -139,7 +144,7 @@
                   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                   {{ block.shopify_attributes }}
                 >
-                  <label class="form__label" for="Quantity-{{ section.id }}">
+                  <label class="h3" for="Quantity-{{ section.id }}">
                     {{ 'products.product.quantity.label' | t }}
                   </label>
                   <quantity-input class="quantity">
@@ -150,7 +155,7 @@
                       {% render 'icon-minus' %}
                     </button>
                     <input
-                      class="quantity__input"
+                      class="quantity__input h3"
                       type="number"
                       name="quantity"
                       id="Quantity-{{ section.id }}"
@@ -344,7 +349,7 @@
                           <button
                             type="submit"
                             name="add"
-                            class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                            class="site-button color-white text-transform-uppercase product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
                             {% if product.selected_or_first_available_variant.available == false %}
                               disabled
                             {% endif %}
