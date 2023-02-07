@@ -32,8 +32,14 @@
     padding: 20px 40px;
     background-color: rgb(var(--color-base-accent-2));
 }
+.text-align-left {
+    text-align: left;
+}
 .text-align-center {
     text-align: center;
+}
+.text-align-right {
+    text-align: right;
 }
 .color-white { color: #fff; }
 .text-transform-uppercase { text-transform: uppercase; }

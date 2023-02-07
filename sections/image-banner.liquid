@@ -2,6 +2,7 @@
 
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
+
   @media screen and (max-width: 749px) {
     #Banner-{{ section.id }}::before,
     #Banner-{{ section.id }} .banner__media::before,
@@ -24,8 +25,18 @@
 {%- endif -%}
 
 {%- style -%}
+  #shopify-section-{{section.id}} .banner__heading strong {
+    color: #fff;
+    background-color: rgb(var(--color-base-accent-2));
+    font-weight: 400;
+  }
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+  @media (max-width: 768px) {
+    #shopify-section-{{section.id}} .banner__heading {
+      color: #000;
+    }
   }
 {%- endstyle -%}
 
@@ -92,7 +103,7 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading | escape }}</span>
+              <span>{{ block.settings.heading }}</span>
             </h2>
           {%- when 'text' -%}
             <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -311,9 +322,8 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "heading",
-          "default": "Image banner",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
         },
         {
