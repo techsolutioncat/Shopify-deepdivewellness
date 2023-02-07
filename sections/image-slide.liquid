@@ -10,6 +10,10 @@
     width: 100%;
     height: 100%;
 }
+#shopify-section-{{section.id}} .mySwiper {
+    border-top: solid 1px {{ section.settings.border_color }};
+    border-bottom: solid 1px {{ section.settings.border_color }};
+}
 #shopify-section-{{section.id}} .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -122,6 +126,12 @@
             "unit": "px",
             "label": "t:sections.all.padding.padding_bottom",
             "default": 60
+        },
+        {
+            "type": "color",
+            "id": "border_color",
+            "default": "#fff",
+            "label": "Slide border color"
         }
     ],
     "blocks": [

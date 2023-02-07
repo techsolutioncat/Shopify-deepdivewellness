@@ -121,7 +121,7 @@
                   {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
                 </div>
                 {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                  {% comment %}<div class="product__tax caption rte">{% endcomment %}
+                  {% comment %}<div class="product__tax caption rte">
                   <div class="h3 main-product-caption">
                     {%- if shop.taxes_included -%}
                       {{ 'products.product.include_taxes' | t }}
@@ -130,6 +130,7 @@
                       {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                     {%- endif -%}
                   </div>
+                  {% endcomment %}
                 {%- endif -%}
                 {%- if product != blank -%}
                   <div {{ block.shopify_attributes }}>
@@ -435,6 +436,8 @@
                 {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
+          
+          {% comment %}
           <a
             {% if product == blank %}
               role="link" aria-disabled="true"
@@ -443,9 +446,12 @@
             {% endif %}
             class="link product__view-details animate-arrow"
           >
+
             {{ 'products.product.view_full_details' | t }}
             {% render 'icon-arrow' %}
           </a>
+          {% endcomment %}
+
         </div>
       </div>
       {%- if section.settings.media_position == 'right' -%}
