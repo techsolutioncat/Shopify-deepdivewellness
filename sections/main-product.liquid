@@ -1275,8 +1275,27 @@
     const quantity = $(this).data('quantity');
     $('#shopify-section-{{ section.id }} .subscription-button .subscription .checked').removeClass('checked');
     $(this).find('.check').addClass('checked');
-    $('#subscription_quantity_selector input.quantity__input').val(quantity);
+    $('#shopify-section-{{ section.id }} input.quantity__input').val(quantity);
   });
+
+  {% comment %}
+  $('#shopify-section-{{ section.id }} button.quantity__button').on('click', function() {
+    var q = $('#shopify-section-{{ section.id }} input.quantity__input').val();
+
+    $('#shopify-section-{{ section.id }} .subscription-button .subscription .checked').removeClass('checked');
+    $('#shopify-section-{{ section.id }} .subscription-button .subscription[data-quantity=1] .check').addClass('checked');
+    
+    if (parseInt(q, 10) + 1 == 2) {
+      $('#shopify-section-{{ section.id }} .subscription-button .subscription .checked').removeClass('checked');
+      $('#shopify-section-{{ section.id }} .subscription-button .subscription[data-quantity=2] .check').addClass('checked');
+    }
+
+    if (parseInt(q, 10) + 1 == 3) {
+      $('#shopify-section-{{ section.id }} .subscription-button .subscription .checked').removeClass('checked');
+      $('#shopify-section-{{ section.id }} .subscription-button .subscription[data-quantity=3] .check').addClass('checked');
+    }
+  });
+  {% endcomment %}
 </script>
 
 {% schema %}
