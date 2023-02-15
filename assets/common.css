@@ -42,5 +42,6 @@
     text-align: right;
 }
 .color-white { color: #fff; }
+.color-site { color: rgb(var(--color-base-accent-2)); }
 .text-transform-uppercase { text-transform: uppercase; }
 /* End common style css */
