@@ -2,12 +2,11 @@
 #shopify-section-{{ section.id }} .subscription-button .subscription {
   display: flex;
   align-items: center;
-  border: solid 1px var(--gradient-base-accent-2);
+  border: solid 1px rgb(var(--color-base-accent-2));
   border-radius: 6px;
   margin-bottom: 16px;
-  padding: 12px 22px;
+  padding: 5px 22px;
   cursor: pointer;
-  background-color: rgb(var(--color-base-accent-2));
 }
 #shopify-section-{{ section.id }} .subscription-button .subscription .image {
   width: 25%;
@@ -21,11 +20,11 @@
   height: 13px;
   display: block;
   border-radius: 50%;
-  border: solid 1px #fff;
+  border: solid 2px rgb(var(--color-base-accent-2));
 }
 #shopify-section-{{ section.id }} .subscription-button .subscription .check.checked label
 {
-  background: var(--gradient-base-accent-2);
+  background: rgb(var(--color-base-accent-2));
 }
 #shopify-section-{{ section.id }} .subscription-button .subscription .subscription-text {
   width: 45%;
@@ -37,15 +36,14 @@
   margin-right: 16px;
 }
 #shopify-section-{{ section.id }} .subscription-button .subscription .most-popular .label {
-  background: #fff;
-  color: var(--gradient-base-accent-2);
+  background: var(--gradient-base-accent-2);
   min-height: 32px;
   display: block;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#shopify-section-{{ section.id }} .subscription-button .subscription .original-price color-white {
+#shopify-section-{{ section.id }} .subscription-button .subscription .original-price .color-white {
   text-decoration-line: line-through;
 }
 {% endstyle %}
@@ -652,6 +650,7 @@
                     </div>
 
                     {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}         
+                        {% comment %}
                         <div class="revy-bundle-action">
                           <div class="subscription-button">
                             
@@ -661,10 +660,10 @@
                                 <img src="{{ '1x-Portable-Cold.png' | asset_url }}">
                               </div>
                               <div class="subscription-text">
-                                <label class="h5 color-white">1x Deepdive wellness</label>
+                                <label class="h5 color-site">1x Deepdive wellness</label>
                               </div>
                               <div class="most-popular"></div>
-                              <div class="discount-price color-white">
+                              <div class="discount-price color-site">
                                 {{ product.price | money }}
                               </div>
                             </div>
@@ -675,13 +674,13 @@
                                 <img src="{{ '2x-Portable-Cold.png' | asset_url }}">
                               </div>
                               <div class="subscription-text">
-                                <label class="h5 color-white">2x Deepdive wellness</br>Save 10%!</label>
+                                <label class="h5 color-site">2x Deepdive wellness</br>Save 10%!</label>
                               </div>
                               <div class="most-popular"></div>
-                              <div class="discount-price color-white">
+                              <div class="discount-price color-site">
                                 {{ product.price | times: 2 | times: 0.9 | money }}
                                 <br>
-                                <label class="original-price color-white h5">{{ product.price | times: 2 | money }}</label>
+                                <label class="original-price color-site h5">{{ product.price | times: 2 | money }}</label>
                               </div>
                             </div>
                             
@@ -691,18 +690,19 @@
                                 <img src="{{ '3x-Portable-Cold.png' | asset_url }}">
                               </div>
                               <div class="subscription-text">
-                                <label class="h5 color-white">3x Deepdive wellness</br>Save 15%!</label>
+                                <label class="h5 color-site">3x Deepdive wellness</br>Save 15%!</label>
                               </div>
-                              <div class="most-popular"><div class="label h5">Most Popular</div></div>
-                              <div class="discount-price color-white">
+                              <div class="most-popular"><div class="label color-white h5">Most Popular</div></div>
+                              <div class="discount-price color-site">
                                 {{ product.price | times: 3 | times: 0.85 | money }}
                                 <br>
-                                <label class="original-price color-white  h5">{{ product.price | times: 3 | money }}</label>
+                                <label class="original-price color-site  h5">{{ product.price | times: 3 | money }}</label>
                               </div>
                             </div>
-
+                            
                           </div>
                         </div>
+                        {% endcomment %}
                         <input
                         type="hidden"
                         name="id"
@@ -710,7 +710,6 @@
                         disabled
                         >
 
-                        {% comment %}
                         <div class="product-form__buttons">
                         <button
                             type="submit"
@@ -744,8 +743,8 @@
                             {{ form | payment_button }}
                         {%- endif -%}
                         </div>
-                        {% endcomment %}
                     {%- endform -%}
+                    {% comment %}
                     <form method="post" action="/cart/add" id="checkout_form">
                       <input type="hidden" name="quantity" value="1" class="quantity">
                       <input type="hidden" name="return_to" value="/checkout/" />
@@ -779,6 +778,7 @@
                             </div>
                         </button>
                     </form>
+                    {% endcomment %}
                     </product-form>
                     {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
@@ -1305,6 +1305,7 @@
 </section>
 
 
+{% comment %}
 <script>
   $('#shopify-section-{{ section.id }} .subscription-button .subscription').on('click', function() {
     const quantity = $(this).data('quantity');
@@ -1319,6 +1320,7 @@
     $('#shopify-section-{{ section.id }} form#checkout_form input.quantity').val(q);
   });
 </script>
+{% endcomment %}
 
 {% schema %}
 {
