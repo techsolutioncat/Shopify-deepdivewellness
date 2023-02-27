@@ -7,6 +7,7 @@
   margin-bottom: 16px;
   padding: 5px 22px;
   cursor: pointer;
+  min-height: 70px;
 }
 #shopify-section-{{ section.id }} .subscription-button .subscription .image {
   width: 25%;
@@ -45,6 +46,13 @@
 }
 #shopify-section-{{ section.id }} .subscription-button .subscription .original-price .color-white {
   text-decoration-line: line-through;
+}
+
+@media screen and (max-width: 1000px) {
+    #shopify-section-{{ section.id }} .subscription-button .subscription .original-price .color-white {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
 }
 {% endstyle %}
 <section
@@ -650,14 +658,14 @@
                     </div>
 
                     {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}         
-                        {% comment %}
                         <div class="revy-bundle-action">
                           <div class="subscription-button">
-                            
                             <div class="subscription" data-quantity="1">
                               <div class="check checked"><label></label></div>
                               <div class="image">
-                                <img src="{{ '1x-Portable-Cold.png' | asset_url }}">
+                                {% if product.id == 8127141708068 %}
+                                  <img src="{{ '1x-Portable-Cold.png' | asset_url }}">
+                                {% endif %}
                               </div>
                               <div class="subscription-text">
                                 <label class="h5 color-site">1x Deepdive wellness</label>
@@ -671,7 +679,9 @@
                             <div class="subscription" data-quantity="2">
                               <div class="check"><label></label></div>
                               <div class="image">
-                                <img src="{{ '2x-Portable-Cold.png' | asset_url }}">
+                                {% if product.id == 8127141708068 %}
+                                  <img src="{{ '2x-Portable-Cold.png' | asset_url }}">
+                                {% endif %}
                               </div>
                               <div class="subscription-text">
                                 <label class="h5 color-site">2x Deepdive wellness</br>Save 10%!</label>
@@ -687,7 +697,9 @@
                             <div class="subscription" data-quantity="3">
                               <div class="check"><label></label></div>
                               <div class="image">
-                                <img src="{{ '3x-Portable-Cold.png' | asset_url }}">
+                                {% if product.id == 8127141708068 %}
+                                  <img src="{{ '3x-Portable-Cold.png' | asset_url }}">
+                                {% endif %}
                               </div>
                               <div class="subscription-text">
                                 <label class="h5 color-site">3x Deepdive wellness</br>Save 15%!</label>
@@ -702,7 +714,7 @@
                             
                           </div>
                         </div>
-                        {% endcomment %}
+
                         <input
                         type="hidden"
                         name="id"
@@ -710,41 +722,42 @@
                         disabled
                         >
 
+                        {% comment %}
                         <div class="product-form__buttons">
-                        <button
-                            type="submit"
-                            name="add"
-                            class="color-white text-transform-uppercase site-button product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-                            {% if product.selected_or_first_available_variant.available == false %}
-                            disabled
-                            {% endif %}
-                        >
-                            <span>
-                            {%- if product.selected_or_first_available_variant.available -%}
-                                {{ 'products.product.add_to_cart' | t }}
-                            {%- else -%}
-                                {{ 'products.product.sold_out' | t }}
-                            {%- endif -%}
-                            </span>
-                            <div class="loading-overlay__spinner hidden">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                role="presentation"
-                                class="spinner"
-                                viewBox="0 0 66 66"
-                                xmlns="http://www.w3.org/2000/svg"
+                          <button
+                              type="submit"
+                              name="add"
+                              class="color-white text-transform-uppercase site-button product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                              {% if product.selected_or_first_available_variant.available == false %}
+                              disabled
+                              {% endif %}
                             >
-                                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                            </svg>
-                            </div>
-                        </button>
-                        {%- if block.settings.show_dynamic_checkout -%}
-                            {{ form | payment_button }}
-                        {%- endif -%}
+                              <span>
+                              {%- if product.selected_or_first_available_variant.available -%}
+                                  {{ 'products.product.add_to_cart' | t }}
+                              {%- else -%}
+                                  {{ 'products.product.sold_out' | t }}
+                              {%- endif -%}
+                              </span>
+                              <div class="loading-overlay__spinner hidden">
+                              <svg
+                                  aria-hidden="true"
+                                  focusable="false"
+                                  role="presentation"
+                                  class="spinner"
+                                  viewBox="0 0 66 66"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                              </div>
+                          </button>
+                          {%- if block.settings.show_dynamic_checkout -%}
+                              {{ form | payment_button }}
+                          {%- endif -%}
                         </div>
+                        {% endcomment %}
                     {%- endform -%}
-                    {% comment %}
                     <form method="post" action="/cart/add" id="checkout_form">
                       <input type="hidden" name="quantity" value="1" class="quantity">
                       <input type="hidden" name="return_to" value="/checkout/" />
@@ -778,7 +791,6 @@
                             </div>
                         </button>
                     </form>
-                    {% endcomment %}
                     </product-form>
                     {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
@@ -1304,8 +1316,6 @@
     </script>
 </section>
 
-
-{% comment %}
 <script>
   $('#shopify-section-{{ section.id }} .subscription-button .subscription').on('click', function() {
     const quantity = $(this).data('quantity');
@@ -1320,7 +1330,6 @@
     $('#shopify-section-{{ section.id }} form#checkout_form input.quantity').val(q);
   });
 </script>
-{% endcomment %}
 
 {% schema %}
 {
