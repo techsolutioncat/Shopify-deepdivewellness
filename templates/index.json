@@ -1,222 +1,371 @@
 {
   "sections": {
-    "image_banner": {
+    "6ffe24ea-204b-47b0-a713-6679e8f91867": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
+        "template--17733600444708__6ffe24ea-204b-47b0-a713-6679e8f91867-167570491866ef1560-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "<p>EMBRACING <strong>THE CHILL<\/strong>: A GUIDE <strong>TO TRANSFORMING<\/strong> YOUR COLD EXPOSURE <strong>EXPERIENCE<\/strong><\/p>",
             "heading_size": "h0"
           }
         },
-        "text": {
+        "template--17733600444708__6ffe24ea-204b-47b0-a713-6679e8f91867-167570491866ef1560-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "\"Embracing the Chill\" provides a comprehensive guide to help you transform your cold exposure journey. From understanding the benefits of cold exposure to tips and tricks for success, this guide offers a roadmap for a healthier and happier life.",
+            "text_style": "caption-with-letter-spacing"
           }
         },
-        "button": {
+        "dd225f1b-63e1-48c5-92f8-f644f79dd897": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+            "button_style": "site-button_outline",
             "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_link_2": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "template--17733600444708__6ffe24ea-204b-47b0-a713-6679e8f91867-167570491866ef1560-0",
+        "template--17733600444708__6ffe24ea-204b-47b0-a713-6679e8f91867-167570491866ef1560-1",
+        "dd225f1b-63e1-48c5-92f8-f644f79dd897"
       ],
       "settings": {
-        "image": "{{ shop.brand.cover_image }}",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image": "shopify:\/\/shop_images\/banner.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "desktop_content_position": "middle-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "4c1cdd39-8157-41d2-8a2d-7080820bde92": {
+      "type": "image-with-text",
+      "disabled": true,
       "blocks": {
-        "heading": {
+        "template--17733600444708__4c1cdd39-8157-41d2-8a2d-7080820bde92-1675402928cc408d00-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
+            "heading": "EMBRACING THE CHILL: A GUIDE TO TRANSFORMING YOUR COLD EXPOSURE EXPERIENCE",
+            "heading_size": "h0"
+          }
+        },
+        "template--17733600444708__4c1cdd39-8157-41d2-8a2d-7080820bde92-1675402928cc408d00-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Embracing the Chill\" provides a comprehensive guide to help you transform your cold exposure journey. From understanding the benefits of cold exposure to tips and tricks for success, this guide offers a roadmap for a healthier and happier life.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--17733600444708__4c1cdd39-8157-41d2-8a2d-7080820bde92-1675402928cc408d00-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "EXPLORE DEEPDRIVE",
+            "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+            "button_style": "site-button"
+          }
+        }
+      },
+      "block_order": [
+        "template--17733600444708__4c1cdd39-8157-41d2-8a2d-7080820bde92-1675402928cc408d00-0",
+        "template--17733600444708__4c1cdd39-8157-41d2-8a2d-7080820bde92-1675402928cc408d00-1",
+        "template--17733600444708__4c1cdd39-8157-41d2-8a2d-7080820bde92-1675402928cc408d00-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_4_1.png",
+        "bg_image": "shopify:\/\/shop_images\/DeepDive_Wellness_ICON_black_1_2x_d11a8b38-ae8f-4e71-afd9-204f134cd742.png",
+        "color": "#f2f2f2",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce": {
+      "type": "icon-grid",
+      "blocks": {
+        "6e67e051-1963-4599-8e14-83ea6407e2b9": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector.png",
+            "text": "<p>Boost Mental Health<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "01fd81b7-d6b6-4afa-a10f-de7c9fb2eb0d": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Black_2.png",
+            "text": "<p>Speed Up Muscle Recovery<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "dca6300e-8233-4597-9b5a-b2d82791daa2": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Black.png",
+            "text": "<p>Strengthen Immune System<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "732339c0-345d-435c-b069-74764f2ecefb": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/hair-follicle_1_traced.png",
+            "text": "<p>Nourish Skin + Hair<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "5b41e723-2957-4350-bde1-ae271a5740cc": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group.png",
+            "text": "<p>Improve Blood Circulation<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "72984ecf-838f-42fa-a79b-e030abd1414d": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Black_1.png",
+            "text": "<p>Increase Energy Levels<\/p>",
+            "font_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "6e67e051-1963-4599-8e14-83ea6407e2b9",
+        "01fd81b7-d6b6-4afa-a10f-de7c9fb2eb0d",
+        "dca6300e-8233-4597-9b5a-b2d82791daa2",
+        "732339c0-345d-435c-b069-74764f2ecefb",
+        "5b41e723-2957-4350-bde1-ae271a5740cc",
+        "72984ecf-838f-42fa-a79b-e030abd1414d"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "gradient_scheme": "no",
+        "show_count": "3",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "b6fdf158-2d59-4958-a747-9a08aeda1805": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unveiling True Self through Merciless Cold - Wim Hof",
+            "heading_size": "h0"
+          }
+        },
+        "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The DeepDrive is a compact, portable ice bath for muscle pain relief and relaxation. Ideal for athletes or those who enjoy ice baths, it can be taken anywhere for anytime use. Experience the benefits of an ice bath on-the-go with the DeepDrive.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET YOURS NOW",
+            "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+            "button_style": "site-button_outline"
+          }
+        }
+      },
+      "block_order": [
+        "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-0",
+        "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-1",
+        "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_28.png",
+        "color": "rgba(0,0,0,0)",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "b1565913-adc6-49b1-8202-d8003167ca9c": {
+      "type": "text-with-full-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sheets-of-ice-formed-on-a-frozen-lake.jpg",
+        "mob_image": "shopify:\/\/shop_images\/sheets-of-ice-formed-on-a-frozen-lake.jpg",
+        "color": "#f2f2f2",
+        "height": "medium",
+        "desktop_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 80,
+        "heading": "WHY Choose Us?",
+        "heading_size": "h0",
+        "caption": "At Deepdrive, we're passionate about helping people reach their full potential through the power of recovery. Our focus on cold water therapy is the cornerstone of our approach, as we believe it is the key to unlocking maximum performance. Our ultimate goal is to spread awareness about the benefits of cold water therapy and make it accessible to as many people as possible.",
+        "text_style": "subtitle",
+        "text_size": "medium"
+      }
+    },
+    "cae612a4-c109-4ad0-8c3b-b1cc56313be0": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-1": {
+          "type": "title",
+          "settings": {
             "heading_size": "h1"
           }
         },
-        "text": {
-          "type": "text",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-2": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-3": {
+          "type": "variant_picker",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "picker_type": "button"
+          }
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-1",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-2",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-3",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-4",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-5"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "product": "deepdive-wellness-portable-cold-plunge-bath",
         "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": true,
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "video": {
-      "type": "video",
+    "d109af30-a409-4854-86b0-12e393f72778": {
+      "type": "banner-over-image",
       "settings": {
-        "heading": "",
+        "image": "shopify:\/\/shop_images\/bandner.png",
+        "banner_image": "shopify:\/\/shop_images\/Rectangle_19.png",
+        "color_scheme": "accent-2",
+        "gradient_scheme": "no",
+        "height": "medium",
+        "desktop_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "heading": "Elevating Hormones for Better Mood and Reduced Stress",
         "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "caption": "Cold water therapy is an easy and natural way to boost your health, providing instant changes to mind and body. Endorsed by Wim Hof, it's a popular and accessible technique that's worth trying for improved well-being.",
+        "text_style": "subtitle",
+        "text_size": "medium",
+        "button_label": "TRY IT  NOW",
+        "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+        "button_style": "site-button_outline"
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "3bc134f3-70f4-4d2c-9db3-e5cca02a1bc0": {
+      "type": "testimonials",
+      "disabled": true,
       "blocks": {
-        "column1": {
-          "type": "column",
+        "b6cf71b8-03fc-42d6-beeb-6d903f050a12": {
+          "type": "client_review",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "",
+            "client_name": "Troy S.",
+            "review_text": "Was a bit skeptical with such a cheap ice bath since others i've looked at cost in the 1000s of dollars, but very pleasantly surprised. Water stays cold for days to weeks and plenty of space for a 6 foot 4 (196cm) guy like me."
           }
         },
-        "column2": {
-          "type": "column",
+        "d8ef85df-0011-4338-b693-595d1845cf90": {
+          "type": "client_review",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "",
+            "client_name": "Navel H.",
+            "review_text": "Game changer! I've used the ice pod 2x per day since i got it. only need to add ice every 3-4 days as water stays super cold even though it's summer here and gets quite hot, assume because the pod is insulated"
           }
         },
-        "column3": {
-          "type": "column",
+        "1083857a-5603-43b4-9d59-8b52324d79b2": {
+          "type": "client_review",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "",
+            "client_name": "Casey M.",
+            "review_text": "Just getting started with the whole Wim hof and cold therapy lifestyle but i'm loving it. This pod makes it so affordable and easy to get started."
+          }
+        },
+        "76179b53-08bf-45b8-a93b-4336ab7fc088": {
+          "type": "client_review",
+          "settings": {
+            "title": "",
+            "client_name": "Wendy S.",
+            "review_text": "The ice pod has become a part of my daily routine. Changed the way i recover after gym sessions and gives such a dopamine and serotonin boost every time. super build quality and A+ fabric\/materials."
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "b6cf71b8-03fc-42d6-beeb-6d903f050a12",
+        "d8ef85df-0011-4338-b693-595d1845cf90",
+        "1083857a-5603-43b4-9d59-8b52324d79b2",
+        "76179b53-08bf-45b8-a93b-4336ab7fc088"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "What people are saying",
+        "font_size": "h0",
+        "color_scheme": "accent-2",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "margin_bottom": 30,
+        "slide_autoplay_speed": 4
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "6ffe24ea-204b-47b0-a713-6679e8f91867",
+    "4c1cdd39-8157-41d2-8a2d-7080820bde92",
+    "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce",
+    "b6fdf158-2d59-4958-a747-9a08aeda1805",
+    "b1565913-adc6-49b1-8202-d8003167ca9c",
+    "cae612a4-c109-4ad0-8c3b-b1cc56313be0",
+    "d109af30-a409-4854-86b0-12e393f72778",
+    "3bc134f3-70f4-4d2c-9db3-e5cca02a1bc0"
   ]
 }

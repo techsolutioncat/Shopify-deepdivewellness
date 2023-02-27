@@ -17,16 +17,22 @@
         "buttons": {
           "type": "buttons",
           "settings": {}
+        },
+        "d0d7cc1f-a477-416c-a90b-1bb3828c0c36": {
+          "type": "shopify:\/\/apps\/ultimate-delivery-date-range\/blocks\/ddr_phrase\/06a5e0ea-a85f-42f8-95ff-50fc43429315",
+          "settings": {}
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "d0d7cc1f-a477-416c-a90b-1bb3828c0c36"
       ],
       "settings": {}
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h2",

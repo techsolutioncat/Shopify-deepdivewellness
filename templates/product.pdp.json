@@ -1,11 +1,722 @@
 {
   "sections": {
-        "main": {
-            "type": "main-product",
-            "settings": {}
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "bdc3523c-7422-4226-95a3-0fce3db8f1ba": {
+          "type": "title",
+          "settings": {}
+        },
+        "19ab2b50-f54e-4760-ae25-5f8584a42c1f": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {}
+        },
+        "352489a9-dd67-4802-adfe-9f13cda93861": {
+          "type": "price",
+          "settings": {}
+        },
+        "b7d67a8f-5469-4973-8821-0221e8ef39e9": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "256a3cb2-96e9-437e-b0fc-d1e33c1251f9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "c40fa437-1629-49cb-af77-5aefd25e9ebe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "price_tag",
+            "content": "<p>Deep Dive Wellness is proud to introduce our line of state-of-the-art cold plunge tubs, the ultimate solution for recovery and rejuvenation. Whether you're an athlete looking to improve performance, or simply looking for a unique and invigorating experience, our cold plunge tubs are designed to deliver results.<\/p><p>Our cold plunge tubs are made from high-quality materials and are engineered to provide the perfect balance of comfort and functionality. The adjustable water flow system allows you to control the water temperature and pressure for a customized soak, making it the ideal choice for users of all types. The water temperature can be adjusted from a chilly 45°F to a refreshing 60°F, providing a therapeutic and revitalizing experience.<\/p>",
+            "page": ""
+          }
+        },
+        "d40e0e5b-7258-4460-a75a-3748654d6e23": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "<ul><li>Diameter: 75cm (30 inches)<\/li><li>Height: 75cm (30 inches)<\/li><li>Weight: 3.5 kg (8 lb)<\/li><li>Capacity: 200 L (53 GL)<\/li><li>Suitable for heights up to 2.1m (6′9 foot)<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "9a9f2a0e-036a-4092-a935-2b0c2cf0197e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cold Therapy Benefits",
+            "icon": "question_mark",
+            "content": "<p><em><strong>What are the benefits of cold water therapy?<\/strong><\/em><\/p><p><strong>❆ <\/strong>Boost the immune system<\/p><p><strong>❆ <\/strong>Improve blood circulation.<\/p><p><strong>❆ <\/strong>Better deep sleep.<\/p><p><strong>❆ <\/strong>Boost energy & elevate mood<\/p><p><strong>❆ <\/strong>Prevent\/help depression<\/p><p><strong>❆ <\/strong>Reduce inflammation.<\/p><p><strong>❆ <\/strong>Reduce muscle soreness<\/p><p><strong>❆ <\/strong>Improve metabolic function.<\/p><p><strong>❆ <\/strong>Improve mood.<\/p><p><strong>❆ <\/strong>Reduce chronic pain<\/p><p><strong>❆ <\/strong>Practice discipline & resilience Shipping<\/p>",
+            "page": ""
+          }
+        },
+        "b8113116-2fb7-424f-a32f-dae8e4c0e063": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "plane",
+            "content": "<p>We ship Worldwide with USPS or FedEx.<\/p><p>See the average delivery times below:<\/p><p><strong>USA & Canada: <\/strong>4-8 business days<\/p><p><strong>United Kingdom: <\/strong>4-8 business days<\/p><p><strong>Europe: <\/strong>4-7 business days<\/p><p><strong>Rest of the world: <\/strong>5-10 business days<\/p><p>All orders are shipped from our USA & EU fulfilment centre. You'll receive tracking when your order ships out, usually within 1-3 days after the order is placed. Please note that we cannot guarantee the delivery date and timeframe, since it's in the hands of FedEx & USPS, the times stated above and at checkout are estimates from the courier itself. We can therefore not issue refunds for shipping cost if the parcel is delayed, and we advise to contact the shipping company itself should you have claims.<\/p>",
+            "page": ""
+          }
+        },
+        "6ae573bc-9728-4632-934d-859a99aff7b0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return policy",
+            "icon": "return",
+            "content": "<p>If you are unhappy with your Ice Plunge Bath Tub for any reason, you have 30 days to return it for a <strong>full refund.<\/strong> <br\/><\/p><p>After we receive it back at our warehouse, you'll get a full refund within 5 business days.<\/p>",
+            "page": ""
+          }
         }
+      },
+      "block_order": [
+        "bdc3523c-7422-4226-95a3-0fce3db8f1ba",
+        "19ab2b50-f54e-4760-ae25-5f8584a42c1f",
+        "352489a9-dd67-4802-adfe-9f13cda93861",
+        "b7d67a8f-5469-4973-8821-0221e8ef39e9",
+        "256a3cb2-96e9-437e-b0fc-d1e33c1251f9",
+        "c40fa437-1629-49cb-af77-5aefd25e9ebe",
+        "d40e0e5b-7258-4460-a75a-3748654d6e23",
+        "9a9f2a0e-036a-4092-a935-2b0c2cf0197e",
+        "b8113116-2fb7-424f-a32f-dae8e4c0e063",
+        "6ae573bc-9728-4632-934d-859a99aff7b0"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "thumbnail",
+        "media_size": "large",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e39325f5-7741-45d5-9314-d48db388a5cf": {
+      "type": "PDP-DDR-text",
+      "settings": {
+        "color_scheme": "accent-2",
+        "gradient_scheme": "yes",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "1675556188693f618c": {
+      "type": "apps",
+      "blocks": {
+        "2416cbe6-2e32-43b1-9249-bd410c30be59": {
+          "type": "shopify:\/\/apps\/ultimate-delivery-date-range\/blocks\/ddr_phrase\/06a5e0ea-a85f-42f8-95ff-50fc43429315",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "2416cbe6-2e32-43b1-9249-bd410c30be59"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "dab59058-b32d-4b6b-a20e-c71c6ec1b919": {
+      "type": "why-us",
+      "blocks": {
+        "8a6284dc-5204-4079-918f-f09d03f6796a": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Rectangle_19.png",
+            "title": "Elevated Performance with Recovery Boost",
+            "font_size": "h3",
+            "text": "Cold Therapy for Rapid Muscle Recovery - Reduces Inflammation and Pain. Constricts blood flow to reduce nerve activity and swelling, promoting faster muscle healing"
+          }
+        },
+        "a0413f4c-0f2f-4197-9cd6-33d1e5f11418": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Rectangle_19_2.png",
+            "title": "Boosting Mood & Brain Power",
+            "font_size": "h3",
+            "text": "Easing mental stress with cold therapy. It provides relief from depression and anxiety by stimulating the nervous system and focusing on controlled breathing."
+          }
+        },
+        "14598a37-69a6-41d9-adb7-3d6750bb02b5": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Rectangle_19_2.png",
+            "title": "Immune System Boost",
+            "font_size": "h3",
+            "text": "Activate your body's systems with cold therapy. Enhance sleep, metabolism, hormone production, and overall health."
+          }
+        }
+      },
+      "block_order": [
+        "8a6284dc-5204-4079-918f-f09d03f6796a",
+        "a0413f4c-0f2f-4197-9cd6-33d1e5f11418",
+        "14598a37-69a6-41d9-adb7-3d6750bb02b5"
+      ],
+      "settings": {
+        "title": "Unlock the Power of Cold Water Therapy: Maximize Your Health and Well-being.",
+        "font_size": "h0",
+        "text": "Transform Your Life with an Ice Bath Journey - Experience the Benefits of Cold Water Exposure. Reducing stress and body tension, promoting muscle recovery, boosting immunity, and slowing the aging process - start your ice bath journey today and see the difference for yourself.",
+        "color": "#f2f2f2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "0b7b898c-fdd9-4d61-90da-a0a46173c412": {
+      "type": "image-slide",
+      "disabled": true,
+      "blocks": {
+        "b5c48e63-314c-4451-bee6-d73d14be06f6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WG_Logo-1130x300.png",
+            "link": "https:\/\/www.wellandgood.com\/"
+          }
+        },
+        "62e3ed78-bfbb-4c6b-8005-612452b3ade6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LIVESTRONG_logo.png",
+            "link": "https:\/\/www.livestrong.com\/"
+          }
+        },
+        "4c092bb1-2712-4ebb-a510-53301575213e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/greatist-logo-vector.png",
+            "link": "https:\/\/greatist.com\/"
+          }
+        },
+        "397532b0-f5c4-4ec8-a79b-4c7fbb9b2e3a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/myfitnesspal-vector-logo-2022.png",
+            "link": "https:\/\/www.myfitnesspal.com\/"
+          }
+        },
+        "99c3a338-46fa-45dd-b398-2ca450998262": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Men_s_Health_svg.png",
+            "link": "https:\/\/www.menshealth.com\/"
+          }
+        },
+        "2a57bf97-a95c-4168-9c3f-fefc43db97b6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Self_magazine_logo_svg.png",
+            "link": " https:\/\/www.self.com\/"
+          }
+        },
+        "f382c314-24e6-465f-8c98-75c74648b38d": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2560px-Healthline_logo_svg.png",
+            "link": "#"
+          }
+        },
+        "4f037870-5da0-4f31-a282-f645fd6aa021": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_logo_schema-ff62f540ef5e4d0ca4941b7e355cb9ec.png",
+            "link": "#"
+          }
+        },
+        "5e3b7afa-4789-4d95-b5f9-1dc3af1eb42c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kickstarter-Logo.png",
+            "link": "#"
+          }
+        },
+        "bce1b364-c99f-4db1-9d65-ddd768fc67d2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/everyday-health-01.png",
+            "link": "https:\/\/www.everydayhealth.com\/"
+          }
+        },
+        "dfffdfc3-c3d6-4d01-bc94-96d98630d03a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-verywell-fit.png",
+            "link": "https:\/\/www.verywellfit.com\/"
+          }
+        }
+      },
+      "block_order": [
+        "b5c48e63-314c-4451-bee6-d73d14be06f6",
+        "62e3ed78-bfbb-4c6b-8005-612452b3ade6",
+        "4c092bb1-2712-4ebb-a510-53301575213e",
+        "397532b0-f5c4-4ec8-a79b-4c7fbb9b2e3a",
+        "99c3a338-46fa-45dd-b398-2ca450998262",
+        "2a57bf97-a95c-4168-9c3f-fefc43db97b6",
+        "f382c314-24e6-465f-8c98-75c74648b38d",
+        "4f037870-5da0-4f31-a282-f645fd6aa021",
+        "5e3b7afa-4789-4d95-b5f9-1dc3af1eb42c",
+        "bce1b364-c99f-4db1-9d65-ddd768fc67d2",
+        "dfffdfc3-c3d6-4d01-bc94-96d98630d03a"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "gradient_scheme": "no",
+        "slide_count": 6,
+        "padding_top": 15,
+        "padding_bottom": 15,
+        "border_color": "#01b9c5"
+      }
+    },
+    "4566cfa4-35df-476a-9780-a6f7d1793264": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17769143370020__4566cfa4-35df-476a-9780-a6f7d1793264-1675494408088b4776-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Improves Recovery Efficiency",
+            "heading_size": "h0"
+          }
+        },
+        "template--17769143370020__4566cfa4-35df-476a-9780-a6f7d1793264-1675494408088b4776-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Deep Dive is a must-have for anyone seeking to optimize their post-workout recovery. Whether you're a seasoned pro athlete or simply looking to enhance your fitness, this portable device delivers quick relief through its use of icy water to combat muscle inflammation and soreness. Experience faster training resumption with the Deep Dive at your fingertips<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17769143370020__4566cfa4-35df-476a-9780-a6f7d1793264-1675494408088b4776-0",
+        "template--17769143370020__4566cfa4-35df-476a-9780-a6f7d1793264-1675494408088b4776-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_28_8d3d8ea8-d5a5-4b6a-aa4d-e1c38945b2e3.png",
+        "color": "rgba(0,0,0,0)",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "81e037e7-3350-41d3-9d8d-fcf0a1bf59cb": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17769143370020__81e037e7-3350-41d3-9d8d-fcf0a1bf59cb-1675494408088b4776-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Eliminating Inflammation, Averting Injury",
+            "heading_size": "h0"
+          }
+        },
+        "template--17769143370020__81e037e7-3350-41d3-9d8d-fcf0a1bf59cb-1675494408088b4776-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Revitalize Your Workout Routine with Deepdrive - The Ultimate Solution for Swift Recovery. With its compact design, Deepdrive lets you enjoy the benefits of icy water therapy anytime, anywhere. Say goodbye to muscle soreness and inflammation, as the cooling effect hastens your recovery time, enabling you to continue your fitness journey with greater ease.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17769143370020__81e037e7-3350-41d3-9d8d-fcf0a1bf59cb-1675494408088b4776-0",
+        "template--17769143370020__81e037e7-3350-41d3-9d8d-fcf0a1bf59cb-1675494408088b4776-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bandner.png",
+        "color": "rgba(0,0,0,0)",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17769143370020__2dc64ef2-c89a-4e1f-b86b-3948dbfeb003-167560525000579a83-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "What's Included",
+            "heading_size": "h0"
+          }
+        },
+        "template--17769143370020__2dc64ef2-c89a-4e1f-b86b-3948dbfeb003-167560525000579a83-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1x<\/strong> Deepdive Tub<\/p><p><strong>1x<\/strong> Cover lid<\/p><p><strong>1x<\/strong> Waterproof Cover<\/p><p><strong>1x<\/strong> Hand pump<\/p><p><strong>1x<\/strong> Waterproof Carry Bag<\/p><p><strong>1x<\/strong> Drainage hose<\/p><p><strong>1x <\/strong>365 days warranty<\/p><p><strong>1x<\/strong> Free home delivery<\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--17769143370020__2dc64ef2-c89a-4e1f-b86b-3948dbfeb003-167560525000579a83-0",
+        "template--17769143370020__2dc64ef2-c89a-4e1f-b86b-3948dbfeb003-167560525000579a83-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pebblely_1.jpg",
+        "color": "rgba(0,0,0,0)",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8e0259c3-6aa0-4d37-aeee-cf2f2468b5f6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17769143370020__8e0259c3-6aa0-4d37-aeee-cf2f2468b5f6-167560525000579a83-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Peace of mind",
+            "heading_size": "h0"
+          }
+        },
+        "template--17769143370020__8e0259c3-6aa0-4d37-aeee-cf2f2468b5f6-167560525000579a83-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every Deep Dive Wellness Tub comes with a 1 year manufacturer warranty out of box.<\/p><p>We also have a <strong>100% Satisfaction Guarantee<\/strong>. If you aren’t 100% satisfied with your Tub, you have 30 days to return it for a full refund.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17769143370020__8e0259c3-6aa0-4d37-aeee-cf2f2468b5f6-167560525000579a83-0",
+        "template--17769143370020__8e0259c3-6aa0-4d37-aeee-cf2f2468b5f6-167560525000579a83-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/inergize-cold-plunge-tub-thumbnail.jpg",
+        "color": "rgba(0,0,0,0)",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "dbc5911b-2d4a-4d95-b198-b1d84695f016": {
+      "type": "table",
+      "blocks": {
+        "d8ae9a84-df0d-4645-ae4e-a13c742476a8": {
+          "type": "cell",
+          "settings": {
+            "title1": "Feature",
+            "title2": "Deep Dive Wellness",
+            "title3": "Other Brands"
+          }
+        },
+        "cb33ad07-6ff7-4f5f-82aa-2f075f3b1e6c": {
+          "type": "cell",
+          "settings": {
+            "title1": "Price",
+            "title2": "From $119 ( Free Shipping incl)",
+            "title3": "$999 (not including costly shipping)"
+          }
+        },
+        "9c2ba15f-d9bb-48f4-a7e4-19e28ad34b03": {
+          "type": "cell",
+          "settings": {
+            "title1": "Bulkiness",
+            "title2": "Small, portable & foldable. Only weighs 7lb (3kg).",
+            "title3": "Big barrels or bathtub-like ice baths. Expensive to ship & requires multiple people to move around."
+          }
+        },
+        "786fe907-b946-4b07-a168-2ad8b27c262a": {
+          "type": "cell",
+          "settings": {
+            "title1": "Shipping cost",
+            "title2": "Insured Free Shipping",
+            "title3": "Due to its large size, shipping of the product must be done via truck and can cost over $500 within the United States."
+          }
+        },
+        "5ceddf5c-9ae9-4c01-8b63-ccbc980aebbb": {
+          "type": "cell",
+          "settings": {
+            "title1": "Portable",
+            "title2": "Yes",
+            "title3": "No"
+          }
+        },
+        "4e3a16c8-6e67-447c-a2ab-0cc440ebc7c7": {
+          "type": "cell",
+          "settings": {
+            "title1": "Ease of Use & Maintenance",
+            "title2": "Easy",
+            "title3": "Difficult"
+          }
+        },
+        "6d81e53e-7ad8-46d6-b6e7-7b029b0cf14a": {
+          "type": "cell",
+          "settings": {
+            "title1": "Insulation",
+            "title2": "Enhanced",
+            "title3": "Basic"
+          }
+        },
+        "210998ee-e953-4ed3-bf00-53cb823628a2": {
+          "type": "cell",
+          "settings": {
+            "title1": "Customer Support & Warranty",
+            "title2": "Exceptional",
+            "title3": "Average"
+          }
+        }
+      },
+      "block_order": [
+        "d8ae9a84-df0d-4645-ae4e-a13c742476a8",
+        "cb33ad07-6ff7-4f5f-82aa-2f075f3b1e6c",
+        "9c2ba15f-d9bb-48f4-a7e4-19e28ad34b03",
+        "786fe907-b946-4b07-a168-2ad8b27c262a",
+        "5ceddf5c-9ae9-4c01-8b63-ccbc980aebbb",
+        "4e3a16c8-6e67-447c-a2ab-0cc440ebc7c7",
+        "6d81e53e-7ad8-46d6-b6e7-7b029b0cf14a",
+        "210998ee-e953-4ed3-bf00-53cb823628a2"
+      ],
+      "settings": {
+        "title": "Our Ice Bath vs Other Ice Baths",
+        "font_size": "h0",
+        "text": "So how do we compare to other ice baths on the market? See for yourself in the comparison below.",
+        "color_scheme": "accent-2",
+        "gradient_scheme": "no",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "4f163d00-426d-4413-a20b-79067a43cc47": {
+      "type": "PDP-loox-review-app",
+      "settings": {
+        "title": "Find Out How Deep Dive Wellness is Improving Lives Through Cold Plunge",
+        "font_size": "h2",
+        "subtitle": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "app_color_scheme": "#f2f2f2"
+      }
+    },
+    "16754945879911f280": {
+      "type": "apps",
+      "blocks": {
+        "a56ca643-0092-4d62-8178-9404cb6482f8": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "a56ca643-0092-4d62-8178-9404cb6482f8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "85ab6184-0ddf-4927-8d0d-8470b8023e94": {
+      "type": "faq",
+      "blocks": {
+        "22c82959-56e8-4bfe-ad9e-efd5e9eb6913": {
+          "type": "faq",
+          "settings": {
+            "question": " What is a cold plunge bath?",
+            "font_size": "h3",
+            "answer": "A cold plunge bath is a shallow bath filled with cold water, typically used for the practice of cold water therapy or hydrotherapy.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "eb12c63e-cc22-4cfa-b804-b69bd5b31403": {
+          "type": "faq",
+          "settings": {
+            "question": "What are the benefits of cold plunge bathing?",
+            "font_size": "h3",
+            "answer": "Cold plunge bathing has been shown to provide benefits such as reduced pain, improved circulation, reduced stress, increased mental clarity, and improved immune function.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "3aba0ca7-3e62-43d4-9a1c-ec9d959f6359": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath outdoors?",
+            "font_size": "h3",
+            "answer": "Yes, you can use a cold plunge bath outdoors, but it is important to protect the tub from weather elements",
+            "color_scheme": "accent-2"
+          }
+        },
+        "58c0f2f4-01e3-435f-ac11-5ee715201079": {
+          "type": "faq",
+          "settings": {
+            "question": "What temperature should the water be for a cold plunge bath?",
+            "font_size": "h3",
+            "answer": "The temperature of the water for a cold plunge bath typically ranges from 50-60°F.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "de76124e-85a4-46c7-a231-e5ce90173cd3": {
+          "type": "faq",
+          "settings": {
+            "question": "How long should I stay in the cold plunge bath?",
+            "font_size": "h3",
+            "answer": "The length of time you should stay in the cold plunge bath will depend on your individual tolerance. It is recommended to start with short durations (1-3 minutes) and gradually increase as your body becomes accustomed to the therapy.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "72401dcb-1460-4086-bab6-aeee208f9652": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I do after a cold plunge bath?",
+            "font_size": "h3",
+            "answer": "After a cold plunge bath, it is recommended to warm up gradually by showering with warm water or covering yourself with warm blankets. It is also recommended to drink plenty of water to replace fluids lost during the therapy.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "90292714-2cf4-4c3d-97c3-33ee40edc2a8": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I wear during a cold plunge bath?",
+            "font_size": "h3",
+            "answer": "It is recommended to wear a swimsuit or other appropriate clothing during a cold plunge bath.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "bf532df7-62ef-4f96-b8c1-4cd293a60317": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath if I have sensitive skin?",
+            "font_size": "h3",
+            "answer": "Cold water therapy may not be appropriate for individuals with sensitive skin. It is always best to consult with a healthcare professional to determine if this therapy is right for you.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "3af925c3-6c15-48a7-bb61-1a86faa45171": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my cold plunge bath?",
+            "font_size": "h3",
+            "answer": "It is important to keep your cold plunge bath clean and well-maintained to ensure the best possible experience and to prevent the growth of harmful bacteria. Regular cleaning and proper storage can help extend the life of your tub.",
+            "color_scheme": "accent-2"
+          }
+        },
+        "e4f576d7-32e1-45c0-bd0d-ccbd78c9c5ff": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath outdoors?",
+            "font_size": "h3",
+            "answer": "Yes, you can use a cold plunge bath outdoors, but it is important to protect the tub from weather elements",
+            "color_scheme": "accent-2"
+          }
+        }
+      },
+      "block_order": [
+        "22c82959-56e8-4bfe-ad9e-efd5e9eb6913",
+        "eb12c63e-cc22-4cfa-b804-b69bd5b31403",
+        "3aba0ca7-3e62-43d4-9a1c-ec9d959f6359",
+        "58c0f2f4-01e3-435f-ac11-5ee715201079",
+        "de76124e-85a4-46c7-a231-e5ce90173cd3",
+        "72401dcb-1460-4086-bab6-aeee208f9652",
+        "90292714-2cf4-4c3d-97c3-33ee40edc2a8",
+        "bf532df7-62ef-4f96-b8c1-4cd293a60317",
+        "3af925c3-6c15-48a7-bb61-1a86faa45171",
+        "e4f576d7-32e1-45c0-bd0d-ccbd78c9c5ff"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "font_size": "h0",
+        "subtitle": "Get answers and feel confident in your journey with Deep Dive Wellness.",
+        "color_scheme": "background-1",
+        "gradient_scheme": "no",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "1c4fc591-330e-4135-9f10-53a6221a3e5e": {
+      "type": "icon-grid",
+      "blocks": {
+        "6c20d8f7-2702-43a4-ba78-23c3012e65cd": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_136.png",
+            "text": "<p>Fast & Free <br\/>Shipping<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "d869cd9b-6712-4f27-801f-08dd290f47fe": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_137.png",
+            "text": "<p>100% Satisfied <br\/>Guarantee<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "33cf93ac-ad42-4b02-a76e-359ef854b521": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/ri_customer-service-2-line.png",
+            "text": "<p>24\/7 Support<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "4d0c6ab6-f9b4-4317-a537-55e159828f3b": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_139.png",
+            "text": "<p>Easy <br\/>Returns<\/p>",
+            "font_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "6c20d8f7-2702-43a4-ba78-23c3012e65cd",
+        "d869cd9b-6712-4f27-801f-08dd290f47fe",
+        "33cf93ac-ad42-4b02-a76e-359ef854b521",
+        "4d0c6ab6-f9b4-4317-a537-55e159828f3b"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "gradient_scheme": "yes",
+        "show_count": "4",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    }
   },
-    "order": [
-        "main"
-    ]
+  "order": [
+    "main",
+    "e39325f5-7741-45d5-9314-d48db388a5cf",
+    "1675556188693f618c",
+    "dab59058-b32d-4b6b-a20e-c71c6ec1b919",
+    "0b7b898c-fdd9-4d61-90da-a0a46173c412",
+    "4566cfa4-35df-476a-9780-a6f7d1793264",
+    "81e037e7-3350-41d3-9d8d-fcf0a1bf59cb",
+    "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003",
+    "8e0259c3-6aa0-4d37-aeee-cf2f2468b5f6",
+    "dbc5911b-2d4a-4d95-b198-b1d84695f016",
+    "4f163d00-426d-4413-a20b-79067a43cc47",
+    "16754945879911f280",
+    "85ab6184-0ddf-4927-8d0d-8470b8023e94",
+    "1c4fc591-330e-4135-9f10-53a6221a3e5e"
+  ]
 }
