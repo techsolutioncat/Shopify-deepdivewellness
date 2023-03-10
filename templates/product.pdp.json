@@ -30,7 +30,7 @@
           "settings": {
             "heading": "Description",
             "icon": "price_tag",
-            "content": "<p>Deep Dive Wellness is proud to introduce our line of state-of-the-art cold plunge tubs, the ultimate solution for recovery and rejuvenation. Whether you're an athlete looking to improve performance, or simply looking for a unique and invigorating experience, our cold plunge tubs are designed to deliver results.<\/p><p>Our cold plunge tubs are made from high-quality materials and are engineered to provide the perfect balance of comfort and functionality. The adjustable water flow system allows you to control the water temperature and pressure for a customized soak, making it the ideal choice for users of all types. The water temperature can be adjusted from a chilly 45°F to a refreshing 60°F, providing a therapeutic and revitalizing experience.<\/p>",
+            "content": "<p>Deep Dive Wellness is proud to introduce our line of state-of-the-art cold plunge tubs, the ultimate solution for recovery and rejuvenation. Whether you're an athlete looking to improve performance, or simply looking for a unique and invigorating experience, our cold plunge tubs are designed to deliver results.<\/p><p>Our cold plunge tubs are made from high-quality materials and are engineered to provide the perfect balance of comfort and functionality. <\/p>",
             "page": ""
           }
         },
@@ -431,7 +431,7 @@
           "type": "cell",
           "settings": {
             "title1": "Price",
-            "title2": "From $119 ( Free Shipping incl)",
+            "title2": "From $149 ( Free Shipping incl)",
             "title3": "$999 (not including costly shipping)"
           }
         },
