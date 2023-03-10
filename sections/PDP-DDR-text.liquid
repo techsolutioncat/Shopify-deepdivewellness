@@ -2,9 +2,7 @@
     #shopify-section-{{section.id}} .section-content {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-    #shopify-section-{{section.id}} .section-content .section-main-container {
-        background: var(--site-linear-gradient);
+        background: {{ section.settings.background }};
     }
     #shopify-section-{{section.id}} .section-main-container {
         padding: 22px 0px;
@@ -12,6 +10,9 @@
         font-size: 15px;
         display: flex;
         justify-content: center;
+    }
+    #shopify-section-{{section.id}} #ddr_embed_text span {
+        color: {{ section.settings.font_color }};
     }
     #shopify-section-{{section.id}} .section-main-container .text p{ margin: 0px; }
 
@@ -22,7 +23,7 @@
     }
 {% endstyle %}
 
-<div class="section-content color-{{ section.settings.color_scheme }} {% if section.settings.gradient_scheme == 'yes' %}gradient{% endif %}">
+<div class="section-content">
     <div class="section-main-container">
         <div class="page-width">
             <div class="text"><div id='ddr_embed_text'></div></div>
@@ -41,48 +42,16 @@
             "content": "Settings section"
         },
         {
-            "type": "select",
-            "id": "color_scheme",
-            "options": [
-                {
-                    "value": "accent-1",
-                    "label": "t:sections.all.colors.accent_1.label"
-                },
-                {
-                    "value": "accent-2",
-                    "label": "t:sections.all.colors.accent_2.label"
-                },
-                {
-                    "value": "background-1",
-                    "label": "t:sections.all.colors.background_1.label"
-                },
-                {
-                    "value": "background-2",
-                    "label": "t:sections.all.colors.background_2.label"
-                },
-                {
-                    "value": "inverse",
-                    "label": "t:sections.all.colors.inverse.label"
-                }
-            ],
-            "default": "background-1",
-            "label": "t:sections.all.colors.label"
+            "type": "color",
+            "id": "background",
+            "default": "#01B9C5",
+            "label": "Background"
         },
-        {
-            "type": "select",
-            "id": "gradient_scheme",
-            "options": [
-                {
-                    "value": "yes",
-                    "label": "Yes"
-                },
-                {
-                    "value": "no",
-                    "label": "No"
-                }
-            ],
-            "default": "no",
-            "label": "Color gradient"
+         {
+            "type": "color",
+            "id": "font_color",
+            "default": "#000",
+            "label": "Font color"
         },
         {
             "type": "range",
