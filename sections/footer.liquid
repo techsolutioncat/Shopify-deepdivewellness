@@ -18,6 +18,15 @@
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
+  {% if section.settings.background_image != blank %}
+    .footer {
+      background-image: url({{ section.settings.background_image | image_url: width: 2000 }});
+      background-size: cover;
+    }
+    .footer.color-accent-2 {
+      background-color: transparent !important;
+    }
+  {% endif %}
 
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -573,6 +582,11 @@
   ],
   "settings": [
     {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
       "type": "select",
       "id": "color_scheme",
       "options": [
@@ -698,7 +712,7 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
@@ -708,7 +722,7 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",

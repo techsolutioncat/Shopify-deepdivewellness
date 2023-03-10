@@ -122,8 +122,8 @@
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
-    "checkout_logo_image": "shopify:\/\/shop_images\/Armory_Avenue_Checkout_1.png",
-    "checkout_logo_position": "center",
+    "checkout_logo_image": "shopify:\/\/shop_images\/DeepDive_Wellness_ICON_1.jpg",
+    "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "sections": {
       "announcement-bar": {
