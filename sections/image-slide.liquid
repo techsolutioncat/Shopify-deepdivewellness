@@ -3,6 +3,10 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
 }
+#shopify-section-{{section.id}} .section-title {
+    color: {{ section.settings.title_color }};
+    font-weight: bold;
+}
 #shopify-section-{{section.id}} .swiper-wrapper {
     align-items: center;
 }
@@ -33,6 +37,9 @@
 <!-- Swiper -->
 <div class="section-content color-{{ section.settings.color_scheme }} {% if section.settings.gradient_scheme == 'yes' %}gradient{% endif %}">
     <div class="swiper mySwiper page-width">
+        {% if section.settings.title != blank %}
+            <div class="section-title text-align-center {{ section.settings.font_size }}">{{ section.settings.title}}</div>
+        {% endif %}
         <div class="swiper-wrapper">
             {% if section.blocks.size > 0 %}
                 {% for block in section.blocks %}
@@ -53,6 +60,48 @@
     "tag": "section",
     "class": "section",
     "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+        },
+        {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title color"
+        },
+        {
+            "type": "select",
+            "id": "font_size",
+            "options": [
+                {
+                    "value": "h5",
+                    "label": "XX-S"
+                },
+                {
+                    "value": "h4",
+                    "label": "X-S"
+                },
+                {
+                    "value": "h3",
+                    "label": "S"
+                },
+                {
+                    "value": "h2",
+                    "label": "M"
+                },
+                {
+                    "value": "h1",
+                    "label": "L"
+                },
+                {
+                    "value": "h0",
+                    "label": "X-L"
+                }
+          ],
+          "default": "h2",
+          "label": "Font size"
+        },
         {
             "type": "select",
             "id": "color_scheme",

@@ -1,59 +1,132 @@
 {% style %}
     #shopify-section-{{section.id}} .section-content {
-        background: {{ section.settings.color }};
+        margin-top: {{ section.settings.margin_top }}px;
+        margin-bottom: {{ section.settings.margin_bottom }}px;
     }
     #shopify-section-{{section.id}} .section-content .section-main-container {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
+        background: {{ section.settings.color }};
+        position: relative;
     }
-    #shopify-section-{{section.id}} .wrapper .blocks {
+    #shopify-section-{{section.id}} .section-border-image {
         display: flex;
-        text-align: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin-top: 50px;
     }
-    #shopify-section-{{section.id}} .wrapper .block {
-        width: calc(33.33% - 20px);
-        padding: 20px 20px 70px 20px;
-        border-radius: 120px;
-    }
-    #shopify-section-{{section.id}} .wrapper .block .block-image {
-        min-height: 115px;
-    }
-    #shopify-section-{{section.id}} .wrapper .block .block-image img {
+    #shopify-section-{{section.id}} .section-border-image img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
-        border: 1px solid rgb(var(--color-base-accent-2));
-        border-radius: 90px;
     }
-    #shopify-section-{{section.id}} .wrapper .block .block-title {
-        margin-top: 30px;
-        color: #fff;
+    #shopify-section-{{section.id}} .section-title,
+    #shopify-section-{{section.id}} .section-text
+    {
+        color: {{ section.settings.font_color }};
     }
-    #shopify-section-{{section.id}} .wrapper .block .block-text {
-        color: #fff;
+    #shopify-section-{{section.id}} .section-title > p {
+        margin: 0px;
     }
-    #shopify-section-{{section.id}} .wrapper .block-1 {
-        background: linear-gradient(180deg, #2B3B4C 0%, rgb(var(--color-base-accent-2)) 100%);
+    #shopify-section-{{section.id}} .section-title em {
+        position: relative;
+        font-style: initial;
     }
-    #shopify-section-{{section.id}} .wrapper .block-0 {
-        background: linear-gradient(0deg, #2B3B4C 0%, rgb(var(--color-base-accent-2)) 100%);
+    #shopify-section-{{section.id}} .section-title em::before {
+        content: "";
+        width: 100%;
+        height: 18px;
+        background: #abd92fab;
+        position: absolute;
+        bottom: -1px;
     }
-    @media(max-width: 1000px) {
-        #shopify-section-{{section.id}} .wrapper .block {
-            width: calc(50% - 20px);
-            padding: 50px;
-        }
+    #shopify-section-{{section.id}} .swiper {
+        width: 100%;
+        height: 100%;
     }
-    @media(max-width: 768px) {
-        #shopify-section-{{section.id}} .wrapper .block {
-            width: 100%;
-        }
+    #shopify-section-{{section.id}} .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 20px;
+        padding: 17px 0px;
+    }
+    #shopify-section-{{section.id}} .block-image {
+        position: relative;
+        width: 100%;
+        max-height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #shopify-section-{{section.id}} .slide-content {
+        padding: 26px 17px 17px 17px;
+        font-size: 12px;
+        height: 193px;
+    }
+    #shopify-section-{{section.id}} .slide-content .review {
+        display: flex;
+        align-items: center;
+    }
+    #shopify-section-{{section.id}} .slide-content .review .star {
+        color: #ABD92F;
+        font-size: 25px;
+        letter-spacing: -2px;
+        margin-right: 11px;
+        margin-bottom: 16px;
+        line-height: 0;
+    }
+    #shopify-section-{{section.id}} .slide-content .username,
+    #shopify-section-{{section.id}} .slide-content .slide-title
+    {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    #shopify-section-{{section.id}} .block-image img.verified {
+        position: absolute;
+        left: 17px;
+        bottom: -1px;
+    }
+    #shopify-section-{{section.id}} .swiper-slide img.slide-image {
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+        width: calc(100% - 34px);
+        height: calc(100% - 34px);
+    }
+    #shopify-section-{{section.id}} .swiper-button {
+        display: block;
+    }
+    #shopify-section-{{section.id}} .swiper-button svg {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    #shopify-section-{{section.id}} .swiper-pagination {
+        position: absolute;
+        bottom: 0px;
+    }
+    #shopify-section-{{section.id}} .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        border: solid 1px #fff;
+    }
+    #shopify-section-{{section.id}} .swiper-pagination-bullet-active {
+        background: #fff;
+    }
+    #shopify-section-{{section.id}} .slide-action-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        margin-top: 20px;
     }
 {% endstyle %}
 
 <div class="section-content">
+    {% if section.settings.top_image != blank %}
+        <div class="section-border-image">
+            <img src="{{ section.settings.top_image | image_url: width: 2000 }}">
+        </div>
+    {% endif %}
     <div class="section-main-container">
         <div class="wrapper page-width">
             {% if section.settings.title != blank %}
@@ -62,28 +135,98 @@
             {% if section.settings.text != blank %}
                 <p class="section-text text-align-center">{{ section.settings.text }}</p>
             {% endif %}
-            <div class="blocks">
-                {% if section.blocks.size > 0 %}
-                    {% for block in section.blocks %}
-                        <div class="block block-{{ forloop.index | modulo: 2 }}">
-                            <div class="block-image">
-                                {% if block.settings.icon != blank %}
-                                    <img src="{{ block.settings.icon | image_url: width: 500 }}">
-                                {% endif %}
+            <div class="swiper mySwiper">
+                <div class="slide-action-buttons">
+                    <div class="swiper-button">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="swiper-button-prev">
+                            <circle cx="25" cy="25" r="24.5" transform="matrix(-1 0 0 1 50 0)" stroke="white"/>
+                            <path d="M23.875 32.3L17.275 25.7C17.175 25.6 17.104 25.4917 17.062 25.375C17.02 25.2583 16.9993 25.1333 17 25C17 24.8667 17.021 24.7417 17.063 24.625C17.105 24.5083 17.1757 24.4 17.275 24.3L23.875 17.7C24.0583 17.5167 24.2877 17.421 24.563 17.413C24.8383 17.405 25.0757 17.5007 25.275 17.7C25.475 17.8833 25.5793 18.1127 25.588 18.388C25.5967 18.6633 25.5007 18.9007 25.3 19.1L20.4 24H31.575C31.8583 24 32.096 24.096 32.288 24.288C32.48 24.48 32.5757 24.7173 32.575 25C32.575 25.2833 32.4793 25.521 32.288 25.713C32.0967 25.905 31.859 26.0007 31.575 26H20.4L25.3 30.9C25.4833 31.0833 25.5793 31.3167 25.588 31.6C25.5967 31.8833 25.5007 32.1167 25.3 32.3C25.1167 32.5 24.8833 32.6 24.6 32.6C24.3167 32.6 24.075 32.5 23.875 32.3Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="swiper-button-next">
+                            <circle cx="25" cy="25" r="25" fill="white"/>
+                            <path d="M26.125 32.3L32.725 25.7C32.825 25.6 32.896 25.4917 32.938 25.375C32.98 25.2583 33.0007 25.1333 33 25C33 24.8667 32.979 24.7417 32.937 24.625C32.895 24.5083 32.8243 24.4 32.725 24.3L26.125 17.7C25.9417 17.5167 25.7123 17.421 25.437 17.413C25.1617 17.405 24.9243 17.5007 24.725 17.7C24.525 17.8833 24.4207 18.1127 24.412 18.388C24.4033 18.6633 24.4993 18.9007 24.7 19.1L29.6 24H18.425C18.1417 24 17.904 24.096 17.712 24.288C17.52 24.48 17.4243 24.7173 17.425 25C17.425 25.2833 17.5207 25.521 17.712 25.713C17.9033 25.905 18.141 26.0007 18.425 26H29.6L24.7 30.9C24.5167 31.0833 24.4207 31.3167 24.412 31.6C24.4033 31.8833 24.4993 32.1167 24.7 32.3C24.8833 32.5 25.1167 32.6 25.4 32.6C25.6833 32.6 25.925 32.5 26.125 32.3Z" fill="#01B9C5"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="swiper-wrapper">
+                    {% if section.blocks.size > 0 %}
+                        {% for block in section.blocks %}
+                            <div class="swiper-slide">
+                                <div class="block-image">
+                                    {% if block.settings.icon != blank %}
+                                        <img class="slide-image" src="{{ block.settings.icon | image_url: width: 500 }}">
+                                    {% endif %}
+                                    <img class="verified" src="{{ 'verified.png' | asset_url }}">
+                                </div>
+                                <div class="slide-content">
+                                    {% if block.settings.username != blank %}
+                                        <div class="review">
+                                            <div class="star">
+                                                <label>★</label>
+                                                <label>★</label>
+                                                <label>★</label>
+                                                <label>★</label>
+                                                <label>★</label>
+                                            </div>
+                                            <div class="username">{{ block.settings.username }}</div>
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.title != blank %}
+                                        <div class="slide-title">{{ block.settings.title }}</div>
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <div class="text">{{ block.settings.text }}</div>
+                                    {% endif %}
+                                </div>
                             </div>
-                            {% if block.settings.title != blank %}
-                                <div class="block-title {{ block.settings.font_size }}">{{ block.settings.title }}</div>
-                            {% endif %}
-                            {% if block.settings.text != blank %}
-                                <div class="block-text">{{ block.settings.text }}</div>
-                            {% endif %}
-                        </div>
-                    {% endfor %}
-                {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
+    {% if section.settings.bottom_image != blank %}
+        <div class="section-border-image">
+            <img src="{{ section.settings.bottom_image | image_url: width: 2000 }}">
+        </div>
+    {% endif %}
 </div>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper("#shopify-section-{{section.id}} .mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        breakpoints: {
+            370: {
+                slidesPerView: 1.1,
+                spaceBetween: 12,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1000: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true
+    });
+</script>
 
 {% schema %}
 {
@@ -92,7 +235,11 @@
     "class": "section",
     "settings": [
         {
-            "type": "text",
+            "type": "header",
+            "content": "Heading"
+        },
+        {
+            "type": "richtext",
             "id": "title",
             "label": "Heading"
         },
@@ -129,14 +276,38 @@
           "label": "Font size"
         },
         {
+            "type": "header",
+            "content": "Text"
+        },
+        {
             "type": "text",
             "id": "text",
             "label": "Text"
         },
         {
+            "type": "header",
+            "content": "Section content"
+        },
+        {
+            "type": "color",
+            "id": "font_color",
+            "default": "#fff",
+            "label": "Font color"
+        },
+        {
             "type": "color",
             "id": "color",
             "label": "Background color"
+        },
+        {
+            "type": "image_picker",
+            "id": "top_image",
+            "label": "Top image"
+        },
+        {
+            "type": "image_picker",
+            "id": "bottom_image",
+            "label": "Bottom image"
         },
         {
             "type": "range",
@@ -157,6 +328,26 @@
             "unit": "px",
             "label": "t:sections.all.padding.padding_bottom",
             "default": 60
+        },
+        {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "unit": "px",
+            "label": "Margin top",
+            "default": 60
+        },
+        {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "unit": "px",
+            "label": "Margin bottom",
+            "default": 60
         }
     ],
     "blocks": [
@@ -171,40 +362,13 @@
                 },
                 {
                     "type": "text",
-                    "id": "title",
-                    "label": "Title"
+                    "id": "username",
+                    "label": "Username"
                 },
                 {
-                    "type": "select",
-                    "id": "font_size",
-                    "options": [
-                        {
-                            "value": "h5",
-                            "label": "XX-S"
-                        },
-                        {
-                            "value": "h4",
-                            "label": "X-S"
-                        },
-                        {
-                            "value": "h3",
-                            "label": "S"
-                        },
-                        {
-                            "value": "h2",
-                            "label": "M"
-                        },
-                        {
-                            "value": "h1",
-                            "label": "L"
-                        },
-                        {
-                            "value": "h0",
-                            "label": "X-L"
-                        }
-                ],
-                "default": "h3",
-                "label": "Font size"
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
                 },
                 {
                     "type": "textarea",
