@@ -1,12 +1,16 @@
 /* Begin common style css */
 .site-button {
-    background-color: rgb(var(--color-base-accent-2));
-    box-shadow: 3px 6px 30px rgba(1, 185, 197, 0.41);
     border-radius: 30px;
     font-size: 20px;
     font-family: var(--font-heading-family);
     padding: 20px 40px;
+    width: 100%;
 }
+.site-button.accent-2 {
+    background-color: rgb(var(--color-base-accent-2));
+    box-shadow: 3px 6px 30px rgba(1, 185, 197, 0.41);
+}
+
 .button:not([disabled]):hover:after,
 .site-button::after,
 .site-button_outline::after
@@ -40,6 +44,9 @@
 }
 .text-align-right {
     text-align: right;
+}
+.font-bold {
+    font-weight: bold;
 }
 .color-white { color: #fff; }
 .color-site { color: rgb(var(--color-base-accent-2)); }
