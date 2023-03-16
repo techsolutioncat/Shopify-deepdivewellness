@@ -30,6 +30,24 @@
   endif
 -%}
 
+{% style %}
+  #shopify-section-{{ section.id }} .price-item.price-item--last {
+    color: #27AE60;
+  }
+  #shopify-installments-content {
+    font-size: 14px;
+    color: #000;
+  }
+  #shopify-section-{{ section.id }} .price-save {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #27AE60;
+    border-radius: 40px;
+    padding: 5px 10px;
+  }
+{% endstyle %}
+
 <div class="price
   {%- if price_class %} {{ price_class }}{% endif -%}
   {%- if available == false %} price--sold-out {% endif -%}
@@ -50,9 +68,6 @@
     </div>
     <div class="price__sale">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-      <span class="price-item price-item--sale price-item--last h2">
-        {{ money_price }}
-      </span>
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span>
@@ -65,6 +80,9 @@
           </s>
         </span>
       {%- endunless -%}
+      <span class="price-item price-item--sale price-item--last h2">
+      {{ money_price }}
+    </span>
     </div>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
@@ -81,6 +99,8 @@
       </span>
     </small>
   </div>
+
+  {% comment %}
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }} h3">
       {{ 'products.product.on_sale' | t }}
@@ -90,4 +110,9 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
+  {% endcomment %}
+
+  <div class="price-save">
+    You Save {{ compare_at_price | number | minus: price | number | money }}
+  </div>
 </div>

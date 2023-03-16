@@ -59,6 +59,9 @@
     font-size: 16px;
     font-weight: bold;
   }
+  #shopify-section-{{ section.id }} .image-with-text__media img {
+    object-fit: contain;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -142,7 +145,8 @@
                         <label>★</label>
                         <label>★</label>
                     </div>
-                    <div class="number">5.0 / 5.0 RATED BY {{ block.settings.review_number }} REVIEWS</div>
+                    <div class="number">5.0 / 5.0 RATED BY <span class="review-count"></span> REVIEWS</div>
+                    <a href="#looxReviews" style="display:none"><div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div></a>
                   </div>
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
@@ -587,11 +591,6 @@
           "type": "color",
           "id": "review_color",
           "label": "Review color"
-        },
-        {
-          "type": "text",
-          "id": "review_number",
-          "label": "Review number"
         }
       ]
     }
@@ -614,3 +613,10 @@
   ]
 }
 {% endschema %}
+
+<script>
+  window.addEventListener('load', (event) =>{
+    var raters = $('#shopify-section-{{ section.id }} .loox-rating').attr('data-raters');
+    $('#shopify-section-{{ section.id }} .review-count').text(raters);
+  });
+</script>
