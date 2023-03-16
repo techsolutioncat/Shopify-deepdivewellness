@@ -27,13 +27,13 @@
         border: solid 1px rgb(var(--color-base-accent-2));
         display: flex;
         align-items: center;
-        border-radius: 70px;
+        border-radius: 10px;
     }
     #shopify-section-{{section.id}} .draw {
         display: none;
         padding: 30px;
         padding-left:30px;
-        border-radius: 90px;
+        border-radius: 10px;
         margin-top: 26px;
     }
     #shopify-section-{{section.id}} #other{
@@ -98,7 +98,7 @@
 <div class="section-content color-{{ section.settings.color_scheme }} {% if section.settings.gradient_scheme == 'yes' %}gradient{% endif %}">
     <div class="section-header">
         {% if section.settings.title != blank %}
-            <div class="rich-text__heading rte {{ section.settings.font_size }}">{{ section.settings.title }}</div>
+            <div class="rich-text__heading font-bold rte {{ section.settings.font_size }}">{{ section.settings.title }}</div>
         {% endif %}
         {% if section.settings.subtitle != blank %}
             <div class="rich-text__heading h3">{{ section.settings.subtitle }}</div>
