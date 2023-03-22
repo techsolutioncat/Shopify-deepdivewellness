@@ -1,42 +1,60 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
-  {%- style -%}
+    {%- style -%}
+        @media screen and (max-width: 749px) {
+            #Banner-{{ section.id }}::before,
+            #Banner-{{ section.id }} .banner__media::before,
+            #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+            padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+            content: '';
+            display: block;
+            }
+        }
 
-  @media screen and (max-width: 749px) {
-    #Banner-{{ section.id }}::before,
-    #Banner-{{ section.id }} .banner__media::before,
-    #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-      padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-      content: '';
-      display: block;
-    }
-  }
-
-  @media screen and (min-width: 750px) {
-    #Banner-{{ section.id }}::before,
-    #Banner-{{ section.id }} .banner__media::before {
-      padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-      content: '';
-      display: block;
-    }
-  }
-  {%- endstyle -%}
+        @media screen and (min-width: 750px) {
+            #Banner-{{ section.id }}::before,
+            #Banner-{{ section.id }} .banner__media::before {
+            padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+            content: '';
+            display: block;
+            }
+        }
+    {%- endstyle -%}
 {%- endif -%}
 
 {%- style -%}
-  #shopify-section-{{section.id}} .banner__heading strong {
-    color: #fff;
-    background-color: rgb(var(--color-base-accent-2));
-    font-weight: 400;
-  }
-  #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
-  }
-  @media (max-width: 768px) {
-    #shopify-section-{{section.id}} .banner__heading {
-      color: #000;
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'heading' -%}
+                #shopify-section-{{section.id}} .banner__heading span {
+                    color: {{ block.settings.font_color }}; 
+                }
+            {%- when 'text' -%}
+                #shopify-section-{{section.id}} .banner__text span {
+                    color: {{ block.settings.font_color }}; 
+                }
+            {%- when 'buttons' -%}
+                #shopify-section-{{section.id}} .banner__buttons a {
+                    color: {{ block.settings.font_color }};
+                    background: {{ block.settings.background_color }};
+                    border: solid 1px {{ block.settings.border_color }};
+                }
+        {%- endcase -%}
+    {%- endfor -%}
+
+    #shopify-section-{{section.id}} .banner__heading strong {
+        color: #fff;
+        background-color: rgb(var(--color-base-accent-2));
+        font-weight: 400;
     }
+    #Banner-{{ section.id }}::after {
+        opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    }
+    @media (max-width: 768px) {
+        #shopify-section-{{section.id}} .banner__heading {
+        color: #000;
+        }
   }
 {%- endstyle -%}
 
@@ -99,28 +117,30 @@
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading }}</span>
-            </h2>
-          {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }}</span>
-            </div>
-          {%- when 'buttons' -%}
-            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
-              {%- if block.settings.button_label_1 != blank -%}
-                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="sit-button {{ block.settings.button_style }} button button--primary">{{ block.settings.button_label_1 | escape }}</a>
-              {%- endif -%}
-              {%- if block.settings.button_label_2 != blank -%}
-                <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="sit-button {{ block.settings.button_style }} button button--primary">{{ block.settings.button_label_2 | escape }}</a>
-              {%- endif -%}
+        <div class="{{ section.settings.text_alignment }}">
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                {%- when 'heading' -%}
+                    <h2 class="banner__heading {{ block.settings.heading_size }} font-bold" {{ block.shopify_attributes }}>
+                    <span>{{ block.settings.heading }}</span>
+                    </h2>
+                {%- when 'text' -%}
+                    <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    <span>{{ block.settings.text }}</span>
+                    </div>
+                {%- when 'buttons' -%}
+                    <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.button_label_1 != blank -%}
+                        <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="site-button button button--primary">{{ block.settings.button_label_1 | escape }}</a>
+                    {%- endif -%}
+                    {%- if block.settings.button_label_2 != blank -%}
+                        <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="site-button button button--primary">{{ block.settings.button_label_2 | escape }}</a>
+                    {%- endif -%}
 
-            </div>
-        {%- endcase -%}
-      {%- endfor -%}
+                    </div>
+                {%- endcase -%}
+            {%- endfor -%}
+        </div>
     </div>
   </div>
 </div>
@@ -313,6 +333,26 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
+    },
+    {
+        "type": "select",
+        "id": "text_alignment",
+        "options": [
+        {
+            "value": "left",
+            "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__1.label"
+        },
+        {
+            "value": "center",
+            "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__2.label"
+        },
+        {
+            "value": "right",
+            "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__3.label"
+        }
+        ],
+        "default": "center",
+        "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.label"
     }
   ],
   "blocks": [
@@ -345,6 +385,11 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Font color"
         }
       ]
     },
@@ -354,9 +399,8 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
-          "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
         },
         {
@@ -378,6 +422,11 @@
           ],
           "default": "body",
           "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Font color"
         }
       ]
     },
@@ -387,44 +436,43 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
-          "id": "button_label_1",
-          "default": "Button label",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
-          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
         },
         {
-          "type": "url",
-          "id": "button_link_1",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
         },
-        {
-          "type": "select",
-          "id": "button_style",
-          "options": [
-            {
-              "value": "site-button",
-              "label": "Background"
-            },
-            {
-              "value": "site-button_outline",
-              "label": "outline"
-            }
-          ],
-          "default": "site-button",
-          "label": "Button style"
-        },
-        {
-          "type": "text",
-          "id": "button_label_2",
-          "default": "Button label",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
-          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
+                {
+            "type": "text",
+            "id": "button_label_2",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
         },
         {
           "type": "url",
           "id": "button_link_2",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
+        },
+        {
+            "type": "color",
+            "id": "font_color",
+            "label": "Font color"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color"
+        },
+        {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border color"
         }
       ]
     }

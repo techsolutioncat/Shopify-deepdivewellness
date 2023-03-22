@@ -1,0 +1,201 @@
+{%- style -%}
+#shopify-section-{{ section.id }} .section-title {
+    color: {{ section.settings.font_color }};
+}
+#shopify-section-{{ section.id }} .main-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#shopify-section-{{ section.id }} .table {
+    border: 1px solid #01B9C5;
+    border-radius: 20px;
+    width: 100%;
+}
+#shopify-section-{{ section.id }} .table .col2 {
+    z-index: 1;
+}
+#shopify-section-{{ section.id }} .main-content:before {
+    content: "";
+    position: absolute;
+    width: 33.33%;
+    height: calc(100% + 100px);
+    background: linear-gradient(180deg, #01B9C5 0%, #ABD92F 97.58%);
+    box-shadow: 20px 5px 60px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#shopify-section-{{ section.id }} .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+#shopify-section-{{ section.id }} .column {
+    display: block;
+    width: 33.33%;
+}
+#shopify-section-{{ section.id }} .col1 {
+    padding-left: 60px;
+}
+@media (max-width: 500px) {
+    #shopify-section-{{ section.id }} .col1 {
+        padding-left: 10px;
+    }
+}
+{%- endstyle -%}
+
+<div class="section-content">
+    {% if section.settings.heading != blank %}
+        <h2 class="section-title text-align-center {{ section.settings.font_size }} {% if section.settings.font_weight == 'Bold' %}font-bold{% endif %}">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="main-content page-width" aria-hidden="true">
+        <div class="table">
+            {% if section.blocks.size > 0 %}
+                <div class="row">
+                    <div class="col1 table-header column h2 font-bold">{{ section.settings.text1 }}</div>
+                    <div class="col2 table-header column h2 font-bold color-white text-align-center">{{ section.settings.text2 }}</div>
+                    <div class="col3 table-header column h2 font-bold text-align-center">{{ section.settings.text3 }}</div>
+                </div>
+                {% for block in section.blocks %}
+                    <div class="row">
+                        {% if block.settings.text != blank %}
+                            <div class="col1 rich-text__text rte column h3">{{ block.settings.text }}</div>
+                        {% endif %}
+                        {% if block.settings.icon1 != blank %}
+                            <div class="col2 column text-align-center">
+                                <img src="{{ block.settings.icon1 | image_url: width: 200 }}">
+                            </div>
+                        {% endif %}
+                        {% if block.settings.icon2 != blank %}
+                            <div class="col3 column text-align-center">
+                                <img src="{{ block.settings.icon2 | image_url: width: 200 }}">
+                            </div>
+                        {% endif %}
+                        
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Different",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "select",
+            "id": "font_size",
+            "options": [
+                {
+                    "value": "h0",
+                    "label": "xx-large"
+                },
+                {
+                    "value": "h1",
+                    "label": "x-large"
+                },
+                {
+                    "value": "h2",
+                    "label": "large"
+                },
+                {
+                    "value": "h3",
+                    "label": "medium"
+                },
+                {
+                    "value": "h4",
+                    "label": "x-small"
+                },
+                {
+                    "value": "h5",
+                    "label": "small"
+                }
+            ],
+            "default": "h3",
+            "label": "Font size"
+        },
+        {
+          "type": "select",
+          "id": "font_weight",
+          "options": [
+            {
+              "value": "Bold",
+              "label": "Bold"
+            },
+            {
+              "value": "Regular",
+              "label": "Regular"
+            }
+          ],
+          "default": "Regular",
+          "label": "Font weight"
+        },
+        {
+            "type": "color",
+            "id": "font_color",
+            "default": "#FFF",
+            "label": "Font color"
+        },
+        {
+            "type": "header",
+            "content": "Table header"
+        },
+        {
+            "type": "text",
+            "id": "text1",
+            "label": "Text1"
+        },
+        {
+            "type": "text",
+            "id": "text2",
+            "label": "Text2"
+        },
+        {
+            "type": "text",
+            "id": "text3",
+            "label": "Text3"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "item",
+            "name": "Item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon1",
+                    "label": "Icon1"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon2",
+                    "label": "Icon2"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Different"
+        }
+    ]
+}
+{% endschema %}
