@@ -1,4 +1,7 @@
 {% style %}
+    #shopify-section-{{section.id}} .section-content {
+        background: {{ section.settings.background_color }};
+    }
     #shopify-section-{{section.id}} .section-content .section-main-container {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -20,6 +23,9 @@
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon img {
         max-width: 70px;
     }
+    #shopify-section-{{section.id}} .section-content .icon-wrap .icon .icon-text {
+        color: {{ section.settings.font_color }};
+    }
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon .icon-text > p {
         margin: 0px;
     }
@@ -34,7 +40,7 @@
     }
 {% endstyle %}
 
-<div class="section-content color-{{ section.settings.color_scheme }} {% if section.settings.gradient_scheme == 'yes' %}gradient{% endif %}">
+<div class="section-content">
     <div class="section-main-container">
         <div class="icon-wrap page-width">
             {% if section.blocks.size > 0 %}
@@ -42,7 +48,7 @@
                     <div class="icon">
                         <div class="icon-image">
                             {% if block.settings.icon != blank %}
-                                <img src="{{ block.settings.icon | image_url: width: 100 }}">
+                                <img src="{{ block.settings.icon | image_url: width: 70 }}">
                             {% endif %}
                         </div>
                         {% if block.settings.text != blank %}
@@ -62,48 +68,9 @@
     "class": "section",
     "settings": [
         {
-            "type": "select",
-            "id": "color_scheme",
-            "options": [
-                {
-                    "value": "accent-1",
-                    "label": "t:sections.all.colors.accent_1.label"
-                },
-                {
-                    "value": "accent-2",
-                    "label": "t:sections.all.colors.accent_2.label"
-                },
-                {
-                    "value": "background-1",
-                    "label": "t:sections.all.colors.background_1.label"
-                },
-                {
-                    "value": "background-2",
-                    "label": "t:sections.all.colors.background_2.label"
-                },
-                {
-                    "value": "inverse",
-                    "label": "t:sections.all.colors.inverse.label"
-                }
-            ],
-            "default": "background-1",
-            "label": "t:sections.all.colors.label"
-        },
-        {
-            "type": "select",
-            "id": "gradient_scheme",
-            "options": [
-                {
-                    "value": "yes",
-                    "label": "Yes"
-                },
-                {
-                    "value": "no",
-                    "label": "No"
-                }
-            ],
-            "default": "no",
-            "label": "Color gradient"
+            "type": "color",
+            "id": "background_color",
+            "label": "Background"
         },
         {
             "type": "select",
@@ -148,6 +115,11 @@
             "unit": "px",
             "label": "t:sections.all.padding.padding_bottom",
             "default": 60
+        },
+        {
+            "type": "color",
+            "id": "font_color",
+            "label": "Text color"
         }
     ],
     "blocks": [

@@ -5,7 +5,7 @@
             background-size: cover;
         }
     {% endif %}
-    #shopify-section-{{section.id}} .section-content .section-main-container {
+    #shopify-section-{{section.id}} .section-content {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
     }
@@ -68,6 +68,18 @@
         position: absolute;
         bottom: 10px;
     }
+    #shopify-section-{{section.id}} .rich-text__heading em {
+        position: relative;
+        font-style: initial;
+    }
+    #shopify-section-{{section.id}} .rich-text__heading em::before {
+        content: "";
+        width: 100%;
+        height: 18px;
+        background: #01b9c54d;
+        position: absolute;
+        bottom: -1px;
+    }
     @media(max-width: 768px) {
         #shopify-section-{{section.id}} .section-content .image-wrap {
             gap: 20px;
@@ -117,14 +129,16 @@
                                 <img src="{{ block.settings.image | image_url: width: 500 }}">
                             {% endif %}
                         </div>
-                        <div class="section-button">
-                            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="site-button button button-primary" {{ block.shopify_attributes }}>
-                                {% if block.settings.button_icon != blank %}
-                                    <img src="{{ block.settings.button_icon | image_url: width: 50 }}">
-                                {% endif %}
-                                <div style="margin-left: 7px;">{{ block.settings.button_label | escape }}</div>
-                            </a>
-                        </div>
+                        {% if block.settings.button_label != blank %}
+                            <div class="section-button">
+                                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="site-button button button-primary" {{ block.shopify_attributes }}>
+                                    {% if block.settings.button_icon != blank %}
+                                        <img src="{{ block.settings.button_icon | image_url: width: 50 }}">
+                                    {% endif %}
+                                    <div style="margin-left: 7px;">{{ block.settings.button_label | escape }}</div>
+                                </a>
+                            </div>
+                        {% endif %}
                     </div>
                 {% endfor %}
             {% endif %}
