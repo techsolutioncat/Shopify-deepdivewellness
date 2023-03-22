@@ -56,7 +56,8 @@
           "type": "heading",
           "settings": {
             "heading": "EMBRACING THE CHILL: A GUIDE TO TRANSFORMING YOUR COLD EXPOSURE EXPERIENCE",
-            "heading_size": "h0"
+            "heading_size": "h0",
+            "font_weight": "light"
           }
         },
         "template--17733600444708__4c1cdd39-8157-41d2-8a2d-7080820bde92-1675402928cc408d00-1": {
@@ -71,7 +72,8 @@
           "settings": {
             "button_label": "EXPLORE DEEPDRIVE",
             "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
-            "button_style": "site-button"
+            "button_style": "site-button",
+            "color_scheme": "background-1"
           }
         }
       },
@@ -98,6 +100,7 @@
     },
     "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce": {
       "type": "icon-grid",
+      "disabled": true,
       "blocks": {
         "6e67e051-1963-4599-8e14-83ea6407e2b9": {
           "type": "item",
@@ -166,12 +169,14 @@
     },
     "b6fdf158-2d59-4958-a747-9a08aeda1805": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-0": {
           "type": "heading",
           "settings": {
             "heading": "Unveiling True Self through Merciless Cold - Wim Hof",
-            "heading_size": "h0"
+            "heading_size": "h0",
+            "font_weight": "light"
           }
         },
         "template--17733600444708__b6fdf158-2d59-4958-a747-9a08aeda1805-16754344047072faba-1": {
@@ -186,7 +191,8 @@
           "settings": {
             "button_label": "GET YOURS NOW",
             "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
-            "button_style": "site-button_outline"
+            "button_style": "site-button_outline",
+            "color_scheme": "background-1"
           }
         }
       },
@@ -212,6 +218,7 @@
     },
     "b1565913-adc6-49b1-8202-d8003167ca9c": {
       "type": "text-with-full-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/sheets-of-ice-formed-on-a-frozen-lake.jpg",
         "mob_image": "shopify:\/\/shop_images\/sheets-of-ice-formed-on-a-frozen-lake.jpg",
@@ -229,6 +236,7 @@
     },
     "cae612a4-c109-4ad0-8c3b-b1cc56313be0": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0": {
           "type": "text",
@@ -285,6 +293,7 @@
     },
     "d109af30-a409-4854-86b0-12e393f72778": {
       "type": "banner-over-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/bandner.png",
         "banner_image": "shopify:\/\/shop_images\/Rectangle_19.png",
