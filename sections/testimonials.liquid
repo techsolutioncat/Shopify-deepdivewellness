@@ -32,12 +32,16 @@
     -ms-flex-align: baseline;
     -webkit-align-items: baseline;
     align-items: baseline;
-    min-height: 360px;
+    min-height: 270px;
     border-radius: 6px;
     position: relative;
 }
 #shopify-section-{{section.id}} .swiper-slide .client-review {
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 #shopify-section-{{section.id}} .swiper-slide img {
     display: block;
@@ -55,6 +59,8 @@
 #shopify-section-{{section.id}} .swiper-slide .review_text {
     text-align: left;
     padding-bottom: 70px;
+    color: #000;
+    text-align: center;
 }
 #shopify-section-{{section.id}} .swiper-slide .user-group {
     display: flex;
@@ -62,8 +68,13 @@
     bottom: 45px;
 }
 #shopify-section-{{section.id}} .slide-footer {
+    display: flex;
     text-align: left;
     margin-left: 12px;
+}
+#shopify-section-{{section.id}} .rate {
+    display: flex;
+    align-items: center;
 }
 #shopify-section-{{section.id}} .slide-footer .rate {
     display: flex;
@@ -73,7 +84,8 @@
     margin-right: 7px;
 }
 #shopify-section-{{section.id}} .star-rating__current span {
-    color: #F3BA26;
+    color: #ABD92F;
+    font-size: 27px;
 }
 #shopify-section-{{section.id}} .color-accent-1 .swiper-pagination-bullet {
     background: #fff;
@@ -95,7 +107,7 @@
 <div class="section-content color-{{ section.settings.color_scheme }}">
     <div class="page-full-width">
         {% if section.settings.title != blank %}
-            <h1 class="section-title {{ section.settings.font_size }} font-weight_bold">{{ section.settings.title }}</h1>
+            <h1 class="section-title {{ section.settings.font_size }} font-bold">{{ section.settings.title }}</h1>
         {% endif %}
 
         <div class="swiper mySwiper testimonials page-width">
@@ -109,30 +121,34 @@
                                         <h2 class="block-title font_medium">{{ block.settings.title }}</h2>
                                     {% endif %}
                                 </div>
+                                <div class="rate">
+                                    <div class="star-rating__current">
+                                        <span>★</span>
+                                        <span>★</span>
+                                        <span>★</span>
+                                        <span>★</span>
+                                        <span>★</span>
+                                    </div>
+                                    <span class="font-bold">5.0</span>
+                                </div>
                                 <div class="review_text font_x-small">
                                     {% if block.settings.review_text != blank %}
                                         {{ block.settings.review_text }}
                                     {% endif %}
                                 </div>
                                 <div class="user-group">
-                                    <div class="client_photo">
-                                        {% if block.settings.client_photo != blank %}
+                                    {% if block.settings.client_photo != blank %}
+                                        <div class="client_photo">
                                             <img src="{{ block.settings.client_photo | image_url: width: 500 }}">
-                                        {% endif %}
-                                    </div>
+                                        </div>
+                                    {% endif %}
                                     <div class="slide-footer">
                                         {% if block.settings.client_name != blank %}
-                                            <div class="client_name font_x-small">{{ block.settings.client_name }}</div>
+                                            <div class="client_name h5">{{ block.settings.client_name }}</div>
                                         {% endif %}
-                                        <div class="rate">
-                                            <div class="star-rating__current">
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                            </div>
-                                        </div>
+                                        {% if block.settings.date != blank %}
+                                            <div class="date h5">, {{ block.settings.date }}</div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
@@ -288,6 +304,11 @@
                     "type": "textarea",
                     "id": "review_text",
                     "label": "Client review"
+                },
+                {
+                    "type": "text",
+                    "id": "date",
+                    "label": "Date"
                 }
             ]
         }
@@ -329,7 +350,7 @@
             },
             // when window width is >= 640px
             1000: {
-                slidesPerView: 4
+                slidesPerView: 3
             }
         }
     });
