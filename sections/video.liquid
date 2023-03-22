@@ -2,6 +2,16 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  {% if section.settings.image != blank %}
+    #shopify-section-{{section.id}} .section-content{
+      background-image: url( {{ section.settings.image | image_url: width: 2000 }} );
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  {% endif %}
+  #shopify-section-{{section.id}} h2.title {
+    color: {{ section.settings.font_color }};
+  }
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -15,12 +25,12 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="section-content color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div{% if section.settings.full_width %} class="page-width"{% endif %}>
       {%- unless section.settings.heading == blank -%}
-        <div class="title-wrapper title-wrapper--no-top-margin">
-          <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+        <div class="title-wrapper title-wrapper--no-top-margin text-align-center">
+          <h2 class="title font-bold {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
         </div>
       {%- endunless -%}
     </div>
@@ -93,6 +103,11 @@
       "label": "t:sections.video.settings.heading.label"
     },
     {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -111,6 +126,12 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color",
+      "id": "font_color",
+      "default": "#fff",
+      "label": "Font color"
     },
     {
       "type": "image_picker",
