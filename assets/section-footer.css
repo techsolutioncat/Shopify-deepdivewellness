@@ -495,7 +495,12 @@ noscript .localization-selector.link {
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
-
+footer.footer a,
+footer.footer p,
+footer.footer li
+{
+  color: #fff !important;
+}
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (max-width: 749px) {
