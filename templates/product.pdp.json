@@ -593,7 +593,8 @@
         "template--18150980780324__9eafbc18-3f11-4918-84eb-1850c0c6885a-1678696725d04e7c25-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Join the 1 million+ deepdrivewellness and experience the <br\/>sensationalmarshmallow-like softness of the deepdrive<\/p>"
+            "text": "<p>Join the 1 million+ deepdrivewellness and experience the <br\/>sensationalmarshmallow-like softness of the deepdrive<\/p>",
+            "border_top": false
           }
         }
       },
@@ -860,11 +861,11 @@
         "4d0c6ab6-f9b4-4317-a537-55e159828f3b"
       ],
       "settings": {
-        "color_scheme": "accent-2",
-        "gradient_scheme": "yes",
+        "background_color": "",
         "show_count": "4",
         "padding_top": 30,
-        "padding_bottom": 30
+        "padding_bottom": 30,
+        "font_color": ""
       }
     },
     "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003": {
