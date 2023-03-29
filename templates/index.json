@@ -6,7 +6,7 @@
         "template--17733600444708__6ffe24ea-204b-47b0-a713-6679e8f91867-167570491866ef1560-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>A GUIDE TO TRANSFORMING<br\/>YOUR COLD EXPOSURE<br\/>EXPERIENCE<\/p>",
+            "heading": "<p>A GUIDE TO <strong>TRANSFORMING<br\/>YOUR COLD<\/strong> EXPOSURE<br\/>EXPERIENCE<\/p>",
             "heading_size": "h1",
             "font_color": "#ffffff"
           }
@@ -22,7 +22,7 @@
         "dd225f1b-63e1-48c5-92f8-f644f79dd897": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Find your fit",
+            "button_label_1": "Begin Your Journey!",
             "button_link_1": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
             "button_label_2": "",
             "button_link_2": "",
@@ -38,18 +38,87 @@
         "dd225f1b-63e1-48c5-92f8-f644f79dd897"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner_e342f3df-7230-4efd-a5db-9e8c7519caa9.png",
-        "image_overlay_opacity": 0,
+        "image": "shopify:\/\/shop_images\/Untitled_design_41.png",
+        "image_2": "shopify:\/\/shop_images\/Deep_Dive_Wellness_Surface_Skimmer_1.png",
+        "image_overlay_opacity": 80,
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-right",
         "show_text_box": true,
         "desktop_content_alignment": "left",
         "color_scheme": "background-2",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": false,
         "show_text_below": false,
-        "text_alignment": "right"
+        "text_alignment": "center"
+      }
+    },
+    "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce": {
+      "type": "icon-grid",
+      "blocks": {
+        "6e67e051-1963-4599-8e14-83ea6407e2b9": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_f121c0e4-8a60-4b75-a340-98f65de6d1aa.png",
+            "text": "<p>Boost Mental <br\/>Health<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "01fd81b7-d6b6-4afa-a10f-de7c9fb2eb0d": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/muscle_1_traced.png",
+            "text": "<p>Speed Up Muscle Recovery<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "dca6300e-8233-4597-9b5a-b2d82791daa2": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/immunity_1_traced.png",
+            "text": "<p>Strengthen Immune System<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "732339c0-345d-435c-b069-74764f2ecefb": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/hair-follicle_1_traced_594524e5-07a9-4d7e-8d9d-1021e9892a09.png",
+            "text": "<p>Nourish Skin + <br\/>Hair<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "5b41e723-2957-4350-bde1-ae271a5740cc": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/healthicons_blood-cells-outline.png",
+            "text": "<p>Improve Blood Circulation<\/p>",
+            "font_size": "h2"
+          }
+        },
+        "72984ecf-838f-42fa-a79b-e030abd1414d": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Black_4.png",
+            "text": "<p>Increase Energy <br\/>Levels<\/p>",
+            "font_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "6e67e051-1963-4599-8e14-83ea6407e2b9",
+        "01fd81b7-d6b6-4afa-a10f-de7c9fb2eb0d",
+        "dca6300e-8233-4597-9b5a-b2d82791daa2",
+        "732339c0-345d-435c-b069-74764f2ecefb",
+        "5b41e723-2957-4350-bde1-ae271a5740cc",
+        "72984ecf-838f-42fa-a79b-e030abd1414d"
+      ],
+      "settings": {
+        "background_color": "",
+        "show_count": "3",
+        "padding_top": 80,
+        "padding_bottom": 60,
+        "font_color": "#01b9c5"
       }
     },
     "a3d1d9a5-4ced-4ec1-93f5-beffb07f99d2": {
@@ -57,16 +126,17 @@
       "blocks": {
         "template--18150980518180__a3d1d9a5-4ced-4ec1-93f5-beffb07f99d2-16794341764f6f223f-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "<p>\"Unlock the Power of Cold Water Therapy\" offers a comprehensive approach to cold water immersion for optimal health and wellness.<\/p>",
-            "heading_size": "h1",
+            "heading": "<p>\"Unleash the Magic of Cold Water Therapy\" – Dive into a holistic and invigorating journey to peak health and well-being through the wonders of cold water immersion.<\/p>",
+            "heading_size": "h2",
             "color": "#01b9c5"
           }
         },
         "template--18150980518180__a3d1d9a5-4ced-4ec1-93f5-beffb07f99d2-16794341764f6f223f-1": {
           "type": "text",
           "settings": {
-            "text": "<p><em>With over 50,000 customers & 750+ 5-star reviews, those who have tried our dusts swear by them for a better day-to-day...<\/em><\/p>",
+            "text": "<p><em>With over 50,000 customers & 750+ 5-star reviews, those who have tried our tub swear by them for a better day-to-day...<\/em><\/p>",
             "border_top": true
           }
         }
@@ -82,6 +152,323 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "cae612a4-c109-4ad0-8c3b-b1cc56313be0": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "15e1f19a-6fd2-4872-99d8-e1e5392d814c": {
+          "type": "reviews",
+          "settings": {
+            "review_color": "#121212"
+          }
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-2": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "acc2a0ac-ddea-4951-8113-b58f6b371fb6": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_219_7c7c48e8-4688-4837-baae-bd59c8a0015b.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0",
+        "15e1f19a-6fd2-4872-99d8-e1e5392d814c",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-1",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-2",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-3",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-4",
+        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-5",
+        "acc2a0ac-ddea-4951-8113-b58f6b371fb6"
+      ],
+      "settings": {
+        "product": "deepdive-wellness-portable-cold-plunge-bath",
+        "color_scheme": "inverse",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "319f5d23-79b0-4385-8daa-fef565586a42": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Unveiling True Self through <br\/>Merciless Cold - Wim Hof<\/p>",
+            "heading_size": "h1",
+            "font_color": "#066268"
+          }
+        },
+        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The DeepDrive is a portable ice bath that provides muscle pain<br\/>relief and relaxation, making it perfect for athletes or anyone in <br\/>need of on-the-go recovery.<\/p>",
+            "text_style": "subtitle",
+            "font_color": "#121212"
+          }
+        },
+        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Try Now",
+            "button_link_1": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+            "button_label_2": "",
+            "button_link_2": "",
+            "font_color": "#01b9c5",
+            "background_color": "#ffffff",
+            "border_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-0",
+        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-1",
+        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_43.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "text_alignment": "left"
+      }
+    },
+    "fbc5937d-acb0-4ae8-81ef-ef91e917f425": {
+      "type": "defferent",
+      "disabled": true,
+      "blocks": {
+        "c47b2c8f-e268-4271-a770-6da2bd65938b": {
+          "type": "item",
+          "settings": {
+            "text": "Satisfaction",
+            "icon1": "shopify:\/\/shop_images\/check.png",
+            "icon2": "shopify:\/\/shop_images\/x.png"
+          }
+        },
+        "444afdbd-228b-42e4-9cf8-330ae660a020": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping",
+            "icon1": "shopify:\/\/shop_images\/check.png",
+            "icon2": "shopify:\/\/shop_images\/x.png"
+          }
+        },
+        "9f1c8b42-5818-44c6-b419-e196341c0c56": {
+          "type": "item",
+          "settings": {
+            "text": "Portable",
+            "icon1": "shopify:\/\/shop_images\/check.png",
+            "icon2": "shopify:\/\/shop_images\/x.png"
+          }
+        },
+        "8d25a427-4ef1-4ee0-aa81-ea2b04879e2a": {
+          "type": "item",
+          "settings": {
+            "text": "Warranty",
+            "icon1": "shopify:\/\/shop_images\/check.png",
+            "icon2": "shopify:\/\/shop_images\/x.png"
+          }
+        },
+        "1ba13432-a44a-4f9f-9663-8816603d50d8": {
+          "type": "item",
+          "settings": {
+            "text": "Return Policy",
+            "icon1": "shopify:\/\/shop_images\/check.png",
+            "icon2": "shopify:\/\/shop_images\/x.png"
+          }
+        }
+      },
+      "block_order": [
+        "c47b2c8f-e268-4271-a770-6da2bd65938b",
+        "444afdbd-228b-42e4-9cf8-330ae660a020",
+        "9f1c8b42-5818-44c6-b419-e196341c0c56",
+        "8d25a427-4ef1-4ee0-aa81-ea2b04879e2a",
+        "1ba13432-a44a-4f9f-9663-8816603d50d8"
+      ],
+      "settings": {
+        "heading": "How is Deepdrivewellness Different?",
+        "font_size": "h1",
+        "font_weight": "Bold",
+        "font_color": "#01b9c5",
+        "text1": "",
+        "text2": "Deepdrivewellness",
+        "text3": "Other"
+      }
+    },
+    "1292e69c-77dd-49d8-8d6d-800a6df7984b": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Deepdrivewellness in action",
+        "image": "shopify:\/\/shop_images\/Rectangle_137.png",
+        "heading_size": "h1",
+        "font_color": "#ffffff",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 52,
+        "padding_bottom": 60
+      }
+    },
+    "3bc134f3-70f4-4d2c-9db3-e5cca02a1bc0": {
+      "type": "testimonials",
+      "blocks": {
+        "b6cf71b8-03fc-42d6-beeb-6d903f050a12": {
+          "type": "client_review",
+          "settings": {
+            "title": "",
+            "client_name": "Troy S.",
+            "review_text": "Was a bit skeptical with such a cheap ice bath since others i've looked at cost in the 1000s of dollars, but very pleasantly surprised. Water stays cold for days to weeks and plenty of space for a 6 foot 4 (196cm) guy like me.",
+            "date": "Customer Since April 2022"
+          }
+        },
+        "d8ef85df-0011-4338-b693-595d1845cf90": {
+          "type": "client_review",
+          "settings": {
+            "title": "",
+            "client_name": "Navel H.",
+            "review_text": "Game changer! I've used the ice pod 2x per day since i got it. only need to add ice every 3-4 days as water stays super cold even though it's summer here and gets quite hot, assume because the pod is insulated",
+            "date": "Customer Since April 2022"
+          }
+        },
+        "1083857a-5603-43b4-9d59-8b52324d79b2": {
+          "type": "client_review",
+          "settings": {
+            "title": "",
+            "client_name": "Casey M.",
+            "review_text": "Just getting started with the whole Wim hof and cold therapy lifestyle but i'm loving it. This pod makes it so affordable and easy to get started.",
+            "date": "Customer Since April 2022"
+          }
+        },
+        "76179b53-08bf-45b8-a93b-4336ab7fc088": {
+          "type": "client_review",
+          "settings": {
+            "title": "",
+            "client_name": "Wendy S.",
+            "review_text": "The ice pod has become a part of my daily routine. Changed the way i recover after gym sessions and gives such a dopamine and serotonin boost every time. super build quality and A+ fabric\/materials.",
+            "date": "Customer Since April 2022"
+          }
+        }
+      },
+      "block_order": [
+        "b6cf71b8-03fc-42d6-beeb-6d903f050a12",
+        "d8ef85df-0011-4338-b693-595d1845cf90",
+        "1083857a-5603-43b4-9d59-8b52324d79b2",
+        "76179b53-08bf-45b8-a93b-4336ab7fc088"
+      ],
+      "settings": {
+        "title": "What people are saying",
+        "font_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "margin_bottom": 30,
+        "slide_autoplay_speed": 4
+      }
+    },
+    "9adbe280-1bd8-4969-8fd1-de0c706305ae": {
+      "type": "image-grid",
+      "disabled": true,
+      "blocks": {
+        "5a9189c3-832b-4ddb-b091-a88a3c9c5bb5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_140.png",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "63f671cc-d92c-49e6-9c0d-8959510b5a28": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_141.png",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "cb9d6e3a-dc34-479b-81a4-0cdbaafbb752": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_142.png",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "6d725884-c6d4-4c8a-9137-3384f92975ba": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_143.png",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5a9189c3-832b-4ddb-b091-a88a3c9c5bb5",
+        "63f671cc-d92c-49e6-9c0d-8959510b5a28",
+        "cb9d6e3a-dc34-479b-81a4-0cdbaafbb752",
+        "6d725884-c6d4-4c8a-9137-3384f92975ba"
+      ],
+      "settings": {
+        "heading": "<p><em>Happy Customers<\/em><\/p>",
+        "heading_size": "h1",
+        "color": "#01b9c5",
+        "show_count": "4",
+        "padding_top": 40,
+        "padding_bottom": 60,
+        "review_color": "",
+        "review_number": "",
+        "button_label": "Get Your Ice Bath Now",
+        "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+        "button_style": "site-button",
+        "button_color": ""
       }
     },
     "3c63d823-e030-4860-a889-0c3e01ce49f6": {
@@ -192,386 +579,6 @@
         "font_weight": "Regular",
         "bck_color": "#f1faef",
         "font_color": "#01b9c5"
-      }
-    },
-    "319f5d23-79b0-4385-8daa-fef565586a42": {
-      "type": "image-banner",
-      "blocks": {
-        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Unveiling True Self through <br\/>Merciless Cold - Wim Hof<\/p>",
-            "heading_size": "h1",
-            "font_color": "#066268"
-          }
-        },
-        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The DeepDrive is a portable ice bath that provides muscle pain<br\/>relief and relaxation, making it perfect for athletes or anyone in <br\/>need of on-the-go recovery.<\/p>",
-            "text_style": "subtitle",
-            "font_color": "#121212"
-          }
-        },
-        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Try Now",
-            "button_link_1": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
-            "button_label_2": "",
-            "button_link_2": "",
-            "font_color": "#01b9c5",
-            "background_color": "#ffffff",
-            "border_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-0",
-        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-1",
-        "template--18150980518180__319f5d23-79b0-4385-8daa-fef565586a42-167944074298f5c57e-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_43.png",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false,
-        "text_alignment": "left"
-      }
-    },
-    "fbc5937d-acb0-4ae8-81ef-ef91e917f425": {
-      "type": "defferent",
-      "blocks": {
-        "c47b2c8f-e268-4271-a770-6da2bd65938b": {
-          "type": "item",
-          "settings": {
-            "text": "Satisfaction",
-            "icon1": "shopify:\/\/shop_images\/check.png",
-            "icon2": "shopify:\/\/shop_images\/x.png"
-          }
-        },
-        "444afdbd-228b-42e4-9cf8-330ae660a020": {
-          "type": "item",
-          "settings": {
-            "text": "Free Shipping",
-            "icon1": "shopify:\/\/shop_images\/check.png",
-            "icon2": "shopify:\/\/shop_images\/x.png"
-          }
-        },
-        "9f1c8b42-5818-44c6-b419-e196341c0c56": {
-          "type": "item",
-          "settings": {
-            "text": "Portable",
-            "icon1": "shopify:\/\/shop_images\/check.png",
-            "icon2": "shopify:\/\/shop_images\/x.png"
-          }
-        },
-        "8d25a427-4ef1-4ee0-aa81-ea2b04879e2a": {
-          "type": "item",
-          "settings": {
-            "text": "Warranty",
-            "icon1": "shopify:\/\/shop_images\/check.png",
-            "icon2": "shopify:\/\/shop_images\/x.png"
-          }
-        },
-        "1ba13432-a44a-4f9f-9663-8816603d50d8": {
-          "type": "item",
-          "settings": {
-            "text": "Return Policy",
-            "icon1": "shopify:\/\/shop_images\/check.png",
-            "icon2": "shopify:\/\/shop_images\/x.png"
-          }
-        }
-      },
-      "block_order": [
-        "c47b2c8f-e268-4271-a770-6da2bd65938b",
-        "444afdbd-228b-42e4-9cf8-330ae660a020",
-        "9f1c8b42-5818-44c6-b419-e196341c0c56",
-        "8d25a427-4ef1-4ee0-aa81-ea2b04879e2a",
-        "1ba13432-a44a-4f9f-9663-8816603d50d8"
-      ],
-      "settings": {
-        "heading": "How is Deepdrivewellness Different?",
-        "font_size": "h1",
-        "font_weight": "Bold",
-        "font_color": "#01b9c5",
-        "text1": "",
-        "text2": "Deepdrivewellness",
-        "text3": "Other"
-      }
-    },
-    "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce": {
-      "type": "icon-grid",
-      "blocks": {
-        "6e67e051-1963-4599-8e14-83ea6407e2b9": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Vector_f121c0e4-8a60-4b75-a340-98f65de6d1aa.png",
-            "text": "<p>Boost Mental <br\/>Health<\/p>",
-            "font_size": "h2"
-          }
-        },
-        "01fd81b7-d6b6-4afa-a10f-de7c9fb2eb0d": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/muscle_1_traced.png",
-            "text": "<p>Speed Up Muscle Recovery<\/p>",
-            "font_size": "h2"
-          }
-        },
-        "dca6300e-8233-4597-9b5a-b2d82791daa2": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/immunity_1_traced.png",
-            "text": "<p>Strengthen Immune System<\/p>",
-            "font_size": "h2"
-          }
-        },
-        "732339c0-345d-435c-b069-74764f2ecefb": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/hair-follicle_1_traced_594524e5-07a9-4d7e-8d9d-1021e9892a09.png",
-            "text": "<p>Nourish Skin + <br\/>Hair<\/p>",
-            "font_size": "h2"
-          }
-        },
-        "5b41e723-2957-4350-bde1-ae271a5740cc": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/healthicons_blood-cells-outline.png",
-            "text": "<p>Improve Blood Circulation<\/p>",
-            "font_size": "h2"
-          }
-        },
-        "72984ecf-838f-42fa-a79b-e030abd1414d": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Black_4.png",
-            "text": "<p>Increase Energy <br\/>Levels<\/p>",
-            "font_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "6e67e051-1963-4599-8e14-83ea6407e2b9",
-        "01fd81b7-d6b6-4afa-a10f-de7c9fb2eb0d",
-        "dca6300e-8233-4597-9b5a-b2d82791daa2",
-        "732339c0-345d-435c-b069-74764f2ecefb",
-        "5b41e723-2957-4350-bde1-ae271a5740cc",
-        "72984ecf-838f-42fa-a79b-e030abd1414d"
-      ],
-      "settings": {
-        "background_color": "",
-        "show_count": "3",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "font_color": "#01b9c5"
-      }
-    },
-    "1292e69c-77dd-49d8-8d6d-800a6df7984b": {
-      "type": "video",
-      "settings": {
-        "heading": "Deepdrivewellness in action",
-        "image": "shopify:\/\/shop_images\/Rectangle_137.png",
-        "heading_size": "h1",
-        "font_color": "#ffffff",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 52,
-        "padding_bottom": 60
-      }
-    },
-    "3bc134f3-70f4-4d2c-9db3-e5cca02a1bc0": {
-      "type": "testimonials",
-      "blocks": {
-        "b6cf71b8-03fc-42d6-beeb-6d903f050a12": {
-          "type": "client_review",
-          "settings": {
-            "title": "",
-            "client_name": "Troy S.",
-            "review_text": "Was a bit skeptical with such a cheap ice bath since others i've looked at cost in the 1000s of dollars, but very pleasantly surprised. Water stays cold for days to weeks and plenty of space for a 6 foot 4 (196cm) guy like me.",
-            "date": "Customer Since April 2022"
-          }
-        },
-        "d8ef85df-0011-4338-b693-595d1845cf90": {
-          "type": "client_review",
-          "settings": {
-            "title": "",
-            "client_name": "Navel H.",
-            "review_text": "Game changer! I've used the ice pod 2x per day since i got it. only need to add ice every 3-4 days as water stays super cold even though it's summer here and gets quite hot, assume because the pod is insulated",
-            "date": "Customer Since April 2022"
-          }
-        },
-        "1083857a-5603-43b4-9d59-8b52324d79b2": {
-          "type": "client_review",
-          "settings": {
-            "title": "",
-            "client_name": "Casey M.",
-            "review_text": "Just getting started with the whole Wim hof and cold therapy lifestyle but i'm loving it. This pod makes it so affordable and easy to get started.",
-            "date": "Customer Since April 2022"
-          }
-        },
-        "76179b53-08bf-45b8-a93b-4336ab7fc088": {
-          "type": "client_review",
-          "settings": {
-            "title": "",
-            "client_name": "Wendy S.",
-            "review_text": "The ice pod has become a part of my daily routine. Changed the way i recover after gym sessions and gives such a dopamine and serotonin boost every time. super build quality and A+ fabric\/materials.",
-            "date": "Customer Since April 2022"
-          }
-        }
-      },
-      "block_order": [
-        "b6cf71b8-03fc-42d6-beeb-6d903f050a12",
-        "d8ef85df-0011-4338-b693-595d1845cf90",
-        "1083857a-5603-43b4-9d59-8b52324d79b2",
-        "76179b53-08bf-45b8-a93b-4336ab7fc088"
-      ],
-      "settings": {
-        "title": "What people are saying",
-        "font_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 30,
-        "padding_bottom": 30,
-        "margin_bottom": 30,
-        "slide_autoplay_speed": 4
-      }
-    },
-    "cae612a4-c109-4ad0-8c3b-b1cc56313be0": {
-      "type": "featured-product",
-      "blocks": {
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "15e1f19a-6fd2-4872-99d8-e1e5392d814c": {
-          "type": "reviews",
-          "settings": {
-            "review_color": "#ffffff"
-          }
-        },
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-2": {
-          "type": "price",
-          "settings": {}
-        },
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-3": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-4": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-5": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "acc2a0ac-ddea-4951-8113-b58f6b371fb6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_219_7c7c48e8-4688-4837-baae-bd59c8a0015b.png"
-          }
-        }
-      },
-      "block_order": [
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0",
-        "15e1f19a-6fd2-4872-99d8-e1e5392d814c",
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-1",
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-2",
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-3",
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-4",
-        "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-5",
-        "acc2a0ac-ddea-4951-8113-b58f6b371fb6"
-      ],
-      "settings": {
-        "product": "deepdive-wellness-portable-cold-plunge-bath",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_position": "left",
-        "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "9adbe280-1bd8-4969-8fd1-de0c706305ae": {
-      "type": "image-grid",
-      "blocks": {
-        "5a9189c3-832b-4ddb-b091-a88a3c9c5bb5": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_140.png",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "63f671cc-d92c-49e6-9c0d-8959510b5a28": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_141.png",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "cb9d6e3a-dc34-479b-81a4-0cdbaafbb752": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_142.png",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "6d725884-c6d4-4c8a-9137-3384f92975ba": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_143.png",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "5a9189c3-832b-4ddb-b091-a88a3c9c5bb5",
-        "63f671cc-d92c-49e6-9c0d-8959510b5a28",
-        "cb9d6e3a-dc34-479b-81a4-0cdbaafbb752",
-        "6d725884-c6d4-4c8a-9137-3384f92975ba"
-      ],
-      "settings": {
-        "heading": "<p><em>Talk about your brand<\/em><\/p>",
-        "heading_size": "h1",
-        "color": "#01b9c5",
-        "show_count": "4",
-        "padding_top": 40,
-        "padding_bottom": 60,
-        "review_color": "",
-        "review_number": "",
-        "button_label": "Get Your Ice Bath Now",
-        "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
-        "button_style": "site-button",
-        "button_color": ""
       }
     },
     "c1e35a0e-d059-4225-8625-c4dfd2f4d260": {
@@ -832,15 +839,15 @@
   },
   "order": [
     "6ffe24ea-204b-47b0-a713-6679e8f91867",
+    "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce",
     "a3d1d9a5-4ced-4ec1-93f5-beffb07f99d2",
-    "3c63d823-e030-4860-a889-0c3e01ce49f6",
+    "cae612a4-c109-4ad0-8c3b-b1cc56313be0",
     "319f5d23-79b0-4385-8daa-fef565586a42",
     "fbc5937d-acb0-4ae8-81ef-ef91e917f425",
-    "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce",
     "1292e69c-77dd-49d8-8d6d-800a6df7984b",
     "3bc134f3-70f4-4d2c-9db3-e5cca02a1bc0",
-    "cae612a4-c109-4ad0-8c3b-b1cc56313be0",
     "9adbe280-1bd8-4969-8fd1-de0c706305ae",
+    "3c63d823-e030-4860-a889-0c3e01ce49f6",
     "c1e35a0e-d059-4225-8625-c4dfd2f4d260",
     "4c1cdd39-8157-41d2-8a2d-7080820bde92",
     "b6fdf158-2d59-4958-a747-9a08aeda1805",

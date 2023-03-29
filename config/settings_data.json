@@ -170,7 +170,7 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "QUICK LINKS",
+              "heading": "Quick Links",
               "menu": "footer"
             }
           },
@@ -186,7 +186,7 @@
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "JOIN OUR MAILING LIST!",
+              "heading": "Join our mailing list!",
               "subtext": "<p>We promise to respect your inbox and only send you relevant information that will enhance your cold plunge bath experience.<\/p>",
               "newsletter_enable": true,
               "alignment": "center"

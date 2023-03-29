@@ -851,6 +851,8 @@
                             
                           </div>
                         </div>
+                        {% endcomment %}
+
                         <input
                         type="hidden"
                         name="id"
@@ -858,6 +860,7 @@
                         disabled
                         >
                         <div class="product-form__buttons">
+                          {% comment %}
                           <button
                               type="submit"
                               name="add"
@@ -886,13 +889,15 @@
                               </svg>
                               </div>
                           </button>
+                          {% endcomment %}
+
                           {%- if block.settings.show_dynamic_checkout -%}
                               {{ form | payment_button }}
                           {%- endif -%}
                         </div>
-                        {% endcomment %}
                     {%- endform -%}
                     
+                    {% comment %}
                     <form method="post" action="/cart/add" id="checkout_form">
                       <input type="hidden" name="quantity" value="1" class="quantity">
                       <input type="hidden" name="return_to" value="/checkout/" />
@@ -930,6 +935,8 @@
                             </svg>
                         </button>
                     </form>
+                    {% endcomment %}
+
                     </product-form>
                     {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
@@ -1464,12 +1471,12 @@
     $('#shopify-section-{{ section.id }} input.quantity__input').val(quantity);
     $('#shopify-section-{{ section.id }} form#checkout_form input.quantity').val(quantity);
   });
+{% endcomment %}
 
   $('#shopify-section-{{ section.id }} button#button_checkout').on('click', function() {
     var q = $('#shopify-section-{{ section.id }} input.quantity__input').val();
     $('#shopify-section-{{ section.id }} form#checkout_form input.quantity').val(q);
   });
-{% endcomment %}
 
   $('#shopify-section-{{ section.id }} .offer-button a').on('click', function() {
     $('#shopify-section-{{ section.id }} form#checkout_form input.quantity').val(2);
