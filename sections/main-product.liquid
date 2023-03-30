@@ -897,7 +897,6 @@
                         </div>
                     {%- endform -%}
                     
-                    {% comment %}
                     <form method="post" action="/cart/add" id="checkout_form">
                       <input type="hidden" name="quantity" value="1" class="quantity">
                       <input type="hidden" name="return_to" value="/checkout/" />
@@ -935,7 +934,6 @@
                             </svg>
                         </button>
                     </form>
-                    {% endcomment %}
 
                     </product-form>
                     {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
