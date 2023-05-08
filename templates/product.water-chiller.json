@@ -28,7 +28,7 @@
         "256a3cb2-96e9-437e-b0fc-d1e33c1251f9": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "4d8bd2f3-cd01-4128-ab6e-21c1c02cc4b2": {
@@ -85,7 +85,7 @@
           "settings": {
             "heading": "Specifications",
             "icon": "box",
-            "content": "<p><strong>Power:<\/strong> 1\/3 horsepower compressor, 280 watt power consumption<\/p><p><strong>Temperature:<\/strong> chills water down to 43 degrees Fahrenheit (8°C)<\/p><p><strong>Weight:<\/strong> 40lbs (18kg)<\/p><p><strong>Water pump & filter:<\/strong> Built into the chiller<\/p><p><strong>Dimensions:<\/strong> 12x12x13in (29x29x32cm), extremely compact and easy to move around<\/p><p><strong>Power usage:<\/strong> 280 watt (example of power usage: at 77°F (25°C) room temperature, and chiller temperature set at 46°F (8°C) will consume around 1.4 kWh per day (every 24 hours). With todays average kWh in the USA costing $0.35, that is just around $0.5 at most per day in electricity cost to run The Pod Chiller 24\/7. <\/p><p><strong>Coating:<\/strong> Matte black corrosion resistant paint on a steel box & frame.<\/p><p><strong>Indoor\/Outdoor use:<\/strong> Both, the chiller can also be used outdoors, but be recommend covering it so it doesn't get dirt, water etc. on it.<\/p><p><strong>Diameter:<\/strong> 32 inches (80cm)<\/p><p><strong>Height:<\/strong> 29 inches (72cm)<\/p><p><strong>Weight:<\/strong> 7 lb (3 kg)<\/p><p><strong>Capacity:<\/strong> 79 gal (300L)<\/p><p>Suitable for heights up to 6′9 foot (2.1m)<\/p>",
+            "content": "<p><strong>Power:<\/strong> 1\/3 horsepower compressor, 280 watt power consumption<\/p><p><strong>Temperature:<\/strong> chills water down to 43 degrees Fahrenheit (8 °C)<\/p><p><strong>Weight:<\/strong> 40lbs (18 kg)<\/p><p><strong>Water pump & filter:<\/strong> Built into the chiller<\/p><p><strong>Dimensions:<\/strong> 12x12x13in (29x29x32cm), extremely compact and easy to move around<\/p><p><strong>Power usage:<\/strong> 280 watt (example of power usage: at 77 °F (25 °C) room temperature, and chiller temperature set at 46 °F (8 °C) will consume around 1.4 kWh per day (every 24 hours). With today's average kWh in the USA costing $0.35, that is just around $0.5 at most per day in electricity cost to run the Chiller 24\/7. <\/p><p><strong>Coating:<\/strong> Matte black corrosion resistant paint on a steel box & frame.<\/p><p><strong>Indoor\/Outdoor use:<\/strong> Both, the chiller can also be used outdoors, but we recommend covering it, so it doesn't get dirt, water etc. on it.<\/p><p><strong>Diameter:<\/strong> 32 inches (80 cm)<\/p><p><strong>Height:<\/strong> 29 inches (72 cm)<\/p><p><strong>Weight:<\/strong> 7 lb (3 kg)<\/p><p><strong>Capacity:<\/strong> 79 gal (300L)<\/p><p>Suitable for heights up to 6′9 foot (2.1 m)<\/p>",
             "page": ""
           }
         },
@@ -112,7 +112,7 @@
           "settings": {
             "heading": "What's Included",
             "icon": "question_mark",
-            "content": "<p><strong>1x<\/strong> Water chiller<\/p><p><strong>2x<\/strong> IcePod hose connectors<\/p><p><strong>1x<\/strong> Water filter<\/p><p><strong>1x<\/strong> Water pump<\/p><p><strong>1x <\/strong>Power cable<\/p><p><strong>1x<\/strong> Free home delivery<\/p><p><strong>1x<\/strong> 365 days warranty<\/p>",
+            "content": "<p><strong>1x<\/strong> Water chiller<\/p><p><strong>2x<\/strong> hose connectors<\/p><p><strong>1x<\/strong> Water pump<\/p><p><strong>1x <\/strong>Power cable<\/p><p><strong>1x<\/strong> Free home delivery<\/p><p><strong>1x<\/strong> 365 days warranty<\/p>",
             "page": ""
           }
         },
@@ -121,7 +121,7 @@
           "settings": {
             "heading": "Return policy",
             "icon": "return",
-            "content": "<p>If you are unhappy with your Ice Plunge Bath Tub for any reason, you have 30 days to return it for a <strong>full refund.<\/strong> <br\/><\/p><p>After we receive it back at our warehouse, you'll get a full refund within 5 business days.<\/p>",
+            "content": "<p>We want you to be completely satisfied with your purchase of our Deep Dive Wellness products. If for any reason you're not happy with your product, you can return it for a <strong>full refund<\/strong> within 30 days of purchase. Please note that you'll need to cover the cost of shipping the product back to us. For the Chiller, the estimated return cost is $40.<\/p><p>Once we receive your returned item at our warehouse, we will issue your refund within 5 business days.<br\/><br\/>Please reach out to us at support@deepdivewellness.com for further inquiries.<\/p>",
             "page": ""
           }
         }
@@ -784,6 +784,7 @@
       "blocks": {
         "22c82959-56e8-4bfe-ad9e-efd5e9eb6913": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": " What is a cold plunge bath?",
             "font_size": "h3",
@@ -838,6 +839,7 @@
         },
         "90292714-2cf4-4c3d-97c3-33ee40edc2a8": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "What should I wear during a cold plunge bath?",
             "font_size": "h3",
@@ -946,6 +948,55 @@
         "font_color": ""
       }
     },
+    "f10aa750-92e8-4b3a-857b-268b8399774c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18316069536036__f10aa750-92e8-4b3a-857b-268b8399774c-168184308705091d50-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "1-YEAR WARRANTY",
+            "heading_size": "h1",
+            "font_weight": "bold"
+          }
+        },
+        "template--18316069536036__f10aa750-92e8-4b3a-857b-268b8399774c-168184308705091d50-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Water Chiller is backed by a 1-year manufacturer's warranty included with your purchase. Additionally, you have the option to purchase an extended warranty when adding the product to your cart.<\/p><p>We also offer a 100% Satisfaction Guarantee. If you're not completely satisfied with the chiller, you can return it within 30 days for a full refund.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18316069536036__f10aa750-92e8-4b3a-857b-268b8399774c-168184308705091d50-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "site-button",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--18316069536036__f10aa750-92e8-4b3a-857b-268b8399774c-168184308705091d50-0",
+        "template--18316069536036__f10aa750-92e8-4b3a-857b-268b8399774c-168184308705091d50-1",
+        "template--18316069536036__f10aa750-92e8-4b3a-857b-268b8399774c-168184308705091d50-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_27_1_93fe7a97-594c-48c2-9085-77af45c08853.png",
+        "color": "#77cddb",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003": {
       "type": "image-with-text",
       "blocks": {
@@ -1018,6 +1069,7 @@
     "16754945879911f280",
     "85ab6184-0ddf-4927-8d0d-8470b8023e94",
     "1c4fc591-330e-4135-9f10-53a6221a3e5e",
+    "f10aa750-92e8-4b3a-857b-268b8399774c",
     "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003"
   ]
 }

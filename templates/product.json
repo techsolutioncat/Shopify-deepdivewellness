@@ -35,7 +35,7 @@
         "e566ca5e-1421-445a-b237-735673727f7e": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "description": {

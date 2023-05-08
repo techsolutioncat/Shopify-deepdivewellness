@@ -424,5 +424,18 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "pay_now_button_label": "Place Order"
+      },
+      "payment": {
+        "klarna_pay_now_label": "Place order with Klarna"
+      },
+      "order_payment_collection": {
+        "pay_now": "Place Order"
+      }
+    }
   }
 }

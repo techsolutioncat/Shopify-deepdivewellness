@@ -33,7 +33,7 @@
         "256a3cb2-96e9-437e-b0fc-d1e33c1251f9": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "4d8bd2f3-cd01-4128-ab6e-21c1c02cc4b2": {
@@ -117,7 +117,7 @@
           "settings": {
             "heading": "Shipping Info",
             "icon": "plane",
-            "content": "<p><strong>We ship Worldwide with USPS, UPS or FedEx.<\/strong><\/p><p><em>Processing time: Our estimated order processing time is 2-5 days, which refers to the period between when you place your order and when your product is shipped. We sincerely appreciate your patience and support during this time.<\/em><br\/><\/p><p>See the average delivery times below:<\/p><p><strong>USA & Canada: <\/strong>4-8 business days<\/p><p><strong>United Kingdom: <\/strong>4-8 business days<\/p><p><strong>Europe: <\/strong>4-7 business days<\/p><p><strong>Rest of the world: <\/strong>5-10 business days<\/p><p>All orders are shipped from our USA & EU Warehouse centre. You'll receive tracking when your order ships out, usually within 2-5 days after the order is placed. <strong>Please note<\/strong>: that we cannot guarantee the delivery date and timeframe, since it's in the hands of FedEx & USPS, the times stated above and at checkout are estimates from the courier itself. We can therefore not issue refunds for shipping cost if the parcel is delayed, and we advise to contact the shipping company itself should you have claims.<\/p>",
+            "content": "<p><strong>We ship Worldwide with USPS, UPS or FedEx.<\/strong><\/p><p><em>Processing time: Our estimated order processing time is 2-3 days, which refers to the period between when you place your order and when your product is shipped. We sincerely appreciate your patience and support during this time.<\/em><br\/><\/p><p>See the average delivery times below:<\/p><p><strong>USA & Canada: <\/strong>2-3 business days<\/p><p><strong>United Kingdom: <\/strong>4-8 business days<\/p><p><strong>Europe: <\/strong>4-7 business days<\/p><p><strong>Rest of the world: <\/strong>5-10 business days<\/p><p>All orders are shipped from our USA & EU Warehouse centre. You'll receive tracking when your order ships out, usually within 2-5 days after the order is placed. <strong>Please note<\/strong>: that we cannot guarantee the delivery date and timeframe, since it's in the hands of FedEx & USPS, the times stated above and at checkout are estimates from the courier itself. We can therefore not issue refunds for shipping cost if the parcel is delayed, and we advise to contact the shipping company itself should you have claims.<\/p>",
             "page": ""
           }
         },
@@ -135,7 +135,7 @@
           "settings": {
             "heading": "Return policy",
             "icon": "return",
-            "content": "<p>If you are unhappy with your Ice Plunge Bath Tub for any reason, you have 30 days to return it for a <strong>full refund.<\/strong> <br\/><\/p><p>After we receive it back at our warehouse, you'll get a full refund within 5 business days.<\/p>",
+            "content": "<p>At Deep Dive Wellness, we want you to be completely satisfied with your purchase. If for any reason you are not happy with your product, you have 30 days to return it for a <strong>full refund<\/strong>.<\/p><p>Please note that you will be responsible for the cost of shipping it back to us. Once we receive the product at our warehouse, you can expect a full refund within 5 business days.<br\/><br\/>Please reach out to us at support@deepdivewellness.com for further inquiries.<\/p>",
             "page": ""
           }
         }
