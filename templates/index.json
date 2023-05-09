@@ -2,6 +2,7 @@
   "sections": {
     "6ffe24ea-204b-47b0-a713-6679e8f91867": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "template--17733600444708__6ffe24ea-204b-47b0-a713-6679e8f91867-167570491866ef1560-0": {
           "type": "heading",
@@ -55,6 +56,7 @@
     },
     "daa006c9-8f0f-4cb7-9a52-db5b07fc31ce": {
       "type": "icon-grid",
+      "disabled": true,
       "blocks": {
         "6e67e051-1963-4599-8e14-83ea6407e2b9": {
           "type": "item",
@@ -123,6 +125,7 @@
     },
     "a3d1d9a5-4ced-4ec1-93f5-beffb07f99d2": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--18150980518180__a3d1d9a5-4ced-4ec1-93f5-beffb07f99d2-16794341764f6f223f-0": {
           "type": "heading",
@@ -156,6 +159,7 @@
     },
     "cae612a4-c109-4ad0-8c3b-b1cc56313be0": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--17733600444708__cae612a4-c109-4ad0-8c3b-b1cc56313be0-16754687031a292b27-0": {
           "type": "text",
@@ -359,6 +363,7 @@
     },
     "3bc134f3-70f4-4d2c-9db3-e5cca02a1bc0": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "b6cf71b8-03fc-42d6-beeb-6d903f050a12": {
           "type": "client_review",
@@ -473,6 +478,7 @@
     },
     "3c63d823-e030-4860-a889-0c3e01ce49f6": {
       "type": "slide-text-banner",
+      "disabled": true,
       "blocks": {
         "2d2437d9-614e-40b3-a35d-fe9c653212ba": {
           "type": "text",

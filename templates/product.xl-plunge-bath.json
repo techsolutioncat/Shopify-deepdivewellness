@@ -89,7 +89,7 @@
           "settings": {
             "heading": "Specifications",
             "icon": "box",
-            "content": "<p><strong>Power:<\/strong> Ultra-efficient 1\/3 HP compressor, consuming only 280W for optimal energy savings.<\/p><p><strong>Temperature: <\/strong>Precisely cools water to a revitalizing 41 °F (5 °C) for the ultimate ice bath experience.<br\/><\/p><p><strong>Weight:<\/strong> A lightweight 40lbs (18 kg), making it easy to transport and position.<br\/><br\/><strong>Filter: <\/strong>External filter.<\/p><p><strong>Water pump:<\/strong> Built into the chiller.<br\/><strong><br\/>Dimensions:<\/strong> Measuring 12x12x13in (29x29x32cm), our chiller is designed for effortless mobility and placement.<\/p><p><strong>Eco-friendly:<\/strong> Consumes a mere $0.5\/day or 1.4 kWh per day (24-hour usage), reducing your energy costs.<\/p><p><strong>Coating:<\/strong> Matte black corrosion resistant paint on a steel box & frame.<\/p><p><strong>Indoor\/Outdoor use:<\/strong> Both, the chiller can also be used outdoors, but we recommend covering it, so it doesn't get dirt, water etc. on it.<br\/><br\/><\/p><p><strong>Plunge bath Specifications<\/strong><br\/><br\/><strong>Spacious Design:<\/strong> 32in (80 cm) diameter and 29in (72 cm) height for optimal comfort during use.<br\/>Ultra-lightweight: Weighs only 7lb (3 kg) for hassle-free relocation.<br\/><br\/><strong>High Capacity:<\/strong> Holds up to 79gal (300L) for an immersive cold plunge experience.<br\/><br\/><strong>Inclusive Sizing: <\/strong>Designed to accommodate users up to 6'9ft (2.1 m) in height.<\/p>",
+            "content": "<p><strong>Power:<\/strong> Ultra-efficient 1\/3 HP compressor, consuming only 280W for optimal energy savings.<\/p><p><strong>Temperature: <\/strong>Precisely cools water to a revitalizing 41 °F (5 °C) for the ultimate ice bath experience.<br\/><\/p><p><strong>Weight:<\/strong> A lightweight 40lbs (18 kg), making it easy to transport and position.<br\/><\/p><p><strong>Water pump:<\/strong> Built into the chiller<\/p><p><strong>Filter: <\/strong>External filter<\/p><p><strong><br\/>Dimensions:<\/strong> Measuring 12x12x13in (29x29x32cm), our chiller is designed for effortless mobility and placement.<\/p><p><strong>Eco-friendly:<\/strong> Consumes a mere $0.5\/day or 1.4 kWh per day (24-hour usage), reducing your energy costs.<\/p><p><strong>Coating:<\/strong> Matte black corrosion resistant paint on a steel box & frame.<\/p><p><strong>Indoor\/Outdoor use:<\/strong> Both, the chiller can also be used outdoors, but we recommend covering it, so it doesn't get dirt, water etc. on it.<br\/><br\/><\/p><p><strong>Plunge bath Specifications<\/strong><br\/><br\/><strong>Spacious Design:<\/strong> 32in (80 cm) diameter and 29in (72 cm) height for optimal comfort during use.<br\/>Ultra-lightweight: Weighs only 7lb (3 kg) for hassle-free relocation.<br\/><br\/><strong>High Capacity:<\/strong> Holds up to 79gal (300L) for an immersive cold plunge experience.<br\/><br\/><strong>Inclusive Sizing: <\/strong>Designed to accommodate users up to 6'9ft (2.1 m) in height.<\/p>",
             "page": ""
           }
         },
@@ -104,6 +104,7 @@
         },
         "ea2217e5-c0e7-4eb1-a878-a6499fa1c4a0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping Info",
             "icon": "plane",
@@ -354,7 +355,7 @@
           "type": "cell",
           "settings": {
             "title1": "Cooling Power",
-            "title2": "Down to 39.2 °F (4 °C)",
+            "title2": "Down to 37.4 °F (3 °C)",
             "title3": "Depends on the model"
           }
         },

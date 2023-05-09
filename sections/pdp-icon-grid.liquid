@@ -9,22 +9,19 @@
     }
     #shopify-section-{{section.id}} .section-content .icon-wrap {
         display: flex;
-        /* justify-content: center; */
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
-        /* gap: 80px; */
-        align-items: center;
+        gap: 80px;
     }
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon {
-        /* width: calc(100% / {{ section.settings.show_count }} - 80px); */
+        width: calc(100% / {{ section.settings.show_count }} - 80px);
         text-align: center;
     }
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon-image {
         margin-bottom: 20px;
     }
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon img {
-        /* max-width: 70px; */
-        width: 100%;
+        max-width: 70px;
     }
     #shopify-section-{{section.id}} .section-content .icon-wrap .icon .icon-text {
         color: {{ section.settings.font_color }};
@@ -51,7 +48,7 @@
                     <div class="icon">
                         <div class="icon-image">
                             {% if block.settings.icon != blank %}
-                                <img src="{{ block.settings.icon | image_url: width: 500 }}">
+                                <img src="{{ block.settings.icon | image_url: width: 70 }}">
                             {% endif %}
                         </div>
                         {% if block.settings.text != blank %}
@@ -66,7 +63,7 @@
 
 {% schema %}
 {
-    "name": "Icon grid",
+    "name": "PDP icon grid",
     "tag": "section",
     "class": "section",
     "settings": [
@@ -177,7 +174,7 @@
     ],
     "presets": [
         {
-            "name": "Icon grid"
+            "name": "PDP icon grid"
         }
     ]
 }

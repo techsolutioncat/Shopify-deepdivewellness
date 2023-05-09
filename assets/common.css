@@ -1,9 +1,10 @@
 /* Begin common style css */
 .site-button {
-    border-radius: 30px;
-    font-size: 20px;
-    font-family: var(--font-heading-family);
-    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    /* font-family: var(--font-heading-family); */
+    font-family: 'Inter';
+    padding: 15px 50px;
     width: 100%;
 }
 .site-button.accent-2 {
@@ -51,4 +52,27 @@
 .color-white { color: #fff; }
 .color-site { color: rgb(var(--color-base-accent-2)); }
 .text-transform-uppercase { text-transform: uppercase; }
+.m-0-auto { margin: 0 auto !important; }
 /* End common style css */
+
+/* Header custom style css */
+header.header--top-center .header__inline-menu {
+    width: 100%;
+    background: #2C3A4F;
+}
+header.header--top-center .header__inline-menu ul.list-menu {
+    display: flex;
+    justify-content: space-between;
+}
+header.header--top-center .header__inline-menu .list-menu__item {
+    padding: 8px 0px;
+}
+header.header--top-center .header__inline-menu .list-menu__item span {
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+}

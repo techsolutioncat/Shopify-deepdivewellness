@@ -71,8 +71,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/image_5.png",
             "title": "Exclusive Offer",
-            "text": "Save Extra $30 when you buy 2     Great offer for family and Friends",
-            "button_label": "Grab 2 Cold Plunge Bath"
+            "text": "Save Extra $30 when you buy a Deep Dive Wellness Chiller",
+            "button_label": "Upgrade Cold Water Therapy Solution"
           }
         },
         "d3297df7-e02f-4e26-8bf7-f7e1d5de4179": {
@@ -135,7 +135,7 @@
           "settings": {
             "heading": "Return policy",
             "icon": "return",
-            "content": "<p>At Deep Dive Wellness, we want you to be completely satisfied with your purchase. If for any reason you are not happy with your product, you have 30 days to return it for a <strong>full refund<\/strong>.<\/p><p>Please note that you will be responsible for the cost of shipping it back to us. Once we receive the product at our warehouse, you can expect a full refund within 5 business days.<br\/><br\/>Please reach out to us at support@deepdivewellness.com for further inquiries.<\/p>",
+            "content": "<p>At Deep Dive Wellness, we want you to be completely satisfied with your purchase. If for any reason you are not happy with your product, you have 30 days from the day you received your order to return it for a <strong>full refund<\/strong>. <br\/><br\/>Please note that you will be responsible for the cost of shipping it back to us. Once we receive the product at our warehouse, you can expect a refund within 5 business days.<\/p><p>If you have any further inquiries or concerns regarding our return policy, please reach out to us at support@deepdivewellness.com. We are always happy to assist you.<\/p>",
             "page": ""
           }
         }
@@ -339,7 +339,7 @@
           "type": "cell",
           "settings": {
             "title1": "Price",
-            "title2": "From $149 ( Free Shipping incl)",
+            "title2": "From $119 (Free Shipping incl)",
             "title3": "$999 (not including costly shipping)"
           }
         },
@@ -960,6 +960,7 @@
     },
     "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--17769143370020__2dc64ef2-c89a-4e1f-b86b-3948dbfeb003-167560525000579a83-0": {
           "type": "heading",
@@ -1012,6 +1013,16 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "08be18ab-3cde-4c6e-8e81-101d18c34d24": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "HAVE A QUESTION ?",
+        "heading_size": "h2",
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
     }
   },
   "order": [
@@ -1030,6 +1041,7 @@
     "16754945879911f280",
     "85ab6184-0ddf-4927-8d0d-8470b8023e94",
     "1c4fc591-330e-4135-9f10-53a6221a3e5e",
-    "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003"
+    "2dc64ef2-c89a-4e1f-b86b-3948dbfeb003",
+    "08be18ab-3cde-4c6e-8e81-101d18c34d24"
   ]
 }
