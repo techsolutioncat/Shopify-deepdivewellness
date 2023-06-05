@@ -1,19 +1,20 @@
 {
   "current": {
+    "logo_width": 90,
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
-    "colors_accent_2": "#01b9c5",
-    "gradient_accent_2": "linear-gradient(90deg, rgba(43, 59, 76, 1), rgba(1, 185, 197, 1) 99.48%)",
+    "colors_accent_2": "#334fb4",
+    "gradient_accent_2": "",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
-    "colors_background_2": "rgba(0,0,0,0)",
+    "colors_background_2": "#f3f3f3",
     "gradient_background_2": "",
-    "type_header_font": "roboto_n4",
+    "type_header_font": "assistant_n4",
     "heading_scale": 100,
-    "type_body_font": "roboto_n4",
+    "type_body_font": "assistant_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -73,7 +74,7 @@
     "blog_card_shadow_horizontal_offset": 0,
     "blog_card_shadow_vertical_offset": 4,
     "blog_card_shadow_blur": 5,
-    "text_boxes_border_thickness": 1,
+    "text_boxes_border_thickness": 0,
     "text_boxes_border_opacity": 10,
     "text_boxes_radius": 0,
     "text_boxes_shadow_opacity": 0,
@@ -105,129 +106,30 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "",
+    "brand_headline": "",
+    "brand_description": "<p><\/p>",
+    "brand_image_width": 100,
     "social_facebook_link": "",
-    "social_pinterest_link": "",
     "social_instagram_link": "",
-    "social_tiktok_link": "",
-    "social_tumblr_link": "",
-    "social_snapchat_link": "",
     "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/DeepDive_Wellness_ICON_2.png",
-    "currency_code_enabled": false,
+    "currency_code_enabled": true,
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "frontpage",
-    "checkout_logo_image": "shopify:\/\/shop_images\/DeepDive_Wellness_ICON_1.jpg",
-    "checkout_logo_position": "left",
-    "checkout_logo_size": "large",
+    "cart_drawer_collection": "",
     "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "DOMESTIC FREE SHIPPING ONLY FOR A LIMITED TIME!",
-              "text_alignment": "center",
-              "color_scheme": "accent-2",
-              "gradient_scheme": "no",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
-        "settings": {}
-      },
-      "header": {
-        "type": "header",
-        "settings": {
-          "color_scheme": "background-1",
-          "gradient_scheme": "no",
-          "logo": "shopify:\/\/shop_images\/DeepDive_Wellness.png",
-          "logo_width": 90,
-          "logo_position": "top-center",
-          "menu": "main-menu",
-          "menu_type_desktop": "dropdown",
-          "show_line_separator": true,
-          "enable_sticky_header": true,
-          "mobile_logo_position": "center",
-          "margin_bottom": 0,
-          "padding_top": 0,
-          "padding_bottom": 0
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick Links",
-              "menu": "footer"
-            }
-          },
-          "bac1611c-509c-4cba-87dd-11cab522633a": {
-            "type": "text",
-            "settings": {
-              "heading": "We would love to hear from you!",
-              "subtext": "<p>Hours of Operation: <br\/>Monday-Friday 9 AM - 7 PM<br\/>Email: <a href=\"mailto:support@deepdivewellness.com\">support@deepdivewellness.com<\/a><\/p><p>Phone: +1 (877) 782-0640<\/p><p>Address : 495 Circle 85 St <br\/>Atlanta GA 30349<\/p>",
-              "newsletter_enable": false,
-              "alignment": "left"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Join our mailing list!",
-              "subtext": "<p>We promise to respect your inbox and only send you relevant information that will enhance your cold plunge bath experience.<\/p>",
-              "newsletter_enable": true,
-              "alignment": "center"
-            }
-          },
-          "bc2f21c1-b8bb-4182-a182-53703d25bcb8": {
-            "type": "text",
-            "settings": {
-              "heading": "Our Commitment",
-              "subtext": "<p>We are committed to providing our customers with the highest quality cold plunge bath experience possible. Our products are designed with your health and wellness in mind, and we strive to make the cold plunge process as accessible, safe, and enjoyable as possible. <\/p>",
-              "newsletter_enable": false,
-              "alignment": "left"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0",
-          "bac1611c-509c-4cba-87dd-11cab522633a",
-          "footer-2",
-          "bc2f21c1-b8bb-4182-a182-53703d25bcb8"
-        ],
-        "settings": {
-          "top_image": "shopify:\/\/shop_images\/ddy.png",
-          "color_scheme": "accent-2",
-          "gradient_scheme": "no",
-          "newsletter_enable": false,
-          "newsletter_heading": "",
-          "show_social": false,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
-          "payment_enable": false,
-          "margin_top": 0,
-          "padding_top": 36,
-          "padding_bottom": 36
-        }
-      },
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "{{ shop.brand.logo }}",
-          "logo_max_width": 100,
           "color_scheme": "background-1"
         }
       },
@@ -237,33 +139,11 @@
           "color_scheme": "background-1"
         }
       }
-    },
-    "content_for_index": [],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "sticky-cart-by-uplinkly": {
-        "type": "shopify:\/\/apps\/sticky-cart-by-uplinkly\/blocks\/sticky-cart\/25fba6ad-75e4-408b-a261-b223e0c71c8b",
-        "disabled": false,
-        "settings": {}
-      },
-      "sticky-cart-animator-by-uplinkly": {
-        "type": "shopify:\/\/apps\/sticky-cart-by-uplinkly\/blocks\/cart-animator\/25fba6ad-75e4-408b-a261-b223e0c71c8b",
-        "disabled": true,
-        "settings": {}
-      },
-      "16156609502398088594": {
-        "type": "shopify:\/\/apps\/omega-multi-facebook-pixels\/blocks\/app-embed-block\/ecdcc423-3dbd-480c-85e8-fdb9789cf058",
-        "disabled": false,
-        "settings": {}
-      }
     }
   },
   "presets": {
     "Default": {
+      "logo_width": 90,
       "colors_solid_button_labels": "#ffffff",
       "colors_accent_1": "#121212",
       "gradient_accent_1": "",
@@ -369,6 +249,9 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "accent_icons": "text",
+      "brand_headline": "",
+      "brand_description": "<p><\/p>",
+      "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
       "social_pinterest_link": "",
@@ -385,90 +268,11 @@
       "cart_type": "notification",
       "show_vendor": false,
       "show_cart_note": false,
+      "cart_drawer_collection": "",
       "sections": {
-        "announcement-bar": {
-          "type": "announcement-bar",
-          "blocks": {
-            "announcement-bar-0": {
-              "type": "announcement",
-              "settings": {
-                "text": "Welcome to our store",
-                "text_alignment": "center",
-                "color_scheme": "background-1",
-                "link": ""
-              }
-            }
-          },
-          "block_order": [
-            "announcement-bar-0"
-          ],
-          "settings": {}
-        },
-        "header": {
-          "type": "header",
-          "settings": {
-            "color_scheme": "background-1",
-            "logo": "{{ shop.brand.logo }}",
-            "logo_width": 90,
-            "logo_position": "middle-left",
-            "menu": "main-menu",
-            "menu_type_desktop": "dropdown",
-            "show_line_separator": true,
-            "enable_sticky_header": true,
-            "mobile_logo_position": "center",
-            "margin_bottom": 0,
-            "padding_top": 20,
-            "padding_bottom": 20
-          }
-        },
-        "footer": {
-          "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Quick links",
-                "menu": "footer"
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Info",
-                "menu": "footer"
-              }
-            },
-            "footer-2": {
-              "type": "text",
-              "settings": {
-                "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
-          "settings": {
-            "color_scheme": "background-1",
-            "newsletter_enable": true,
-            "newsletter_heading": "Subscribe to our emails",
-            "show_social": true,
-            "enable_country_selector": false,
-            "enable_language_selector": false,
-            "payment_enable": true,
-            "margin_top": 48,
-            "padding_top": 36,
-            "padding_bottom": 36
-          }
-        },
         "main-password-header": {
           "type": "main-password-header",
           "settings": {
-            "logo": "{{ shop.brand.logo }}",
-            "logo_max_width": 100,
             "color_scheme": "background-1"
           }
         },
