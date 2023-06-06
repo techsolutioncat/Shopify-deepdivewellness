@@ -1,65 +1,115 @@
 .color-site-main-background {
-    background-color: #0F2038 !important;
+  background-color: #0F2038 !important;
 }
 
 /* Fonts */
 /* Font weight */
 .fw-100 {
-    font-weight: 100;
+  font-weight: 100;
 }
+
 .fw-200 {
-    font-weight: 200;
+  font-weight: 200;
 }
+
 .fw-300 {
-    font-weight: 300;
+  font-weight: 300;
 }
+
 .fw-400 {
-    font-weight: 400;
+  font-weight: 400;
 }
+
 .fw-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
+
 .fw-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
+
 .fw-700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* Font size */
+.fs-13 {
+  font-size: 13px !important;
+}
+
 .fs-15 {
-    font-size: 15px !important;
+  font-size: 15px !important;
 }
+
 .fs-18 {
-    font-size: 18px !important;
+  font-size: 18px !important;
 }
+
 .fs-28 {
-    font-size: 28px !important;
+  font-size: 28px !important;
 }
+
+.fs-50 {
+  font-size: 50px !important;
+}
+
 /* Font color */
 .fc-white {
-    color: #fff !important;
+  color: #fff !important;
 }
+
 /* Font family */
 .font__Lexend-Deca {
-    font-family: 'Lexend Deca' !important;
+  font-family: 'Lexend Deca' !important;
 }
+
 .font__Poppins {
-    font-family: 'Poppins' !important;
+  font-family: 'Poppins' !important;
 }
+
 /* Spacing */
 .m-0 {
-    margin: 0px;
+  margin: 0px;
 }
+
 .mt-0 {
-    margin-top: 0px;
+  margin-top: 0px;
 }
+
 .mb-0 {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
+
 .ml-0 {
-    margin-left: 0px;
+  margin-left: 0px;
 }
+
 .mr-0 {
-    margin-right: 0px;
+  margin-right: 0px;
+}
+
+/* Button style */
+.site-button {
+  background: #8FC10A;
+  border-radius: 38px;
+  padding: 18px 36px;
+  background: #8FC10A;
+  border-radius: 38px;
+  color: #fff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+@media (max-width: 749px) {
+  .site-button {
+    width: 100%;
+    font-size: 17px;
+    padding: 17px 35px;
+  }
+}
+/* Text style */
+.text-align-center {
+  text-align: center;
 }
