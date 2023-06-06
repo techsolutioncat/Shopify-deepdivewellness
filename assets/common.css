@@ -1,0 +1,65 @@
+.color-site-main-background {
+    background-color: #0F2038 !important;
+}
+
+/* Fonts */
+/* Font weight */
+.fw-100 {
+    font-weight: 100;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+/* Font size */
+.fs-15 {
+    font-size: 15px !important;
+}
+.fs-18 {
+    font-size: 18px !important;
+}
+.fs-28 {
+    font-size: 28px !important;
+}
+/* Font color */
+.fc-white {
+    color: #fff !important;
+}
+/* Font family */
+.font__Lexend-Deca {
+    font-family: 'Lexend Deca' !important;
+}
+.font__Poppins {
+    font-family: 'Poppins' !important;
+}
+/* Spacing */
+.m-0 {
+    margin: 0px;
+}
+.mt-0 {
+    margin-top: 0px;
+}
+.mb-0 {
+    margin-bottom: 0px;
+}
+.ml-0 {
+    margin-left: 0px;
+}
+.mr-0 {
+    margin-right: 0px;
+}
