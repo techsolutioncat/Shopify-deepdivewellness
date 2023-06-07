@@ -1,0 +1,148 @@
+{% style %}
+  #shopify-section-{{section.id}} .section-content {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  #shopify-section-{{section.id}} .heading {
+    margin: 0px;
+    color: #0F2038;
+  }
+  #shopify-section-{{section.id}} .top-title {
+    color: #01BAC4;
+  }
+  #shopify-section-{{section.id}} .text {
+    line-height: 180%;
+    color: #242424;
+    margin-top: 40px;
+  }
+  #shopify-section-{{section.id}} .block-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  #shopify-section-{{section.id}} .block-icons .icon img {
+    max-width: 126px;
+  }
+  @media (max-width: 759px) {
+    #shopify-section-{{section.id}} .heading {
+      font-size: 32px !important;
+    }
+    #shopify-section-{{section.id}} .top-title {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .text,
+    #shopify-section-{{section.id}} .icon-text {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .block-icons .icon img {
+      max-width: 102px;
+    }
+    #shopify-section-{{section.id}} .text br {
+      display: contents;
+    }
+    #shopify-section-{{section.id}} .block-icons {
+      margin-top: 40px;
+    }
+
+  }
+{% endstyle %}
+
+<div class="section-content">
+  <div class="page-width text-align-center">
+    {% if section.settings.top_title != blank %}
+      <h2 class="top-title fw-600 fs-20 font__Poppins">{{ section.settings.top_title }}</h2>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h2 class="heading fw-700 fs-50 font__Lexend-Deca">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.text != blank %}
+      <div class="text fw-400 fs-19 font__Poppins text-align-center">{{ section.settings.text }}</div>
+    {% endif %}
+    <div class="main-container">
+      <div class="block-area">
+        <div class="block-icons">
+          {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+              <div class="icon">
+                {% if block.settings.icon != blank %}
+                  <img src="{{ block.settings.icon | image_url: width: 300 }}">
+                {% endif %}
+                {% if block.settings.text != blank %}
+                  <div class="icon-text fw-600 fs-20 font__Poppins">{{ block.settings.text }}</div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DDW icon grid",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "top_title",
+      "label": "Top title"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block_text",
+      "name": "Block text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "icon"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DDW icon grid"
+    }
+  ]
+}
+{% endschema %}
