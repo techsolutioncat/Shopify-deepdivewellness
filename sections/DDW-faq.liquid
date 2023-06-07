@@ -1,0 +1,262 @@
+{% style %}
+  {%- if section.settings.bck_image != blank -%}
+       #shopify-section-{{section.id}} .section-content {
+          background-image: url({{ section.settings.bck_image | image_url:width: 2048 }});
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+  {%- endif -%}
+  #shopify-section-{{section.id}} .section-title {
+    line-height: 119%;
+    margin-top: 12px;
+  }
+  #shopify-section-{{section.id}} .faq_section {
+    margin-top: 39px;
+  }
+  #shopify-section-{{section.id}} .section-content {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  #shopify-section-{{section.id}} .accordion__item {
+    margin-top: 16px;
+  }
+  #shopify-section-{{section.id}} .accordion__item__header {
+    padding: 19px 24px;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+    background: #FFFFFF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  #shopify-section-{{section.id}} .accordion__item__header::before {
+    height: 16px;
+    width: 16px;
+    content: '';
+    position: absolute;
+    right: 25px;
+    top: 23px;
+    transition: 0.5s all;
+    transform: rotate(45deg);
+    border-right: 3px solid #01BAC4;
+    border-bottom: 3px solid #01BAC4;
+  }
+
+  #shopify-section-{{section.id}} .accordion__item__header.active {
+    transition: 0.5s;
+  }
+
+  #shopify-section-{{section.id}} .accordion__item__header.active::before {
+    transform: rotate(-135deg);
+  }
+
+  #shopify-section-{{section.id}} .accordion__item__content {
+    overflow-y: auto;
+    padding: 0;
+    display: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 24px;
+  }
+  #shopify-section-{{section.id}} .accordion__item__header.active + .accordion__item__content {
+    display: block;
+  }
+
+  @media (max-width: 749px) {
+    {%- if section.settings.bck_image != blank -%}
+      #shopify-section-{{section.id}} .section-content {
+        background-image: url({{ section.settings.mob_bck_image | image_url:width: 1000 }});
+    }
+{%- endif -%}
+    #shopify-section-{{section.id}} .section-subtitle {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .section-title {
+      font-size: 32px !important;
+    }
+    #shopify-section-{{section.id}} .question {
+      font-size: 14px !important;
+    }
+    #shopify-section-{{section.id}} .answer {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .accordion__item__header {
+      padding: 19px 40px 19px 16px;
+    }
+    #shopify-section-{{section.id}} .accordion__item__content {
+      padding: 1px 16px 16px 16px;
+    }
+    #shopify-section-{{section.id}} .section-content {
+      padding-top: 98px;
+      padding-bottom: 98px;
+    }
+  }
+{% endstyle %}
+
+<div class="section-content color-{{ section.settings.color_scheme }}">
+  <div class="section-header">
+    {% if section.settings.subtitle != blank %}
+      <div class="section-subtitle h3 fc-white fs-20 fw-600 font__Poppins text-align-center">{{ section.settings.subtitle }}</div>
+    {% endif %}
+    {% if section.settings.title != blank %}
+      <div class="section-title font-bold rte fc-white fs-50 fw-700 font__Lexend-Deca text-align-center">{{ section.settings.title }}</div>
+    {% endif %}
+  </div>
+  <div class="page-width faq_section">
+    {% if section.blocks.size > 0 %}
+      {% for block in section.blocks %}
+        <div class="FaQ_Each accordion__item">
+          <section class="accordion__item__header">
+            {% if block.settings.question != blank %}
+              <div class="question fs-18 fw-600 font__Lexend-Deca">{{ block.settings.question }}</div>
+            {% endif %}
+          </section>
+          <section class="accordion__item__content color-{{ block.settings.color_scheme }}">
+            {% if block.settings.answer != blank %}
+              <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer }}</div>
+            {% endif %}
+          </section>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<!-- jQuery -->
+<script>
+  if ($('#shopify-section-{{section.id}} .accordion__item__header').length > 0) {
+    var active = 'active';
+    $('#shopify-section-{{section.id}} .accordion__item__header').click(function () {
+      $(this).toggleClass(active);
+    });
+  }
+</script>
+{% schema %}
+{
+  "name": "DDW FAQ",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bck_image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mob_bck_image",
+      "label": "Mobile background image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "t:sections.all.colors.accent_1.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.all.colors.accent_2.label"
+            },
+            {
+              "value": "background-1",
+              "label": "t:sections.all.colors.background_1.label"
+            },
+            {
+              "value": "background-2",
+              "label": "t:sections.all.colors.background_2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.all.colors.inverse.label"
+            }
+          ],
+          "default": "background-1",
+          "label": "t:sections.all.colors.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DDW FAQ"
+    }
+  ]
+}
+{% endschema %}
