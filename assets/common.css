@@ -52,7 +52,9 @@
 .fs-28 {
   font-size: 28px !important;
 }
-
+.fs-44 {
+  font-size: 44px !important;
+}
 .fs-50 {
   font-size: 50px !important;
 }
@@ -116,4 +118,21 @@
 /* Text style */
 .text-align-center {
   text-align: center;
+}
+
+/* align style */
+.d-flex {
+  display: flex;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
 }
