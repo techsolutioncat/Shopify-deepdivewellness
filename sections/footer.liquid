@@ -760,9 +760,9 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <script>
-  if ($('.accordion__item__header').length > 0) {
+  if ($('footer.footer .accordion__item__header').length > 0) {
     var active = 'active';
-    $('.accordion__item__header').click(function () {
+    $('footer.footer .accordion__item__header').click(function () {
       $(this).toggleClass(active);
       $(this).next('div').slideToggle(200);
     });
