@@ -1,0 +1,203 @@
+{% style %}
+  #shopify-section-{{section.id}} .section-content {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+      background: {{ section.settings.background_color }};
+  }
+
+  #shopify-section-{{section.id}} .section-title {
+    line-height: 119%;
+    letter-spacing: -0.01em;
+    color: #0F2038;
+  }
+  #shopify-section-{{section.id}} .section-subtitle {
+    color: #242424;
+    line-height: 180%;
+  }
+  #shopify-section-{{section.id}} .content-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+  }
+  #shopify-section-{{section.id}} .table-wrap {
+    width: 950px;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 20px;
+  }
+  #shopify-section-{{section.id}} .table-wrap table {
+    width: 100%;
+    background: #fff;
+    box-shadow: none;
+  }
+  #shopify-section-{{section.id}} .table-wrap table td {
+    padding: 10px;
+    border: none;
+    border-bottom: solid 1px #e1e1e1;
+  }
+  #shopify-section-{{section.id}} .table-wrap table tr:nth-child(1) td:nth-child(2){
+    margin-left: 76px;
+  }
+  #shopify-section-{{section.id}} .table-wrap table tr:nth-child(1) td {
+    border: none;
+  }
+  @media (max-width: 1000px) {
+    #shopify-section-{{section.id}} .table-wrap table tr td {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .section-title {
+      font-size: 32px !important;
+    }
+    #shopify-section-{{section.id}} .section-title br {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    #shopify-section-{{section.id}} .table-wrap table tr:nth-child(1) img:nth-child(1){
+      margin-left: -41px;
+    }
+    #shopify-section-{{section.id}} .table-wrap table tr:nth-child(1) img {
+      width: 50px;
+    }
+    #shopify-section-{{section.id}} .table-wrap table tr:nth-child(1) td:nth-child(2){
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 500px) {
+    #shopify-section-{{section.id}} .table-wrap table tr:nth-child(1) img:nth-child(1){
+      margin-left: 0px;
+    }
+  }
+{% endstyle %}
+
+<div class="section-content">
+  <div class="section-main-container">
+    <div class="wrapper page-width">
+      {% if section.settings.heading != blank %}
+        <div class="section-title font-bold rte fs-50 fw-700 font__Lexend-Deca text-align-center">
+          {{ section.settings.heading }}
+        </div>
+      {% endif %}
+      {% if section.settings.subtitle != blank %}
+        <div class="section-subtitle h3 fs-17 fw-400 font__Poppins text-align-center">
+          {{ section.settings.subtitle }}
+        </div>
+      {% endif %}
+      <div class="content-box">
+        <div class="blocks table-wrap">
+          {% if section.blocks.size > 0 %}
+            <table>
+              <tbody>
+                {% if section.settings.image1 != blank or section.settings.image2 != blank or section.settings.image3 != blank %}
+                  <tr class="table-boday">
+                    <td class="fs-20 fw-500 font__Lexend-Deca"></td>
+                    <td class="fs-20 fw-500 font__Lexend-Deca text-align-center d-flex jc_space-between align-items_center">
+                      {% if section.settings.image1 != blank %}<img class="img-deepdivewellness" src="{{ section.settings.image1 | image_url: width: 200 }}">{% endif %}
+                      {% if section.settings.image2 != blank %}<img src="{{ section.settings.image2 | image_url: width: 200 }}">{% endif %}
+                    </td>
+                    <td class="fs-20 fw-500 font__Lexend-Deca text-align-center">{% if section.settings.image3 != blank %}<img src="{{ section.settings.image3 | image_url: width: 200 }}">{% endif %}</td>
+                  </tr>
+                {% endif %}
+                {% for block in section.blocks %}
+                  <tr class="table-boday">
+                    <td class="fs-20 fw-500 font__Lexend-Deca">{{ block.settings.title1 }}</td>
+                    <td class="fs-24 fw-600 font__Lexend-Deca text-align-center" style="color: #242424;">{{ block.settings.title2 }}</td>
+                    <td class="fs-24 fw-600 font__Lexend-Deca text-align-center" style="color: #DA2E2E;">{{ block.settings.title3 }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DDW table",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image3"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cell",
+      "name": "cell",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title1",
+          "label": "Title1"
+        },
+        {
+          "type": "textarea",
+          "id": "title2",
+          "label": "Title2"
+        },
+        {
+          "type": "textarea",
+          "id": "title3",
+          "label": "Title3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DDW table"
+    }
+  ]
+}
+{% endschema %}

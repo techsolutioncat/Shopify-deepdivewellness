@@ -45,11 +45,17 @@
 .fs-16 {
   font-size: 16px !important;
 }
+.fs-17 {
+  font-size: 16px !important;
+}
 .fs-18 {
   font-size: 18px !important;
 }
 .fs-20 {
   font-size: 20px !important;
+}
+.fs-24 {
+  font-size: 24px !important;
 }
 .fs-28 {
   font-size: 28px !important;
@@ -126,7 +132,12 @@
 .d-flex {
   display: flex;
 }
-
+.jc_space-between {
+  justify-content: space-between;
+}
+.align-items_center {
+  align-items: center;
+}
 .half-width {
   width: 50%;
 }
