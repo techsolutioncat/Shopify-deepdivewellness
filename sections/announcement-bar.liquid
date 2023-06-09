@@ -1,3 +1,11 @@
+{% style %}
+  @media (max-width: 768px) {
+    .announcement-bar p.announcement-bar__message span {
+      font-size: 11px !important;
+    }
+  }
+{% endstyle %}
+
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
@@ -8,7 +16,7 @@
           {%- endif -%}
               <div class="page-width">
                 <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
-                  <span>{{ block.settings.text | escape }}</span>
+                  <span class="font__Poppins fc-white fs-13 fw-600">{{ block.settings.text | escape }}</span>
                   {%- if block.settings.link != blank -%}
                     {% render 'icon-arrow' %}
                   {%- endif -%}
@@ -81,6 +89,10 @@
             {
               "value": "inverse",
               "label": "t:sections.all.colors.inverse.label"
+            },
+            {
+              "value": "site-main-background",
+              "label": "Site main background"
             }
           ],
           "default": "accent-1",
