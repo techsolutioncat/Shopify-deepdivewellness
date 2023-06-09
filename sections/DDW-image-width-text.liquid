@@ -1,131 +1,209 @@
 {% style %}
-    #shopify-section-{{section.id}} .section-content {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-    #shopify-section-{{section.id}} .content-wrap {
-        gap: 60px;
-    }
-    #shopify-section-{{section.id}} .heading {
-        letter-spacing: -0.01em;
-        margin-top: 0px;
-        margin-bottom: 32px;
-    }
-    #shopify-section-{{section.id}} .heading strong {
-        color: #01BAC4;
-    }
-    #shopify-section-{{section.id}} .section-text {
-        line-height: 180%;
-        color: #242424;
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
-    #shopify-section-{{section.id}} .block-text {
-        display: flex;
-        justify-content: center;
-        gap: 13px;
-        margin-top: 38px;
-    }
-    #shopify-section-{{section.id}} .block-text .text {
-        line-height: 100%;
-    }
+  #shopify-section-{{section.id}} .section-content {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    Background: {{ section.settings.background_color }};
+  }
 
-    @media (max-width: 1000px) {
-        #shopify-section-{{section.id}} .content-wrap {
-            flex-direction: column;
-            gap: 0px;
-        }
-        #shopify-section-{{section.id}} .content-wrap .text-content,
-        #shopify-section-{{section.id}} .content-wrap .image-content
-        {
-            width: 100%;
-        }
-        #shopify-section-{{section.id}} .left-image {
-            display: block;
-            text-align: center;
-        } 
-        #shopify-section-{{section.id}} .right-image {
-            display: none;
-        } 
-        #shopify-section-{{section.id}} .heading,
-        #shopify-section-{{section.id}} .section-button {
-            text-align: center;
-        }
+  {% if section.settings.layout_width != 'half-width' %}
+    #shopify-section-{{section.id}} .content-wrap .image-content {
+      width: 40%;
     }
-    @media (max-width: 749px) {
-        #shopify-section-{{section.id}} .heading {
-            font-size: 32px !important;
-        }
-        #shopify-section-{{section.id}} .section-text {
-            font-size: 14px !important;
-        }
-        #shopify-section-{{section.id}} .block-area {
-            display: flex;
-            justify-content: center;
-        }
-        #shopify-section-{{section.id}} .block-text {
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 29px;
-        }
-        #shopify-section-{{section.id}} .section-content {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        #shopify-section-{{section.id}} .left-image img {
-            object-fit: cover;
-            width: 100%;
-        } 
+    #shopify-section-{{section.id}} .content-wrap .image-content img {
+      max-width: 700px;
     }
+    @media (max-width: 1600px) {
+      #shopify-section-{{section.id}} .content-wrap .image-content {
+        width: 50%;
+      }
+    }
+  {% endif %}
+  #shopify-section-{{section.id}} .top-heading-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #shopify-section-{{section.id}} .review-text {
+    margin-top: 32px;
+    color: #1B1B1B;
+  }
+  #shopify-section-{{section.id}} .content-wrap {
+      gap: 60px;
+  }
+  #shopify-section-{{section.id}} .heading {
+      letter-spacing: -0.01em;
+      margin-top: 0px;
+      margin-bottom: 32px;
+  }
+  #shopify-section-{{section.id}} .heading p {
+    margin: 0px;
+  }
+  #shopify-section-{{section.id}} .heading strong {
+      color: #01BAC4;
+  }
+  #shopify-section-{{section.id}} .section-text {
+      line-height: 180%;
+      color: #242424;
+      margin-top: 0px;
+      margin-bottom: 40px;
+  }
+  #shopify-section-{{section.id}} .block-text {
+      display: flex;
+      /* justify-content: center; */
+      gap: 13px;
+      margin-top: 38px;
+  }
+  #shopify-section-{{section.id}} .block-text .text {
+      line-height: 100%;
+  }
+
+  @media (max-width: 1000px) {
+      #shopify-section-{{section.id}} .content-wrap {
+          flex-direction: column;
+          gap: 0px;
+      }
+      #shopify-section-{{section.id}} .content-wrap .text-content,
+      #shopify-section-{{section.id}} .content-wrap .image-content
+      {
+          width: 100%;
+      }
+      #shopify-section-{{section.id}} .left-image {
+          display: block;
+          text-align: center;
+      }
+      #shopify-section-{{section.id}} .right-image {
+          display: none;
+      }
+      #shopify-section-{{section.id}} .heading,
+      #shopify-section-{{section.id}} .section-button {
+          text-align: center;
+      }
+  }
+  @media (max-width: 749px) {
+    #shopify-section-{{section.id}} .top-heading-wrap .top-heading {
+      font-size: 11px !important;
+      line-height: 180%;
+    }
+      #shopify-section-{{section.id}} .heading br,
+      #shopify-section-{{section.id}} .review-text br
+     {
+        display: none;
+      }
+      #shopify-section-{{section.id}} .heading {
+          font-size: 32px !important;
+      }
+      #shopify-section-{{section.id}} .section-text {
+          font-size: 14px !important;
+      }
+      #shopify-section-{{section.id}} .block-area {
+          display: flex;
+          justify-content: center;
+      }
+      #shopify-section-{{section.id}} .block-text {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 29px;
+      }
+      #shopify-section-{{section.id}} .section-content {
+          padding-top: 50px;
+          padding-bottom: 50px;
+      }
+      #shopify-section-{{section.id}} .left-image img {
+          object-fit: cover;
+          width: 100%;
+      }
+      #shopify-section-{{section.id}} .review-text {
+        margin-top: 28px;
+        font-size: 13px !important;
+      }
+      #shopify-section-{{section.id}} .customer-name {
+        font-size: 14px !important;
+      }
+  }
 {% endstyle %}
 
-<div class="section-content page-width">
+<div class="section-content">
+  <div class="page-width">
     {% comment %} Begin text content {% endcomment %}
     <div class="content-wrap d-flex">
-        <div class="half-width image-content left-image {% if section.settings.layout == 'right_image' %} display-none {% endif %}">
-            {% if section.settings.section_image != blank %}
-                <img src="{{ section.settings.section_image | image_url: width: 1000 }}">
+      <div class="{% if section.settings.layout_width == 'half-width' %}half-width{% endif %} image-content left-image {% if section.settings.layout == 'right_image' %} display-none {% endif %}">
+        {% if section.settings.section_image != blank %}
+          <img src="{{ section.settings.section_image | image_url: width: 1000 }}">
+        {% endif %}
+      </div>
+
+      <div class="{% if section.settings.layout_width == 'half-width' %}half-width{% endif %} text-content">
+        <div class="top-heading-wrap">
+          {% if section.settings.top_heading_image != blank %}
+            <img src="{{ section.settings.top_heading_image | image_url: width: 300 }}">
+          {% endif %}
+          {% if section.settings.top_heading != blank %}
+            <h2 class="top-heading fw-400 fs-15 font__Poppins">{{ section.settings.top_heading }}</h2>
+          {% endif %}
+        </div>
+        {% if section.settings.heading != blank %}
+          {% if section.settings.heading_image != blank %}
+            <h2 class="heading fw-700 fs-44 font__Lexend-Deca">
+              {{ section.settings.heading | split: '</p>' }}
+              {% if section.settings.heading_image != blank %}
+                <img src="{{ section.settings.heading_image | image_url: width: 300 }}">
+              {% endif %}
+            </h2>
+          {% else %}
+            <h2 class="heading fw-700 fs-44 font__Lexend-Deca">{{ section.settings.heading }}</h2>
+          {% endif %}
+        {% endif %}
+        {% if section.settings.text != blank %}
+          <h2 class="section-text fw-400 fs-16 font__Poppins">{{ section.settings.text }}</h2>
+        {% endif %}
+        {% if section.settings.button_link != blank %}
+          <div class="section-button d-flex">
+            <a href="{{ section.settings.button_link }}" class="site-button">{{ section.settings.button_text }}</a>
+          </div>
+        {% endif %}
+        <div class="block-area">
+          <div class="block-text">
+            {% if section.blocks.size > 0 %}
+              {% for block in section.blocks %}
+                {% if block.settings.block_text != blank %}
+                  <p class="text fs-13 fw-500 font__Poppins m-0">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
+                    </svg>
+                    {{ block.settings.block_text }}
+                  </p>
+                {% endif %}
+              {% endfor %}
             {% endif %}
+          </div>
         </div>
 
-        <div class="half-width text-content">
-            {% if section.settings.heading != blank %}
-                <h2 class="heading fw-700 fs-44 font__Lexend-Deca">{{ section.settings.heading }}</h2>
-            {% endif %}
-            {% if section.settings.text != blank %}
-                <h2 class="section-text fw-400 fs-16 font__Poppins">{{ section.settings.text }}</h2>
-            {% endif %}
-            {% if section.settings.button_link != blank %}
-                <div class="section-button d-flex">
-                    <a href="{{ section.settings.button_link }}" class="site-button">{{ section.settings.button_text }}</a>
-                </div>
-            {% endif %}
-            <div class="block-area">
-                <div class="block-text">
-                  {% if section.blocks.size > 0 %}
-                    {% for block in section.blocks %}
-                      {% if block.settings.block_text != blank %}
-                        <p class="text fs-13 fw-500 font__Poppins m-0">
-                          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
-                          </svg>
-                          {{ block.settings.block_text }}
-                        </p>
-                      {% endif %}
-                    {% endfor %}
-                  {% endif %}
-                </div>
-              </div>
-        </div>
-        {% comment %} End text contetn {% endcomment %}
+        {% if section.settings.review_text != blank %}
+          <div class="review-text fw-400 fs-14 font__Poppins">{{ section.settings.review_text }}</div>
+        {% endif %}
+        {% if section.settings.customer_name != blank %}
+          <div class="customer-name fw-700 fs-15 font__Lexend-Deca">
+            {{ section.settings.customer_name }}
+            <svg width="89" height="15" viewBox="0 0 89 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.3573 14.9916C12.253 14.9922 12.1502 14.9675 12.0577 14.9196L7.88947 12.7386L3.7161 14.9196C3.60949 14.9786 3.48817 15.0061 3.36641 14.9989C3.24464 14.9916 3.1275 14.9498 3.02875 14.8785C2.93001 14.8072 2.85377 14.7092 2.809 14.5962C2.76423 14.4832 2.7528 14.3599 2.77605 14.2406L3.57147 9.61117L0.19352 6.33971C0.1075 6.25568 0.0468114 6.14935 0.0183151 6.03276C-0.0101811 5.91616 -0.0053468 5.79395 0.0322729 5.67995C0.0698925 5.56595 0.138797 5.46471 0.231188 5.38768C0.32358 5.31065 0.435769 5.26091 0.555073 5.24408L5.20363 4.57024L7.26966 0.35746C7.32308 0.250124 7.40554 0.159784 7.50775 0.096625C7.60996 0.0334659 7.72786 0 7.84815 0C7.96844 0 8.08634 0.0334659 8.18855 0.096625C8.29076 0.159784 8.37322 0.250124 8.42664 0.35746L10.4927 4.57024L15.1412 5.24408C15.2601 5.2617 15.3717 5.31202 15.4634 5.38937C15.5551 5.46672 15.6233 5.56803 15.6604 5.6819C15.6974 5.79576 15.7018 5.91767 15.673 6.03388C15.6443 6.1501 15.5835 6.25602 15.4976 6.33971L12.1197 9.61631L12.9202 14.2457C12.94 14.3647 12.9263 14.4867 12.8808 14.5984C12.8352 14.71 12.7595 14.807 12.662 14.8784C12.5711 14.9401 12.4665 14.9789 12.3573 14.9916Z" fill="#F2A52A"/>
+              <path d="M30.5442 14.9942C30.4399 14.9955 30.3369 14.9707 30.2447 14.9222L26.0764 12.7412L21.9031 14.9222C21.7963 14.9782 21.676 15.0035 21.5556 14.9953C21.4352 14.9872 21.3194 14.9458 21.2213 14.8759C21.1238 14.8044 21.0481 14.7075 21.0025 14.5958C20.9569 14.4842 20.9433 14.3621 20.963 14.2432L21.7636 9.61378L18.3857 6.33717C18.2996 6.25314 18.239 6.14681 18.2105 6.03022C18.182 5.91363 18.1868 5.79142 18.2244 5.67742C18.262 5.56342 18.3309 5.46217 18.4233 5.38514C18.5157 5.30811 18.6279 5.25837 18.7472 5.24154L23.3958 4.5677L25.4618 0.354923C25.5174 0.248398 25.6011 0.159026 25.704 0.0964704C25.8068 0.0339145 25.9249 0.000555244 26.0455 0C26.1654 0.00035082 26.2828 0.0336798 26.3849 0.0963095C26.487 0.158939 26.5697 0.248435 26.6239 0.354923L28.69 4.5677L33.3385 5.24154C33.4578 5.25837 33.57 5.30811 33.6624 5.38514C33.7548 5.46217 33.8237 5.56342 33.8613 5.67742C33.899 5.79142 33.9038 5.91363 33.8753 6.03022C33.8468 6.14681 33.7861 6.25314 33.7001 6.33717L30.3221 9.61378L31.1227 14.2432C31.1425 14.3621 31.1288 14.4842 31.0832 14.5958C31.0376 14.7075 30.9619 14.8044 30.8645 14.8759C30.7695 14.9417 30.6593 14.9825 30.5442 14.9942Z" fill="#F2A52A"/>
+              <path d="M48.7466 14.9942C48.6422 14.9961 48.5391 14.9714 48.447 14.9222L44.2737 12.7412L40.1055 14.9222C39.9987 14.9782 39.8784 15.0035 39.758 14.9953C39.6376 14.9872 39.5218 14.9458 39.4237 14.8759C39.3262 14.8044 39.2505 14.7075 39.2049 14.5958C39.1593 14.4842 39.1457 14.3621 39.1654 14.2432L39.966 9.61378L36.5881 6.33717C36.502 6.25314 36.4413 6.14681 36.4128 6.03022C36.3844 5.91363 36.3892 5.79142 36.4268 5.67742C36.4644 5.56342 36.5333 5.46217 36.6257 5.38514C36.7181 5.30811 36.8303 5.25837 36.9496 5.24154L41.5982 4.5677L43.6642 0.354923C43.7184 0.248435 43.8012 0.158939 43.9032 0.0963095C44.0053 0.0336798 44.1228 0.00035082 44.2427 0C44.3632 0.000555244 44.4813 0.0339145 44.5842 0.0964704C44.687 0.159026 44.7708 0.248398 44.8263 0.354923L46.8924 4.5677L51.5409 5.24154C51.6602 5.25837 51.7724 5.30811 51.8648 5.38514C51.9572 5.46217 52.0261 5.56342 52.0637 5.67742C52.1013 5.79142 52.1062 5.91363 52.0777 6.03022C52.0492 6.14681 51.9885 6.25314 51.9025 6.33717L48.5245 9.61378L49.3251 14.2432C49.3449 14.3621 49.3312 14.4842 49.2856 14.5958C49.24 14.7075 49.1643 14.8044 49.0669 14.8759C48.9719 14.9417 48.8617 14.9825 48.7466 14.9942Z" fill="#F2A52A"/>
+              <path d="M66.9321 14.9916C66.8262 14.9929 66.7215 14.9681 66.6274 14.9196L62.4592 12.7386L58.3065 14.9196C58.2 14.9771 58.0793 15.0034 57.9584 14.9954C57.8376 14.9874 57.7214 14.9454 57.6236 14.8744C57.5257 14.8033 57.45 14.706 57.4054 14.5938C57.3609 14.4816 57.3491 14.3591 57.3716 14.2406L58.167 9.61117L54.7942 6.33971C54.7062 6.25729 54.6438 6.15141 54.6145 6.03467C54.5852 5.91794 54.5902 5.79528 54.629 5.6813C54.6664 5.5682 54.7344 5.46756 54.8255 5.39043C54.9167 5.3133 55.0273 5.26266 55.1455 5.24408L59.794 4.57024L61.8601 0.35746C61.9135 0.250124 61.9959 0.159784 62.0981 0.0966249C62.2004 0.0334658 62.3183 0 62.4385 0C62.5588 0 62.6767 0.0334658 62.7789 0.0966249C62.8811 0.159784 62.9636 0.250124 63.017 0.35746L65.0831 4.57024L69.7316 5.24408C69.8505 5.2617 69.9621 5.31202 70.0538 5.38937C70.1455 5.46672 70.2137 5.56803 70.2508 5.68189C70.2878 5.79576 70.2922 5.91767 70.2634 6.03388C70.2347 6.1501 70.1739 6.25601 70.088 6.33971L66.71 9.61631L67.5106 14.2457C67.5316 14.3647 67.5185 14.4872 67.4728 14.5991C67.4272 14.7109 67.3508 14.8078 67.2524 14.8784C67.157 14.9427 67.0468 14.9816 66.9321 14.9916Z" fill="#F2A52A"/>
+              <path d="M85.13 14.9916C85.024 14.9929 84.9193 14.9681 84.8252 14.9196L80.657 12.7386L76.4837 14.9196C76.3776 14.9728 76.2589 14.9957 76.1406 14.9856C76.0223 14.9755 75.9091 14.9328 75.8137 14.8624C75.7184 14.792 75.6445 14.6965 75.6005 14.5867C75.5564 14.4769 75.5439 14.3571 75.5643 14.2406L76.3597 9.61117L72.9817 6.33971C72.8937 6.25729 72.8313 6.15141 72.802 6.03468C72.7727 5.91794 72.7777 5.79528 72.8165 5.6813C72.8539 5.5682 72.9219 5.46756 73.013 5.39043C73.1042 5.3133 73.2148 5.26266 73.333 5.24408L77.9815 4.57024L80.0476 0.35746C80.101 0.250124 80.1834 0.159784 80.2856 0.096625C80.3879 0.0334659 80.5057 0 80.626 0C80.7463 0 80.8642 0.0334659 80.9664 0.096625C81.0686 0.159784 81.1511 0.250124 81.2045 0.35746L83.2706 4.57024L87.9191 5.24408C88.038 5.2617 88.1496 5.31202 88.2413 5.38937C88.333 5.46672 88.4012 5.56803 88.4383 5.6819C88.4753 5.79576 88.4797 5.91767 88.4509 6.03388C88.4222 6.1501 88.3614 6.25602 88.2755 6.33971L84.9027 9.61631L85.6981 14.2457C85.7191 14.3647 85.706 14.4872 85.6603 14.5991C85.6147 14.711 85.5383 14.8078 85.4399 14.8784C85.3475 14.941 85.2411 14.9799 85.13 14.9916Z" fill="#F2A52A"/>
+            </svg>
+          </div>
+        {% endif %}
+      </div>
+      {% comment %} End text contetn {% endcomment %}
 
-        <div class="half-width image-content right-image {% if section.settings.layout == 'left_image' %} display-none {% endif %}">
-            {% if section.settings.section_image != blank %}
-                <img src="{{ section.settings.section_image | image_url: width: 1000 }}">
-            {% endif %}
-        </div>
+      <div class="{% if section.settings.layout_width == 'half-width' %}half-width{% endif %} image-content right-image {% if section.settings.layout == 'left_image' %} display-none {% endif %}">
+        {% if section.settings.section_image != blank %}
+          <img src="{{ section.settings.section_image | image_url: width: 1000 }}">
+        {% endif %}
+      </div>
     </div>
+  </div>
 </div>
 
 {% schema %}
@@ -134,19 +212,65 @@
   "tag": "section",
   "settings": [
     {
+      "type": "header",
+      "content": "Setting top heading"
+    },
+    {
+      "type": "richtext",
+      "id": "top_heading",
+      "label": "Top heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_heading_image",
+      "label": "Top heading image"
+    },
+    {
+      "type": "header",
+      "content": "Setting heading"
+    },
+    {
       "type": "richtext",
       "id": "heading",
       "label": "Heading"
     },
     {
-        "type": "textarea",
-        "id": "text",
-        "label": "Text"
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "heading_image",
+      "label": "Heading image"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "header",
+      "content": "Setting content"
     },
     {
       "type": "image_picker",
       "id": "section_image",
       "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Review"
+    },
+    {
+      "type": "richtext",
+      "id": "review_text",
+      "label": "Review text"
+    },
+    {
+      "type": "text",
+      "id": "customer_name",
+      "label": "Customer name"
     },
     {
       "type": "text",
@@ -159,20 +283,36 @@
       "label": "Button link"
     },
     {
-        "type": "select",
-        "id": "layout",
-        "options": [
-            {
-                "value": "left_image",
-                "label": "Left image"
-            },
-            {
-                "value": "right_image",
-                "label": "Right image"
-            }  
-        ],
-        "default": "right_image",
-        "label": "Layout"
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "left_image",
+          "label": "Left image"
+        },
+        {
+          "value": "right_image",
+          "label": "Right image"
+        }
+      ],
+      "default": "right_image",
+      "label": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout_width",
+      "options": [
+        {
+          "value": "half_width",
+          "label": "Half width"
+        },
+        {
+          "value": "auto_width",
+          "label": "Auto width"
+        }
+      ],
+      "default": "half_width",
+      "label": "Layout width"
     },
     {
       "type": "range",
