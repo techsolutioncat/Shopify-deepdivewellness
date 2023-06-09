@@ -43,11 +43,39 @@
   endif
 -%}
 
+{% style %}
+#shopify-section-{{section.id}} .card--standard .card__inner {
+  border: 1px solid #DDDDDD;
+}
+#shopify-section-{{section.id}} .underline-links-hover:hover a,
+#shopify-section-{{section.id}} .a.pd-title
+{
+  line-height: 119%;
+  letter-spacing: -0.01em;
+  color: #0F2038;
+}
+#shopify-section-{{section.id}} .price--on-sale .price-item--regular {
+  color: #2424247a;
+}
+@media (max-width: 999px) {
+  #shopify-section-{{section.id}} .collection__title h2.title {
+    font-size: 32px !important;
+  }
+  #shopify-section-{{section.id}} a.pd-title
+  {
+    font-size: 20px !important;
+  }
+  #shopify-section-{{section.id}} .price-item--last {
+    font-size: 18px !important;
+  }
+}
+{% endstyle %}
+
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.title }}</h2>
+        <h2 class="title inline-richtext {{ section.settings.heading_size }} fs-50 fw-700 font__Lexend-Deca text-align-center">{{ section.settings.title }}</h2>
       {%- endif -%}
       {%- if section.settings.description != blank
         or section.settings.show_description
