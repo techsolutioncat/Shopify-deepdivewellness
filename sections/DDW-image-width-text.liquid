@@ -5,7 +5,7 @@
     Background: {{ section.settings.background_color }};
   }
 
-  {% if section.settings.layout_width != 'half-width' %}
+  {% if section.settings.layout_width != 'half_width' %}
     #shopify-section-{{section.id}} .content-wrap .image-content {
       width: 40%;
     }
@@ -13,8 +13,14 @@
       max-width: 700px;
     }
     @media (max-width: 1600px) {
-      #shopify-section-{{section.id}} .content-wrap .image-content {
+      #shopify-section-{{section.id}} .content-wrap .text-content {
         width: 50%;
+      }
+    }
+    @media (max-width: 1400px) {
+      #shopify-section-{{section.id}} .content-wrap .image-content img {
+        max-width: 100% !important;
+        width: 100% !important;
       }
     }
   {% endif %}
@@ -127,13 +133,13 @@
   <div class="page-width">
     {% comment %} Begin text content {% endcomment %}
     <div class="content-wrap d-flex">
-      <div class="{% if section.settings.layout_width == 'half-width' %}half-width{% endif %} image-content left-image {% if section.settings.layout == 'right_image' %} display-none {% endif %}">
+      <div class="{% if section.settings.layout_width == 'half_width' %}half-width{% endif %} image-content left-image {% if section.settings.layout == 'right_image' %} display-none {% endif %}">
         {% if section.settings.section_image != blank %}
           <img src="{{ section.settings.section_image | image_url: width: 1000 }}">
         {% endif %}
       </div>
 
-      <div class="{% if section.settings.layout_width == 'half-width' %}half-width{% endif %} text-content">
+      <div class="{% if section.settings.layout_width == 'half_width' %}half-width{% endif %} text-content">
         <div class="top-heading-wrap">
           {% if section.settings.top_heading_image != blank %}
             <img src="{{ section.settings.top_heading_image | image_url: width: 300 }}">
@@ -235,7 +241,7 @@
       "label": "Heading"
     },
     {
-      "type": "textarea",
+      "type": "richtext",
       "id": "text",
       "label": "Text"
     },

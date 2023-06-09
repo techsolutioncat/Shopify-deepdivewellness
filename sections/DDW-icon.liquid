@@ -1,0 +1,91 @@
+{% style %}
+  #shopify-section-{{section.id}} .section-content {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  #shopify-section-{{section.id}} .section-content {
+      display: flex;
+      justify-content: center;
+  }
+  #shopify-section-{{section.id}} .icon-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #shopify-section-{{section.id}} .icon-grid .icon {
+      max-width: 235px;
+      max-height: 235px;
+  }
+  @media (max-width: 720px) {
+      #shopify-section-{{section.id}} .icon-grid .icon {
+          width: calc((100% - 10px)/3);
+      }
+  }
+{% endstyle %}
+
+<div class="section-content">
+  <div class="icon-grid">
+    {% if section.blocks.size > 0 %}
+      {% for block in section.blocks %}
+        {% if block.settings.icon != blank %}
+          <div class="icon">
+            <img src="{{ block.settings.icon | image_url: width: 300 }}">
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DDW full width icon grid",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Icon grid"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block_icon",
+      "name": "Block icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DDW full width icon grid"
+    }
+  ]
+}
+{% endschema %}

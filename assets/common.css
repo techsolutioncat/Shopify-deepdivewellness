@@ -57,8 +57,14 @@
 .fs-24 {
   font-size: 24px !important;
 }
+.fs-22 {
+  font-size: 22px !important;
+}
 .fs-28 {
   font-size: 28px !important;
+}
+.fs-42 {
+  font-size: 42px !important;
 }
 .fs-44 {
   font-size: 44px !important;
@@ -115,6 +121,9 @@
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
+}
+.site-button::after {
+  box-shadow: none;
 }
 @media (max-width: 749px) {
   .site-button {

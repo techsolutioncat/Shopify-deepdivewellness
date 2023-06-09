@@ -89,6 +89,17 @@
   #shopify-section-{{section.id}} .right-card:nth-child(2) {
     margin-left: 36px;
   }
+  #shopify-section-{{section.id}} .section-main-content {
+    position: relative;
+  }
+  #shopify-section-{{section.id}} .section-button {
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+  }
+  #shopify-section-{{section.id}} .section-button a {
+    text-decoration: none;
+  }
 
   @media (max-width: 1000px) {
     /* #shopify-section-{{section.id}} .left-box {
@@ -122,6 +133,11 @@
     }
     #shopify-section-{{section.id}} .right-box {
       margin-top: -40px;
+  }
+    #shopify-section-{{section.id}} .section-button {
+      width: 100%;
+      text-align: center;
+      bottom: -76px;
     }
   }
 
@@ -140,6 +156,9 @@
     }
     #shopify-section-{{section.id}} .text-box .text {
       font-size: 14px !important;
+    }
+    #shopify-section-{{section.id}} .section-button a {
+      font-size: 32px !important;
     }
   }
 
@@ -224,6 +243,13 @@
         {% endfor %}
       </div>
     {% endif %}
+
+    <div class="section-button">
+      {% if section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="fc-white fs-42 fw-700 font__Lexend-Deca">{{ section.settings.button_text }}</a>
+      {% endif %}
+    </div>
+    
   </div>
 </div>
 
@@ -257,6 +283,16 @@
       "type": "richtext",
       "id": "title",
       "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
     },
     {
       "type": "range",
