@@ -1,0 +1,185 @@
+{% style %}
+  {%- if section.settings.bck_image != blank -%}
+    #shopify-section-{{section.id}} .section-content {
+      background-image: url({{ section.settings.bck_image | image_url:width: 2048 }});
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+    }
+  {%- endif -%}
+  #shopify-section-{{section.id}} .section-content {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    margin-top: 30px;
+  }
+
+  #shopify-section-{{section.id}} .card-box {
+    gap: 22px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #shopify-section-{{section.id}} .section-content .section-subtitle {
+    line-height: 180%;
+    /* identical to box height, or 36px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  #shopify-section-{{section.id}} .section-content .section-subtitle p {
+    margin: 0px;
+  }
+  #shopify-section-{{section.id}} .section-content .section-title {
+    line-height: 119%;
+  }
+  #shopify-section-{{section.id}} .card-box {
+    margin-top: 60px;
+  }
+  #shopify-section-{{section.id}} .card-box .card-item {
+    width: 366px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 32px 20px;
+  }
+  #shopify-section-{{section.id}} .card-box .card-item .card-title {
+    margin: 0px;
+    line-height: 119%;
+    letter-spacing: -0.01em;
+    color: #0F2038;
+  }
+  @media (max-width: 749px) {
+    {%- if section.settings.bck_image != blank -%}
+      #shopify-section-{{section.id}} .section-content {
+        background-image: url({{ section.settings.mob_bck_image | image_url:width: 1000 }});
+        background-position-y: bottom;
+      }
+    {% endif %}
+    #shopify-section-{{section.id}} .section-title br {
+      display: none;
+    }
+    #shopify-section-{{section.id}} .card-box {
+      margin-top: 30px;
+    }
+    #shopify-section-{{section.id}} .section-title {
+      font-size: 32px !important;
+    }
+    #shopify-section-{{section.id}} .text-box .title {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .section-content {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    #shopify-section-{{section.id}} .card-box .card-item .card-title {
+      font-size: 20px !important;
+    }
+    #shopify-section-{{section.id}} .card-box .card-item .card-text {
+      font-size: 14px !important;
+    }
+  }
+
+{% endstyle %}
+
+<div class="section-content">
+  <div class="section-header page-width">
+    {% if section.settings.subtitle != blank %}
+      <div class="section-subtitle h3 fc-white fs-20 fw-600 font__Poppins text-align-center font-white">
+        {{ section.settings.subtitle }}
+      </div>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <div class="section-title font-bold rte fc-white fs-50 fw-700 font__Lexend-Deca text-align-center font-white">
+        {{ section.settings.heading }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="page-width section-main-content">
+    {% if section.blocks.size > 0 %}
+      <div class="card-box">
+        {% for block in section.blocks %}
+          <div class="card-item">
+            {% if block.settings.title != blank %}
+              <p class="card-title fs-22 fw-600 font__Lexend-Deca">{{ block.settings.title }}</p>
+            {% endif %}
+            {% if block.settings.text != blank %}
+              <div class="card-text fs-16 fw-400 font__Poppins">{{ block.settings.text }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DDW card box",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "bck_image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mob_bck_image",
+      "label": "Mobile background image"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block_card",
+      "name": "Block card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DDW card box"
+    }
+  ]
+}
+{% endschema %}
