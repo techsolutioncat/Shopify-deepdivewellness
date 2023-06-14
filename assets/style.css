@@ -199,7 +199,8 @@ footer.footer .footer__payment {
 }
 
 /* Header style css */
-.header .header__heading {
+.header .header__heading,
+.header a.header__heading-link {
   position: absolute;
   background: #fff;
   top: 0px;
@@ -267,7 +268,8 @@ header .header__menu-item svg.icon-caret {
   /* .header summary.header__icon--menu {
     margin-top: -44px;
   } */
-  .header .header__heading {
+  .header .header__heading,
+  .header a.header__heading-link {
     width: 90px;
   }
 }

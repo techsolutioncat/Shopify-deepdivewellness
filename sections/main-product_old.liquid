@@ -10,53 +10,8 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-  {{ 'custom-main-product.css' | asset_url | stylesheet_tag }}
-
-  <script src="{{ 'main-product.js' | asset_url }}"></script>
 
   {%- style -%}
-    /* Begin custom style css */
-    #shopify-section-{{section.id}} {
-      background: {{ section.settings.background_color }};
-    }
-
-    #shopify-section-{{section.id}} .tabs {
-      display: flex;
-      align-items: center;
-      gap: 100px;
-      margin-bottom: 26px;
-      list-style: none;
-      justify-content: center;
-      padding: 0px;
-    }
-    #shopify-section-{{section.id}} .tabs .tab {
-      border-bottom: 1px solid #ccc;
-      cursor: pointer;
-      line-height: 119%;
-      letter-spacing: -0.01em;
-      color: #0F2038;
-      padding: 0px 17px 6px 17px;
-    }
-    #shopify-section-{{section.id}} .tabs .tab.active,
-    #shopify-section-{{section.id}} .tabs .tab:hover {
-      color: #0F2038;
-      border-bottom: 2px solid #01BAC4;
-    }
-    #shopify-section-{{section.id}} .tab-content {
-      display: none;
-      line-height: 190%;
-      color: #242424;
-    }
-    #shopify-section-{{section.id}} .tab-content.active {
-      display: block;
-    }
-    #shopify-section-{{section.id}} .tab-description {
-      background: #FFFFFF;
-      border-radius: 10px;
-      padding: 22px;
-    }
-    /* End custom styl css */
-
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -100,7 +55,7 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  <div id="section__maing-roduct" class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
@@ -126,34 +81,12 @@
               </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
-                {% if block.settings.product_title != blank %}
-                  <h1 class="product-title fw-700 fs-36 font__Lexend-Deca">{{ block.settings.product_title }}</h1>
-                {% else %}
-                <h1 class="product-title fw-700 fs-36 font__Lexend-Deca">{{ product.title | escape }}</h1>
-                {% endif %}
-
+                <h1>{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
                     {{ product.title | escape }}
                   </h2>
                 </a>
-              </div>
-            {%- when 'loox-rating' -%}
-              <a href="#looxReviews"><div id="loox_product-rating" class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div></a>
-            {%- when 'tab-description' -%}
-              <div class="tab-description">
-                <ul class="tabs">
-                  <li data-tab-target="#tab_1" class="tab active fs-18 fw-600 font__Lexend-Deca">{{ block.settings.title1 }}</li>
-                  <li data-tab-target="#tab_2" class="tab fs-18 fw-600 font__Lexend-Deca">{{ block.settings.title2 }}</li>
-                </ul>
-                <div class="tab-contents">
-                  <div class="tab-content active fs-15 fw-400 font__Poppins" id="tab_1">
-                    {{ block.settings.text1 }}
-                  </div>
-                  <div class="tab-content fs-15 fw-400 font__Poppins" id="tab_2">
-                    {{ block.settings.text2 }}
-                  </div>
-                </div>
               </div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -646,46 +579,6 @@
       "type": "@app"
     },
     {
-      "type": "loox-rating",
-      "name": "Loox product rating",
-      "limit": 1
-    },
-    {
-      "type": "tab-description",
-      "name": "Tab description",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "header",
-          "content": "Tabl content1"
-        },
-        {
-          "type": "text",
-          "id": "title1",
-          "label": "Title1"
-        },
-        {
-          "type": "textarea",
-          "id": "text1",
-          "label": "Text1"
-        },
-        {
-          "type": "header",
-          "content": "Tabl content2"
-        },
-        {
-          "type": "text",
-          "id": "title2",
-          "label": "Title2"
-        },
-        {
-          "type": "textarea",
-          "id": "text2",
-          "label": "Text2"
-        }
-      ]
-    },
-    {
       "type": "text",
       "name": "t:sections.main-product.blocks.text.name",
       "settings": [
@@ -720,14 +613,7 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "product_title",
-          "label": "Product title"
-        }
-      ]
+      "limit": 1
     },
     {
       "type": "price",
@@ -2015,11 +1901,6 @@
     }
   ],
   "settings": [
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color"
-    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",
