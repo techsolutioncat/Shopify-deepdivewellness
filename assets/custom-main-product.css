@@ -1,0 +1,30 @@
+/* Product top text style css */
+    #section__maing-roduct p.product__text.subtitle {
+        font-family: 'Gochi Hand', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 80%;
+        /* identical to box height, or 18px */
+        color: #0F2038;
+    }
+
+/* Product top title style css */
+    #section__maing-roduct h1.product-title {
+        line-height: 119%;
+        letter-spacing: -0.01em;
+        color: #0F2038;
+    }
+    #section__maing-roduct h1.product-title > p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #section__maing-roduct h1.product-title strong {
+        color: #01BAC4;
+    }
+
+@media (max-width: 759px) {
+    #section__maing-roduct h1.product-title br {
+        display: none;
+    }    
+}

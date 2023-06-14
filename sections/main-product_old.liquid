@@ -10,160 +10,8 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-  {{ 'custom-main-product.css' | asset_url | stylesheet_tag }}
-
-  <script src="{{ 'main-product.js' | asset_url }}"></script>
 
   {%- style -%}
-    /* Begin custom style css */
-    #shopify-section-{{section.id}} {
-      background: {{ section.settings.background_color }};
-    }
-
-    #shopify-section-{{section.id}} .tabs {
-      display: flex;
-      align-items: center;
-      gap: 100px;
-      margin-bottom: 26px;
-      list-style: none;
-      justify-content: center;
-      padding: 0px;
-    }
-    #shopify-section-{{section.id}} .tabs .tab {
-      border-bottom: 1px solid #ccc;
-      cursor: pointer;
-      line-height: 119%;
-      letter-spacing: -0.01em;
-      color: #0F2038;
-      padding: 0px 17px 6px 17px;
-    }
-    #shopify-section-{{section.id}} .tabs .tab.active,
-    #shopify-section-{{section.id}} .tabs .tab:hover {
-      color: #0F2038;
-      border-bottom: 2px solid #01BAC4;
-    }
-    #shopify-section-{{section.id}} .tab-content {
-      display: none;
-      line-height: 190%;
-      color: #242424;
-    }
-    #shopify-section-{{section.id}} .tab-content.active {
-      display: block;
-    }
-    #shopify-section-{{section.id}} .tab-description {
-      background: #FFFFFF;
-      border-radius: 10px;
-      padding: 22px;
-    }
-    #shopify-section-{{section.id}} .product-form__buttons {
-      max-width: 100%;
-    }
-    #shopify-section-{{section.id}} .product-form__submit:hover:after {
-      box-shadow: none;
-    }
-    #shopify-section-{{section.id}} .product-form__submit {
-      font-size: 22px !important;
-    }
-
-    #shopify-section-{{section.id}} .pack-group {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 43px;
-      flex-wrap: wrap;
-    }
-    #shopify-section-{{section.id}} .pack-group .pack-item {
-      width: calc((100% - 48px)/4);
-      border: 1px solid #EDEDED;
-      border-radius: 4px;
-      max-height: 114px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 4px;
-      background: #fff;
-    }
-
-    #shopify-section-{{section.id}} .pack-group .pack-item.active {
-      border: 2px solid #01BAC4;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-      background: #F4FEFF;
-    }
-
-    #shopify-section-{{section.id}} .pack-group .pack-item .pack-quantity {
-      line-height: 100%;
-      margin-top: 11px;
-    }
-    #shopify-section-{{section.id}} .pack-item {
-      position: relative;
-    }
-    #shopify-section-{{section.id}} .pack-item .str-off {
-      position: absolute;
-      bottom: -12px;
-      background: #01BAC4;
-      border-radius: 30px;
-      padding: 0px 8px;
-    }
-    #shopify-section-{{section.id}} .pack-item-str {
-      margin-top: -32px;
-    }
-    #shopify-section-{{section.id}} .product-form__quantity {
-      display: none;
-    }
-    #shopify-section-{{section.id}} .block-text {
-      display: flex;
-      gap: 13px;
-    }
-    /* FAQ custom style css */
-    #shopify-section-{{section.id}} .faq-section {
-      margin-top: 30px;
-    }
-    #shopify-section-{{section.id}} .accordion__item__header {
-      padding: 14px;
-      cursor: pointer;
-      position: relative;
-      color: #000;
-      border-top: 1px solid #005c6129;      
-      /* border-radius: 4px; */
-    }
-    #shopify-section-{{section.id}} .accordion__item:nth-child(1) .accordion__item__header {
-      border-top: none;
-    }
-    #shopify-section-{{section.id}} .accordion__item__header::before {
-      height: 12px;
-      width: 12px;
-      content: '';
-      position: absolute;
-      right: 25px;
-      top: 19px;
-      transition: 0.5s all;
-      transform: rotate(45deg);
-      border-right: 3px solid #01BAC4;
-      border-bottom: 3px solid #01BAC4;
-    }
-
-    #shopify-section-{{section.id}} .accordion__item__header.active {
-      transition: 0.5s;
-    }
-
-    #shopify-section-{{section.id}} .accordion__item__header.active::before {
-      transform: rotate(-135deg);
-    }
-
-    #shopify-section-{{section.id}} .accordion__item__content {
-      overflow-y: auto;
-      padding: 0;
-      display: none;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      padding: 0px 14px 14px 14px;
-      margin-top: -4px;
-    }
-    #shopify-section-{{section.id}} .accordion__item__header.active + .accordion__item__content {
-      display: block;
-    }
-    /* End custom styl css */
-
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -173,45 +21,6 @@
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
-    @media (max-width: 1000px) {
-      #shopify-section-{{section.id}} .pack-group .pack-item {
-        width: 120px;
-        height: 114px;
-        margin-bottom: 32px;
-      }
-      #shopify-section-{{section.id}} .pack-group {
-        justify-content: center;
-        gap: 16px;
-      }
-      #shopify-section-{{section.id}} .tabs {
-        gap: 14px;
-      }
-    }
-    @media (max-width: 749px) {
-      #shopify-section-{{section.id}} .block-area {
-        display: flex;
-        justify-content: center;
-      }
-      #shopify-section-{{section.id}} .block-text {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 0px;
-        width: auto;
-      }
-      #shopify-section-{{section.id}} .tabs .tab,
-      #shopify-section-{{section.id}} .tabs .tab-content,
-      #shopify-section-{{section.id}} .accordion__item__header .question,
-      #shopify-section-{{section.id}} .accordion__item__header .answer {
-        font-size: 14px !important;
-      }
-      #product_price .price__sale {
-        justify-content: center;
-      }
-      #product_price .price-sale-last {
-        margin-top: -18px;
       }
     }
   {%- endstyle -%}
@@ -246,7 +55,7 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  <div id="section__maing-roduct" class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
@@ -270,144 +79,24 @@
               >
                 {{- block.settings.text -}}
               </p>
-            {%- when 'faq' -%}
-              <div class="faq-section">
-                {% if block.settings.question1 != blank %}
-                <div class="FaQ_Each accordion__item">
-                  <div class="accordion__item__header">
-                    {% if block.settings.question1 != blank %}
-                      <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question1 }}</div>
-                    {% endif %}
-                  </div>
-                  <div class="accordion__item__content">
-                    {% if block.settings.answer1 != blank %}
-                      <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer1 }}</div>
-                    {% endif %}
-                  </div>
-                </div>
-                {% endif %}
-                {% if block.settings.question2 != blank %}
-                <div class="FaQ_Each accordion__item">
-                  <div class="accordion__item__header">
-                    {% if block.settings.question2 != blank %}
-                      <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question2 }}</div>
-                    {% endif %}
-                  </div>
-                  <div class="accordion__item__content">
-                    {% if block.settings.answer2 != blank %}
-                      <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer2 }}</div>
-                    {% endif %}
-                  </div>
-                </div>
-                {% endif %}
-                {% if block.settings.question3 != blank %}
-                <div class="FaQ_Each accordion__item">
-                  <div class="accordion__item__header">
-                    {% if block.settings.question3 != blank %}
-                      <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question3 }}</div>
-                    {% endif %}
-                  </div>
-                  <div class="accordion__item__content">
-                    {% if block.settings.answer3 != blank %}
-                      <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer3 }}</div>
-                    {% endif %}
-                  </div>
-                </div>
-                {% endif %}
-                {% if block.settings.question4 != blank %}
-                <div class="FaQ_Each accordion__item">
-                  <div class="accordion__item__header">
-                    {% if block.settings.question4 != blank %}
-                      <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question4 }}</div>
-                    {% endif %}
-                  </div>
-                  <div class="accordion__item__content">
-                    {% if block.settings.answer4 != blank %}
-                      <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer4 }}</div>
-                    {% endif %}
-                  </div>
-                </div>
-                {% endif %}
-                {% if block.settings.question5 != blank %}
-                <div class="FaQ_Each accordion__item">
-                  <div class="accordion__item__header">
-                    {% if block.settings.question5 != blank %}
-                      <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question5 }}</div>
-                    {% endif %}
-                  </div>
-                  <div class="accordion__item__content">
-                    {% if block.settings.answer5 != blank %}
-                      <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer5 }}</div>
-                    {% endif %}
-                  </div>
-                </div>
-                {% endif %}
-              </div>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
-                {% if block.settings.product_title != blank %}
-                  <h1 class="product-title fw-700 fs-36 font__Lexend-Deca">{{ block.settings.product_title }}</h1>
-                {% else %}
-                <h1 class="product-title fw-700 fs-36 font__Lexend-Deca">{{ product.title | escape }}</h1>
-                {% endif %}
-
+                <h1>{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
                     {{ product.title | escape }}
                   </h2>
                 </a>
               </div>
-            {%- when 'loox-rating' -%}
-              <a href="#looxReviews"><div id="loox_product-rating" class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div></a>
-            {%- when 'tab-description' -%}
-              <div class="tab-description">
-                <ul class="tabs">
-                  <li data-tab-target="#tab_1" class="tab active fs-18 fw-600 font__Lexend-Deca">{{ block.settings.title1 }}</li>
-                  <li data-tab-target="#tab_2" class="tab fs-18 fw-600 font__Lexend-Deca">{{ block.settings.title2 }}</li>
-                </ul>
-                <div class="tab-contents">
-                  <div class="tab-content active fs-15 fw-400 font__Poppins" id="tab_1">
-                    {{ block.settings.text1 }}
-                  </div>
-                  <div class="tab-content fs-15 fw-400 font__Poppins" id="tab_2">
-                    {{ block.settings.text2 }}
-                  </div>
-                </div>
-              </div>
-            {%- when 'discount-pack' -%}
-              <div class="pack-group">
-                <div class="pack-item active" data-quantity="1">
-                  <div class="pack-quantity fs-24 fw-700 font__Lexend-Deca">1X</div>
-                  <img src="{{ '1x.png' | asset_url }}">
-                </div>
-                <div class="pack-item" data-quantity="2">
-                  <div class="pack-item-str fs-14 fw-400 font__Poppins">BESTSELLER</div>
-                  <div class="pack-quantity fs-24 fw-700 font__Lexend-Deca">2X</div>
-                  <img src="{{ '2x.png' | asset_url }}">
-                  <div class="str-off fs-13 fw-500 fc-white font__Poppins">15% OFF</div>
-                </div>
-                <div class="pack-item" data-quantity="3">
-                  <div class="pack-quantity fs-24 fw-700 font__Lexend-Deca">3X</div>
-                  <img src="{{ '3x.png' | asset_url }}">
-                  <div class="str-off fs-13 fw-500 fc-white font__Poppins">20% OFF</div>
-                </div>
-                <div class="pack-item" data-quantity="6">
-                  <div class="pack-item-str fs-14 fw-400 font__Poppins">REST VALUE</div>
-                  <div class="pack-quantity fs-24 fw-700 font__Lexend-Deca">6X</div>
-                  <img src="{{ '6x.png' | asset_url }}">
-                  <div class="str-off fs-13 fw-500 fc-white font__Poppins">25% OFF</div>
-                </div>
-              </div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'product-price',
+                {%- render 'price',
                   product: product,
                   use_variant: true,
                   show_badges: true,
                   price_class: 'price--large'
                 -%}
               </div>
-              {% comment %}
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
                   {%- if shop.taxes_included -%}
@@ -418,7 +107,6 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
-              {% endcomment %}
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -623,34 +311,6 @@
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
-              <div class="block-area">
-                <div class="block-text">
-                  {% if block.settings.text1 != blank %}
-                    <p class="text fs-13 fw-500 font__Poppins m-0">
-                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
-                      </svg>
-                      {{ block.settings.text1 }}
-                    </p>
-                  {% endif %}
-                  {% if block.settings.text2 != blank %}
-                    <p class="text fs-13 fw-500 font__Poppins m-0">
-                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
-                      </svg>
-                      {{ block.settings.text2 }}
-                    </p>
-                  {% endif %}
-                  {% if block.settings.text3 != blank %}
-                    <p class="text fs-13 fw-500 font__Poppins m-0">
-                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
-                      </svg>
-                      {{ block.settings.text3 }}
-                    </p>
-                  {% endif %}
-                </div>
-              </div>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -919,128 +579,6 @@
       "type": "@app"
     },
     {
-      "type": "loox-rating",
-      "name": "Loox product rating",
-      "limit": 1
-    },
-    {
-      "type": "faq",
-      "name": "FAQ",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "header",
-          "content": "FAQ1"
-        },
-        {
-          "type": "text",
-          "id": "question1",
-          "label": "Question"
-        },
-        {
-          "type": "textarea",
-          "id": "answer1",
-          "label": "Answer"
-        },
-        {
-          "type": "header",
-          "content": "FAQ2"
-        },
-        {
-          "type": "text",
-          "id": "question2",
-          "label": "Question"
-        },
-        {
-          "type": "textarea",
-          "id": "answer2",
-          "label": "Answer"
-        },
-        {
-          "type": "header",
-          "content": "FAQ3"
-        },
-        {
-          "type": "text",
-          "id": "question3",
-          "label": "Question"
-        },
-        {
-          "type": "textarea",
-          "id": "answer3",
-          "label": "Answer"
-        },
-        {
-          "type": "header",
-          "content": "FAQ4"
-        },
-        {
-          "type": "text",
-          "id": "question4",
-          "label": "Question"
-        },
-        {
-          "type": "textarea",
-          "id": "answer4",
-          "label": "Answer"
-        },
-        {
-          "type": "header",
-          "content": "FAQ5"
-        },
-        {
-          "type": "text",
-          "id": "question5",
-          "label": "Question"
-        },
-        {
-          "type": "textarea",
-          "id": "answer5",
-          "label": "Answer"
-        }
-      ]
-    },
-    {
-      "type": "discount-pack",
-      "name": "Discount pack",
-      "limit": 1
-    },
-    {
-      "type": "tab-description",
-      "name": "Tab description",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "header",
-          "content": "Tabl content1"
-        },
-        {
-          "type": "text",
-          "id": "title1",
-          "label": "Title1"
-        },
-        {
-          "type": "textarea",
-          "id": "text1",
-          "label": "Text1"
-        },
-        {
-          "type": "header",
-          "content": "Tabl content2"
-        },
-        {
-          "type": "text",
-          "id": "title2",
-          "label": "Title2"
-        },
-        {
-          "type": "textarea",
-          "id": "text2",
-          "label": "Text2"
-        }
-      ]
-    },
-    {
       "type": "text",
       "name": "t:sections.main-product.blocks.text.name",
       "settings": [
@@ -1075,14 +613,7 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "product_title",
-          "label": "Product title"
-        }
-      ]
+      "limit": 1
     },
     {
       "type": "price",
@@ -1205,21 +736,6 @@
           "default": false,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
-        },
-        {
-          "type": "text",
-          "id": "text1",
-          "label": "Text1"
-        },
-        {
-          "type": "text",
-          "id": "text2",
-          "label": "Text2"
-        },
-        {
-          "type": "text",
-          "id": "text3",
-          "label": "Text3"
         }
       ]
     },
@@ -2385,11 +1901,6 @@
     }
   ],
   "settings": [
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color"
-    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",
