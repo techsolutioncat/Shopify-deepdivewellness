@@ -23,6 +23,7 @@
   #shopify-section-{{ section.id }} .video_link{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
   }
   #shopify-section-{{ section.id }} .video_link .video-section {
@@ -32,6 +33,12 @@
   #shopify-section-{{ section.id }} .video_link .video-section .video-section__media {
     width: 100%;
     height: 100%;
+  }
+  #shopify-section-{{ section.id }} .left-image {
+    margin-right: 36px;
+  }
+  #shopify-section-{{ section.id }} .top-image {
+    display: none;
   }
   @media (max-width: 1000px) {
     #shopify-section-{{ section.id }} .video_link .video-section {
@@ -50,6 +57,15 @@
         background-image: url({{ section.settings.mob_bck_image | image_url:width: 1000 }});
       }
     {%- endif -%}
+    #shopify-section-{{ section.id }} .video_link{
+      flex-direction: column;
+    }
+    #shopify-section-{{ section.id }} .left-image {
+      display: none;
+    }
+    #shopify-section-{{ section.id }} .top-image {
+      display: block;
+    }
     #shopify-section-{{section.id}} .section-content {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -92,6 +108,16 @@
   <div class="section-body">
     {%- if section.settings.video_url != blank -%}
       <div class="video_link">
+        {% if section.settings.left_image != blank %}
+          <div class="left-image">
+            <img src="{{ section.settings.left_image | image_url: width: 300 }}">
+          </div>
+        {% endif %}
+        {% if section.settings.top_image != blank %}
+          <div class="top-image">
+            <img src="{{ section.settings.top_image | image_url: width: 300 }}">
+          </div>
+        {% endif %}
         <div class="video-section isolate">
           <noscript>
             <div
@@ -252,6 +278,16 @@
       "label": "t:sections.video.settings.video_url.label",
       "placeholder": "t:sections.video.settings.video_url.placeholder",
       "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left image"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_image",
+      "label": "Top image"
     },
     {
       "type": "range",
