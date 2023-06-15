@@ -1,0 +1,272 @@
+{% style %}
+  #shopify-section-{{section.id}} .section-content {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    Background: {{ section.settings.background_color }};
+  }
+  #shopify-section-{{section.id}} .section-title {
+    line-height: 119%;
+    letter-spacing: -0.01em;
+    color: #0F2038;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #shopify-section-{{section.id}} .section-content .section-subtitle {
+    line-height: 180%;
+    /* identical to box height, or 36px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #01BAC4;
+  }
+  #shopify-section-{{section.id}} .section-content .section-subtitle p {
+    margin: 0px;
+  }
+  #shopify-section-{{section.id}} .card-box .card-item .card-title {
+    margin: 22px 0px 0px 0px;
+    line-height: 119%;
+    letter-spacing: -0.01em;
+    color: #0F2038;
+  }
+  #shopify-section-{{section.id}} .card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  #shopify-section-{{section.id}} .card-box .card-item {
+    width: 289px;
+  }
+  #shopify-section-{{section.id}} .card-box .card-item .card-text {
+    letter-spacing: -0.01em;
+    color: #242424d4;
+  }
+  #shopify-section-{{section.id}} .card-box .card-item .card-image {
+    width: 289px;
+    height: 267px;
+  }
+  #shopify-section-{{section.id}} .card-box .card-item .card-image img {
+    width: 100%;
+    height: 100%;
+  }
+  #shopify-section-{{section.id}} .block-text {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 22px;
+  }
+  #shopify-section-{{section.id}} .section-button {
+    justify-content: center;
+    margin-top: 50px;
+  }
+  #shopify-section-{{section.id}} .section-button a.site-button {
+    text-align: center;
+  }
+  @media (max-width: 749px) {
+    #shopify-section-{{section.id}} .block-area {
+      display: flex;
+      justify-content: center;
+    }
+    #shopify-section-{{section.id}} .block-text {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 29px;
+    }
+  }
+  @media (max-width: 500px) {
+    #shopify-section-{{section.id}} .section-title {
+      font-size: 32px !important;
+    }
+    #shopify-section-{{section.id}} .section-title br {
+      display: none;
+    }
+    #shopify-section-{{section.id}} .section-subtitle {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .card-title {
+      font-size: 16px !important;
+    }
+    #shopify-section-{{section.id}} .card-text {
+      font-size: 15px !important;
+    }
+    #shopify-section-{{section.id}} .section-button {
+      margin-top: 32px;
+    }
+    #shopify-section-{{section.id}} .section-content {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+{% endstyle %}
+
+<div class="section-content">
+  <div class="section-header page-width">
+    {% if section.settings.subtitle != blank %}
+      <div class="section-subtitle h3 fs-20 fw-600 font__Poppins text-align-center font-white">
+        {{ section.settings.subtitle }}
+      </div>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <div class="section-title font-bold rte fs-50 fw-700 font__Lexend-Deca text-align-center font-white">
+        {{ section.settings.heading }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="page-width section-main-content">
+    {% if section.blocks.size > 0 %}
+      <div class="card-box">
+        {% for block in section.blocks %}
+          <div class="card-item">
+            {% if block.settings.image != blank %}
+              <div class="card-image">
+                <img src="{{ block.settings.image | image_url: width: 300 }}">
+              </div>
+            {% endif %}
+            {% if block.settings.title != blank %}
+              <p class="card-title fs-24 fw-600 font__Lexend-Deca">{{ block.settings.title }}</p>
+            {% endif %}
+            {% if block.settings.text != blank %}
+              <div class="card-text fs-16 fw-400 font__Poppins">{{ block.settings.text }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if section.settings.button_link != blank %}
+      <div class="section-button d-flex">
+        <a href="{{ section.settings.button_link }}" class="site-button">{{ section.settings.button_text }}</a>
+      </div>
+    {% endif %}
+    <div class="block-area">
+      <div class="block-text">
+        {% if section.settings.text1 != blank %}
+          <p class="text fs-13 fw-500 font__Poppins m-0">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
+            </svg>
+            {{ section.settings.text1 }}
+          </p>
+        {% endif %}
+        {% if section.settings.text2 != blank %}
+          <p class="text fs-13 fw-500 font__Poppins m-0">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
+            </svg>
+            {{ section.settings.text2 }}
+          </p>
+        {% endif %}
+        {% if section.settings.text3 != blank %}
+          <p class="text fs-13 fw-500 font__Poppins m-0">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.70606 7.30713C1.38301 7.30804 1.06682 7.40039 0.794072 7.5735C0.521322 7.7466 0.303156 7.9934 0.164815 8.28532C0.0264738 8.57725 -0.0263893 8.90238 0.0123415 9.22309C0.0510724 9.54381 0.179814 9.84701 0.383673 10.0976L4.72946 15.4212C4.88441 15.6136 5.08303 15.7662 5.30882 15.8665C5.53462 15.9667 5.78106 16.0116 6.02769 15.9975C6.55518 15.9691 7.0314 15.687 7.33503 15.223L16.3623 0.684527C16.3638 0.682115 16.3654 0.679704 16.367 0.677328C16.4516 0.547275 16.4242 0.289544 16.2494 0.127634C16.2013 0.0831714 16.1447 0.049012 16.083 0.0272591C16.0212 0.00550627 15.9557 -0.00337947 15.8904 0.00114937C15.8251 0.00567821 15.7615 0.0235258 15.7033 0.0535926C15.6452 0.0836594 15.5938 0.125309 15.5524 0.175977C15.5492 0.17996 15.5458 0.183884 15.5424 0.187747L6.43823 10.4741C6.40358 10.5132 6.36151 10.5451 6.31445 10.5678C6.26738 10.5906 6.21627 10.6038 6.16407 10.6066C6.11188 10.6094 6.05964 10.6018 6.0104 10.5843C5.96116 10.5668 5.91589 10.5396 5.87723 10.5044L2.85573 7.75485C2.54192 7.46718 2.13176 7.30746 1.70606 7.30713Z" fill="#01BAC4"/>
+            </svg>
+            {{ section.settings.text3 }}
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DDW Multicolumn",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Text box"
+    },
+    {
+      "type": "text",
+      "id": "text1",
+      "label": "Text1"
+    },
+    {
+      "type": "text",
+      "id": "text2",
+      "label": "Text2"
+    },
+    {
+      "type": "text",
+      "id": "text3",
+      "label": "Text3"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block_card",
+      "name": "Block card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "DDW Multicolumn"
+    }
+  ]
+}
+{% endschema %}
