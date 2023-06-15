@@ -1,30 +1,136 @@
 {% style %}
   #shopify-section-{{section.id}} .section-content {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #shopify-section-{{section.id}} .image-grid {
-      display: flex;
-      gap: 5px;
-      flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
   }
   #shopify-section-{{section.id}} .image-grid .image {
-      max-width: 235px;
-      max-height: 235px;
+    max-width: 235px;
+    max-height: 235px;
   }
   #shopify-section-{{section.id}} .image-grid .image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+
+  /* Content box custom style css */
+  #shopify-section-{{section.id}} .left-box-title {
+    line-height: 119%;
+    /* identical to box height, or 31px */
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #0F2038;
+  }
+  #shopify-section-{{section.id}} .left-box-title,
+  #shopify-section-{{section.id}} .right-box-title
+  {
+    line-height: 119%;
+    /* identical to box height, or 31px */
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #0F2038;
+  }
+  #shopify-section-{{section.id}} .left-box-text,
+  #shopify-section-{{section.id}} .right-box-text
+  {
+    margin-top: 15px;
+    line-height: 180%;
+    text-align: center;
+    color: #242424;
+  }
+  #shopify-section-{{section.id}} .left-box,
+  #shopify-section-{{section.id}} .right-box
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  #shopify-section-{{section.id}} .left-image {
+    width: 207px;
+    height: 207px;
+  }
+  #shopify-section-{{section.id}} .left-image {
+    text-align: center;
+  }
+  #shopify-section-{{section.id}} .content-box {
+    padding-top: 57px;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 1000px) {
+    #shopify-section-{{section.id}} .content-box {
+      flex-direction: column;
+      justify-content: center;
+    }
+    #shopify-section-{{section.id}} .left-box,
+    #shopify-section-{{section.id}} .right-box {
+      width: 100%;
+    }
+    #shopify-section-{{section.id}} .right-box {
+      margin-top: 15px;
+    }
+  }
+
   @media (max-width: 720px) {
-      #shopify-section-{{section.id}} .image-grid .image {
-          width: calc((100% - 10px)/3);
-      }
+    #shopify-section-{{section.id}} .image-grid .image {
+      width: calc((100% - 10px)/3);
+    }
+    #shopify-section-{{section.id}} .left-box-title,
+    #shopify-section-{{section.id}} .right-box-title
+    {
+      font-size: 22px !important;
+    }
+    #shopify-section-{{section.id}} .left-box-text,
+    #shopify-section-{{section.id}} .right-box-text
+    {
+      font-size: 14px !important;
+    }
   }
 {% endstyle %}
 
 <div class="section-content">
+  <div class="page-width content-box d-flex">
+    <div class="left-box half-width">
+      {% if section.settings.left_image != blank %}
+        <div class="left-image">
+          <img src="{{ section.settings.left_image | image_url: width: 300 }}">
+        </div>
+      {% endif %}
+      {% if section.settings.left_title != blank %}
+        <div class="left-box-title fw-700 fs-26 font__Lexend-Deca">{{ section.settings.left_title }}</div>
+      {% endif %}
+      {% if section.settings.left_text != blank %}
+        <div class="left-box-text fw-400 fs-16 font__Poppins">{{ section.settings.left_text }}</div>
+      {% endif %}
+    </div>
+    <div class="right-box half-width">
+      <div class="right-box">
+        {% if section.settings.right_image != blank %}
+          <div class="right-image">
+            <img src="{{ section.settings.right_image | image_url: width: 300 }}">
+          </div>
+        {% endif %}
+        {% if section.settings.right_title != blank %}
+          <div class="right-box-title fw-700 fs-26 font__Lexend-Deca">{{ section.settings.right_title }}</div>
+        {% endif %}
+        {% if section.settings.right_text != blank %}
+          <div class="right-box-text fw-400 fs-16 font__Poppins">{{ section.settings.right_text }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
   <div class="image-grid">
     {% if section.blocks.size > 0 %}
       {% for block in section.blocks %}
@@ -45,7 +151,41 @@
   "settings": [
     {
       "type": "header",
-      "content": "Image grid"
+      "content": "Left box settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left picker"
+    },
+    {
+      "type": "text",
+      "id": "left_title",
+      "label": "Left title"
+    },
+    {
+      "type": "textarea",
+      "id": "left_text",
+      "label": "Left text"
+    },
+    {
+      "type": "header",
+      "content": "Right box settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right picker"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Right title"
+    },
+    {
+      "type": "textarea",
+      "id": "right_text",
+      "label": "Right text"
     }
   ],
   "blocks": [
