@@ -1,0 +1,111 @@
+{% style %}
+  #shopify-section-{{section.id}} .section-content {
+    padding-top: {{ section.settings.padding_top }}px;
+    /* padding-bottom: {{ section.settings.padding_bottom }}px; */
+    background: {{ section.settings.background_color }};
+    padding-bottom: 40px;
+  }
+  #shopify-section-{{section.id}} .section-title {
+    line-height: 119%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #0F2038;
+  }
+  #shopify-section-{{section.id}} .section-subtitle {
+    font-family: 'Gochi Hand' !important;
+    line-height: 80%;
+    color: #0A131F;
+  }
+
+  /* Custom app style css */
+  #shopify-block-loox-product-reviews {
+    background: #f0fbfb;
+    margin-top: -28px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  #looxReviews {
+    background: #fff;
+  }
+  @media (max-width: 749px) {
+    {%- if section.settings.bck_image != blank -%}
+      #shopify-section-{{section.id}} .section-content {
+        background-image: url({{ section.settings.mob_bck_image | image_url:width: 1000 }});
+        background-position-y: bottom;
+      }
+    {% endif %}
+    #shopify-section-{{section.id}} .section-title br {
+      display: none;
+    }
+    #shopify-section-{{section.id}} .section-title {
+      font-size: 32px !important;
+    }
+    #shopify-section-{{section.id}} .section-subtitle {
+      font-size: 24px !important;
+    }
+  }
+{% endstyle %}
+
+<div id="PDP_loox-app" class="section-content">
+  <div class="section-header page-width">
+    {% if section.settings.heading != blank %}
+      <div class="section-title font-bold rte fs-50 fw-700 font__Lexend-Deca text-align-center">
+        {{ section.settings.heading }}
+      </div>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <div class="section-subtitle h3 fs-28 fw-400 font__Poppins text-align-center">
+        {{ section.settings.subtitle }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DDW app",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "DDW app"
+    }
+  ]
+}
+{% endschema %}

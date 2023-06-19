@@ -108,7 +108,27 @@
       margin-top: -32px;
     }
     #shopify-section-{{section.id}} .product-form__quantity {
-      display: none;
+      {% if section.settings.visible_quantity != true %}
+        display: none;
+      {% endif %}
+      max-width: 100%;
+    }
+    #shopify-section-{{section.id}} .product-form__quantity .quantity {
+      width: 100%;
+    }
+    #shopify-section-{{section.id}} .product-form__quantity .quantity:after {
+      border: 1px solid rgba(15, 32, 56, 0.2);
+      border-radius: 6px;
+    }
+    #shopify-section-{{section.id}} input.quantity__input {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 119%;
+      /* identical to box height, or 24px */
+      letter-spacing: -0.01em;
+      color: #0F2038;
     }
     #shopify-section-{{section.id}} .block-text {
       display: flex;
@@ -162,13 +182,62 @@
     #shopify-section-{{section.id}} .accordion__item__header.active + .accordion__item__content {
       display: block;
     }
+    #shopify-section-{{section.id}} legend.form__label {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 190%;
+      /* or 28px */
+      color: #242424;
+    }
+    #shopify-section-{{section.id}} variant-radios label {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 119%;
+      /* identical to box height, or 19px */
+      letter-spacing: -0.01em;
+      color: #0F2038;
+      background: #fff;
+      border-radius: 50px;
+      border: none;
+      border: 1px solid #0f203830;
+    }
+    #shopify-section-{{section.id}} variant-radios input:checked + label {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 119%;
+      /* identical to box height, or 19px */
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+      background: #01BAC4;
+      border-radius: 50px;
+      border: none;
+    }
     /* End custom styl css */
 
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
-
+    #shopify-section-{{section.id}} #ddr_embed_text {
+      text-align: center !important;
+    }
+    #shopify-section-{{section.id}} #ddr_embed_text span {
+      text-align: center;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 180%;
+      /* or 29px */
+      text-align: center;
+      color: rgba(27, 27, 27, 0.9);
+    }
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
@@ -249,7 +318,85 @@
   <div id="section__maing-roduct" class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
+      {% comment %} {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'faq' -%}
+            <div class="faq-section">
+              {% if block.settings.question1 != blank %}
+              <div class="FaQ_Each accordion__item">
+                <div class="accordion__item__header">
+                  {% if block.settings.question1 != blank %}
+                    <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question1 }}</div>
+                  {% endif %}
+                </div>
+                <div class="accordion__item__content">
+                  {% if block.settings.answer1 != blank %}
+                    <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer1 }}</div>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+              {% if block.settings.question2 != blank %}
+              <div class="FaQ_Each accordion__item">
+                <div class="accordion__item__header">
+                  {% if block.settings.question2 != blank %}
+                    <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question2 }}</div>
+                  {% endif %}
+                </div>
+                <div class="accordion__item__content">
+                  {% if block.settings.answer2 != blank %}
+                    <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer2 }}</div>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+              {% if block.settings.question3 != blank %}
+              <div class="FaQ_Each accordion__item">
+                <div class="accordion__item__header">
+                  {% if block.settings.question3 != blank %}
+                    <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question3 }}</div>
+                  {% endif %}
+                </div>
+                <div class="accordion__item__content">
+                  {% if block.settings.answer3 != blank %}
+                    <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer3 }}</div>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+              {% if block.settings.question4 != blank %}
+              <div class="FaQ_Each accordion__item">
+                <div class="accordion__item__header">
+                  {% if block.settings.question4 != blank %}
+                    <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question4 }}</div>
+                  {% endif %}
+                </div>
+                <div class="accordion__item__content">
+                  {% if block.settings.answer4 != blank %}
+                    <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer4 }}</div>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+              {% if block.settings.question5 != blank %}
+              <div class="FaQ_Each accordion__item">
+                <div class="accordion__item__header">
+                  {% if block.settings.question5 != blank %}
+                    <div class="question fs-16 fw-600 font__Poppins">{{ block.settings.question5 }}</div>
+                  {% endif %}
+                </div>
+                <div class="accordion__item__content">
+                  {% if block.settings.answer5 != blank %}
+                    <div class="answer fs-16 fw-400 font__Lexend-Deca">{{ block.settings.answer5 }}</div>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%} {% endcomment %}
     </div>
+    
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <product-info
         id="ProductInfo-{{ section.id }}"
@@ -490,6 +637,8 @@
               </p>
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
+            {%- when 'pdp-ddr-text' -%}
+              <div id='ddr_embed_text'></div>
             {%- when 'collapsible_tab' -%}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
@@ -518,7 +667,7 @@
                 {% # theme-check-disable %}
                 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
                 {% # theme-check-enable %}
-                <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
+                {% comment %} <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
                   <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
                     <span class="loading-overlay hidden">
@@ -536,7 +685,7 @@
                     </span>
                     <span>({{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}})</span>
                   </span>
-                </label>
+                </label> {% endcomment %}
                 <quantity-input class="quantity">
                   <button class="quantity__button no-js-hidden" name="minus" type="button">
                     <span class="visually-hidden">
@@ -1248,6 +1397,11 @@
           "content": "t:sections.main-product.blocks.share.settings.title_info.content"
         }
       ]
+    },
+    {
+      "type": "pdp-ddr-text",
+      "limit": 1,
+      "name": "DDR text"
     },
     {
       "type": "custom_liquid",
@@ -2385,6 +2539,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "visible_quantity",
+      "default": true,
+      "label": "Visible quantity"
+    },
     {
       "type": "color",
       "id": "background_color",
