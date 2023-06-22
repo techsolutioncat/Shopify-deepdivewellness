@@ -27,6 +27,12 @@
     max-width: 126px;
   }
   @media (max-width: 759px) {
+    #shopify-section-{{section.id}} .block-icons {
+      gap: 16px;
+    }
+    #shopify-section-{{section.id}} .block-icons .icon {
+      width: calc(50% -16px);
+    }
     #shopify-section-{{section.id}} .heading {
       font-size: 32px !important;
     }

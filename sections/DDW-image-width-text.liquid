@@ -24,6 +24,11 @@
       }
     }
   {% endif %}
+  
+  #shopify-section-{{section.id}} img.mobile-image {
+    display: none;
+  }
+
   #shopify-section-{{section.id}} .top-heading {
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -101,6 +106,14 @@
     }
   }
   @media (max-width: 749px) {
+    {% if section.settings.section_mob_image != blank %}
+      #shopify-section-{{section.id}} img.section-image {
+        display: none;
+      }
+      #shopify-section-{{section.id}} img.mobile-image {
+        display: block;
+      }
+    {% endif %}
     #shopify-section-{{section.id}} .top-heading-wrap .top-heading {
       font-size: 11px !important;
       line-height: 180%;
@@ -111,10 +124,11 @@
         display: none;
       }
       #shopify-section-{{section.id}} .heading {
-          font-size: 32px !important;
+        font-size: 28px !important;
+        margin-top: 25px;
       }
       #shopify-section-{{section.id}} .section-text {
-          font-size: 14px !important;
+        font-size: 14px !important;
       }
       #shopify-section-{{section.id}} .block-area {
           display: flex;
@@ -150,7 +164,10 @@
     <div class="content-wrap d-flex">
       <div class="{% if section.settings.layout_width == 'half_width' %}half-width{% endif %} image-content left-image {% if section.settings.layout == 'right_image' %} display-none {% endif %}">
         {% if section.settings.section_image != blank %}
-          <img src="{{ section.settings.section_image | image_url: width: 1000 }}">
+          <img class="section-image" src="{{ section.settings.section_image | image_url: width: 1000 }}">
+        {% endif %}
+        {% if section.settings.section_mob_image != blank %}
+          <img class="mobile-image" src="{{ section.settings.section_mob_image | image_url: width: 1000 }}">
         {% endif %}
       </div>
 
@@ -278,6 +295,11 @@
       "type": "image_picker",
       "id": "section_image",
       "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_mob_image",
+      "label": "Mobile image"
     },
     {
       "type": "header",
