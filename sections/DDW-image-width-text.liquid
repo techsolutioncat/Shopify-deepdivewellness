@@ -16,6 +16,30 @@
       #shopify-section-{{section.id}} .content-wrap .text-content {
         width: 50%;
       }
+      #shopify-section-{{section.id}} .page-width {
+        padding-right: 0px;
+      }
+      #shopify-section-{{section.id}} .content-wrap .image-content {
+        position: absolute;
+        right: 0;
+      }
+      #shopify-section-{{section.id}} .content-wrap .image-content img {
+        width: 100%;
+      }
+
+      @media (max-width: 1000px) {
+        #shopify-section-{{section.id}} .content-wrap .image-content {
+          position: relative;
+        }
+        #shopify-section-{{section.id}} .page-width {
+          padding-right: 5rem;
+        }
+      }
+      @media (max-width: 749px) {
+        #shopify-section-{{section.id}} .page-width {
+          padding-right: 1.5rem;
+        }
+      }
     }
     @media (max-width: 1400px) {
       #shopify-section-{{section.id}} .content-wrap .image-content img {
@@ -75,6 +99,15 @@
   #shopify-section-{{section.id}} .section-button .site-button {
     padding: 12px 34px;
   }
+  #shopify-section-{{section.id}} .img__mobile {
+    display: none;
+  }
+  #shopify-section-{{section.id}} .img__desktop,  
+  #shopify-section-{{section.id}} .img__mobile {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 9px;
+  }
   @media (max-width: 1650px) {
     #shopify-section-{{section.id}} .content-wrap .text-content {
       width: 60%;
@@ -114,6 +147,15 @@
         display: block;
       }
     {% endif %}
+    #shopify-section-{{section.id}} .heading {
+      text-align: left;
+    }
+    #shopify-section-{{section.id}} .img__mobile {
+      display: initial;
+    }
+    #shopify-section-{{section.id}} .img__desktop {
+      display: none;
+    }
     #shopify-section-{{section.id}} .top-heading-wrap .top-heading {
       font-size: 11px !important;
       line-height: 180%;
@@ -125,7 +167,6 @@
       }
       #shopify-section-{{section.id}} .heading {
         font-size: 28px !important;
-        margin-top: 25px;
       }
       #shopify-section-{{section.id}} .section-text {
         font-size: 14px !important;
@@ -141,7 +182,7 @@
           margin-top: 29px;
       }
       #shopify-section-{{section.id}} .section-content {
-          padding-top: 50px;
+          padding-top: 0px;
           padding-bottom: 50px;
       }
       #shopify-section-{{section.id}} .left-image img {
@@ -185,7 +226,10 @@
             <h2 class="heading fw-700 fs-44 font__Lexend-Deca">
               {{ section.settings.heading | split: '</p>' }}
               {% if section.settings.heading_image != blank %}
-                <img src="{{ section.settings.heading_image | image_url: width: 300 }}">
+                <img class="img__desktop" src="{{ section.settings.heading_image | image_url: width: 300 }}">
+              {% endif %}
+              {% if section.settings.heading_mob_image != blank %}
+                <img class="img__mobile" src="{{ section.settings.heading_mob_image | image_url: width: 300 }}">
               {% endif %}
             </h2>
           {% else %}
@@ -281,6 +325,11 @@
       "type": "image_picker",
       "id": "heading_image",
       "label": "Heading image"
+    },
+    {
+      "type": "image_picker",
+      "id": "heading_mob_image",
+      "label": "Heading mobile image"
     },
     {
       "type": "color",
