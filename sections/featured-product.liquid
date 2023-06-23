@@ -108,7 +108,7 @@
   display: flex;
   justify-content: center;
   gap: 13px;
-  margin-top: 38px;
+  /* margin-top: 38px; */
   width: 107%;
 }
 #shopify-section-{{section.id}} form[data-type=add-to-cart-form] {
@@ -157,8 +157,12 @@
   }
 }
 @media(max-width: 759px) {
+  #shopify-section-{{section.id}} .pack-group {
+    justify-content: center;
+    gap: 16px;
+  }
   #shopify-section-{{section.id}} .pack-group .pack-item {
-    width: calc((100% - 16px)/2);
+    width: 120px;
     margin-bottom: 50px;
   }
   #shopify-section-{{section.id}} .pack-group .pack-item:nth-child(3),

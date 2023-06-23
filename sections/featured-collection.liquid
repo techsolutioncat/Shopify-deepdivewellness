@@ -44,6 +44,9 @@
 -%}
 
 {% style %}
+#shopify-section-{{section.id}} .product-grid {
+  justify-content: center;
+}
 #shopify-section-{{section.id}} .card--standard .card__inner {
   border: 1px solid #DDDDDD;
 }
@@ -107,6 +110,11 @@
   }
   #shopify-section-{{section.id}} .price-item--last {
     font-size: 18px !important;
+  }
+  #shopify-section-{{section.id}} .card-information,
+  #shopify-section-{{section.id}} .card__heading
+  {
+    text-align: center;
   }
 }
 {% endstyle %}
