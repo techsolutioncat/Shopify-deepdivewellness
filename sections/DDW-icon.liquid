@@ -19,9 +19,19 @@
       max-height: 235px;
   }
   @media (max-width: 720px) {
-      #shopify-section-{{section.id}} .icon-grid .icon {
-          width: calc((100% - 10px)/3);
-      }
+    #shopify-section-{{section.id}} .icon-grid .icon {
+      width: calc((100% - 10px)/3);
+      text-align: center;
+    }
+    #shopify-section-{{section.id}} .icon-grid .icon:first-child,
+    #shopify-section-{{section.id}} .icon-grid .icon:last-child
+    {
+      width: 100%;
+      max-width: 100%;
+    }
+    #shopify-section-{{section.id}} .icon-grid {
+      gap: 30px;
+    }
   }
 {% endstyle %}
 

@@ -43,7 +43,8 @@
   }
   @media (max-width: 1000px) {
     #shopify-section-{{section.id}} .table-wrap table tr td {
-      font-size: 16px !important;
+      font-size: 15px !important;
+      line-height: 120%;
     }
     #shopify-section-{{section.id}} .section-title {
       font-size: 28px !important;
@@ -66,6 +67,9 @@
   @media (max-width: 500px) {
     #shopify-section-{{section.id}} .table-wrap table tr:nth-child(1) img:nth-child(1){
       margin-left: 0px;
+    }
+    #shopify-section-{{section.id}} .table-wrap svg {
+      width: 28px;
     }
   }
 {% endstyle %}
