@@ -269,6 +269,22 @@ header.header a.header__icon--cart {
   margin-top: 6px;
 }
 
+button.pp-button-enter {
+  background: #8FC10A !important;
+  border-radius: 38px !important;
+  color: #fff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  border: none !important;
+}
+
+button.pp-button-enter::after {
+  box-shadow: none !important;
+}
+
 @media (max-width: 1200px) {
   .header--middle-left .header__inline-menu {
     margin-left: 0px;
