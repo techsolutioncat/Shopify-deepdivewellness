@@ -1,104 +1,627 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-product",
-        "blocks": {
-          "vendor": {
-            "type": "text",
-            "settings": {
-              "text": "{{ product.vendor }}",
-              "text_style": "uppercase"
-            }
-          },
-          "title": {
-            "type": "title",
-            "settings": {}
-          },
-          "price": {
-            "type": "price",
-            "settings": {}
-          },
-          "variant_picker": {
-            "type": "variant_picker",
-            "settings": {
-              "picker_type": "button"
-            }
-          },
-          "quantity_selector": {
-            "type": "quantity_selector",
-            "settings": {}
-          },
-          "buy_buttons": {
-            "type": "buy_buttons",
-            "settings": {
-              "show_dynamic_checkout": true,
-              "show_gift_card_recipient": false
-            }
-          },
-          "description": {
-            "type": "description",
-            "settings": {}
-          },
-          "share": {
-            "type": "share",
-            "settings": {
-              "share_label": "Share"
-            }
-          },
-          "loox-rating": {
-            "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-            "settings": {}
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "“Game changer, keeps the water cold at all times”",
+            "text_style": "subtitle"
           }
         },
-        "block_order": [
-          "vendor",
-          "title",
-          "price",
-          "loox-rating",
-          "variant_picker",
-          "quantity_selector",
-          "buy_buttons",
-          "description",
-          "share"
-        ],
-        "settings": {
-          "enable_sticky_info": true,
-          "media_size": "large",
-          "constrain_to_viewport": true,
-          "media_fit": "contain",
-          "gallery_layout": "stacked",
-          "media_position": "left",
-          "image_zoom": "lightbox",
-          "mobile_thumbnails": "hide",
-          "hide_variants": true,
-          "enable_video_looping": false,
-          "padding_top": 36,
-          "padding_bottom": 12
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_title": "<p>DeepDive Wellness® -<br\/><strong>XL Plunge Bath<\/strong><\/p>"
+          }
+        },
+        "2c3d12cd-1b51-45d6-bd99-739de2a7238f": {
+          "type": "loox-rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "text1": "31+ Positive Reviews",
+            "text2": "Satisfaction Guarantee",
+            "text3": "FREE & Fast Shipping"
+          }
+        },
+        "60b135fd-db28-42c9-bf54-98188390070c": {
+          "type": "tab-description",
+          "settings": {
+            "title1": "Description",
+            "text1": "<p>Designed for both ice bath enthusiasts and professional athletes, Our <strong>XL<\/strong> <strong>Plunge Bath<\/strong> from <strong>Deep Dive Wellness <\/strong>is crafted with a hardened solid-wall construction, providing ample space for up to <strong>two people<\/strong> to fully submerge and enjoy the benefits of cold water therapy.<br><br><\/p>",
+            "title2": "Chiller Specs",
+            "text2": "<p><span style=\"color: #33cccc;\"><strong>1 HP Chiller<\/strong><\/span><\/p>\n<p>Parameter 1 HP Chiller:<\/p>\n<ul>\n<li>Input Voltage: 110V<\/li>\n<li>Rated Frequency: 50Hz<\/li>\n<li>Working Current: 3.2A<\/li>\n<li>Water Refrigerated: 79 - 528 gallons<\/li>\n<li>Power: 1 HP<\/li>\n<li>Refrigerating Capacity: 1800W<\/li>\n<li>Recommended Flow Rate: 396 - 1057 gal\/h<\/li>\n<li>Watts: 550W<\/li>\n<li>Refrigerant: R134a<\/li>\n<li>Refrigerant Weight: 280g<\/li>\n<li>Product Size: 20 in x 16 in x 19 in<\/li>\n<li>Gross Weight: 69 lbs<\/li>\n<\/ul>\n<p><span style=\"color: #33cccc;\"><strong>1\/2 HP Chiller<\/strong><\/span><\/p>\n<p>Parameter 1\/2 HP Chiller:<\/p>\n<ul>\n<li>Input Voltage: 110V<\/li>\n<li>Rated Frequency: 50Hz<\/li>\n<li>Working Current: 2.4A<\/li>\n<li>Water Refrigerated: 53 - 317 gallons<\/li>\n<li>Power: ½ HP<\/li>\n<li>Refrigerating Capacity: 790W<\/li>\n<li>Recommended Flow Rate: 317 - 793 gal\/h<\/li>\n<li>Watts: 375W<\/li>\n<li>Refrigerant: R134a<\/li>\n<li>Refrigerant Weight: 260g<\/li>\n<li>Product Size: 18 in × 14 in × 19 in<\/li>\n<li>Gross Weight: 48 lbs<\/li>\n<\/ul>\n<p><span style=\"color: #33cccc;\"><strong>1\/4 HP Chiller<\/strong><\/span><\/p>\n<p>Parameter 1\/4 Chiller:<\/p>\n<ul>\n<li>Input Voltage: 110V<\/li>\n<li>Rated Frequency: 50Hz<\/li>\n<li>Working Current: 1.4A<\/li>\n<li>Water Refrigerated: 26 - 211 gallons<\/li>\n<li>Power: ¼ HP<\/li>\n<li>Refrigerating Capacity: 390W<\/li>\n<li>Recommended Flow Rate: 132 - 660 gal\/h<\/li>\n<li>Watts: 190W<\/li>\n<li>Refrigerant: R134a<\/li>\n<li>Refrigerant Weight: 220g<\/li>\n<li>Product Size: 17 in × 13 in × 17 in<\/li>\n<li>Gross Weight: 41 lbs<\/li>\n<\/ul>\n\n<p>Note: Pump, filter, and hoses are not included with the chiller purchase; use the recommended flow rate to select a compatible water pump.<\/p>"
+          }
+        },
+        "e86338cd-ea72-42cb-bfd8-c355fe991a38": {
+          "type": "pdp-ddr-text",
+          "settings": {}
+        },
+        "00b89dca-8d4d-4c3f-b6f8-db5a4b6d71d4": {
+          "type": "faq",
+          "settings": {
+            "question1": "Bath Specifications",
+            "answer1": "<ul>\n<li>\n<h5>XL Plunge Bath<\/h5>\n<ul>\n<li>63 gal (240 L) capacity<\/li>\n<li>Weight: 30 Ib (13 Kg)<\/li>\n<li>Dimensions: 150(L) x 70(W) x 62(H) cm.<\/li>\n<li>Room for 2 people.<\/li>\n<li>Reinforced, skin-safe PVC for top durability.<\/li>\n<li>Cold-resistant: -7.6 °F (-22 °C)<\/li>\n<li>Insulated build for stable performance.<\/li>\n<li>Provided carry bag for easy transport.<\/li>\n<\/ul>\n<h5>DD Chiller<\/h5>\n<ul>\n<li>Chills to a refreshing 3 °C (37 °F).<\/li>\n<li>Features UV and particle filtration.<\/li>\n<li>All-in-one, portable design.<\/li>\n<li>Plug-and-play, self-priming pump.<\/li>\n<li>WiFi-enabled for remote control.<\/li>\n<li>Suitable for indoor\/outdoor use.<\/li>\n<li>Equipped with safety shutoff.<\/li>\n<li>Constructed with industrial-grade components.<\/li>\n<\/ul>\n<\/li>\n<\/ul>",
+            "question2": "Dimensions",
+            "answer2": "<h5>XL Plunge Bath<\/h5>\n<ul>\n<li>Dimensions: 150(L) x 70(W) x 62(H) cm.<\/li>\n<li>Capacity: 63 gal (240 L)<\/li>\n<li>Weight: 30 Ib (13 Kg)<\/li>\n<li>Room for 2 people.<\/li>\n<\/ul>\n<p> <\/p>\n<h5>DD Chiller<\/h5>\n<ul>\n<li>Dimensions: 54 (L) x 40(W) x 55(H)cm.<\/li>\n<li>Weight: 88Ib (40 kg)<\/li>\n<\/ul>",
+            "question3": "What’s Included",
+            "answer3": "<h5>XL Plunge Bath<\/h5>\n<ul>\n<li>1x Ice bath<\/li>\n<li>1x Carry bag<\/li>\n<li>Inflatable cover<\/li>\n<li>Floor pump<\/li>\n<li>Repair Kit<\/li>\n<li>Instruction manual<\/li>\n<\/ul>\n<p><strong>HC Chiller<\/strong><\/p>\n<ul>\n<li>1x Water chiller<\/li>\n<li>1x Power cable<\/li>\n<li>Connection (Inlet and outlet connectors)<\/li>\n<li>1x Product Manual<\/li>\n<li>1x Free home delivery<\/li>\n<li>1x 365 days warranty<\/li>\n<\/ul>\n<p><strong>Please Note:<\/strong> Pump, filter, and hoses are not included.<\/p>\n<p><strong>Pump Connection:<\/strong> Inlet and outlet connectors included.<\/p>",
+            "question4": "1HP vs  1\/2HP vs 1\/4 HP",
+            "answer4": "<p>The 1 HP chiller is designed for frequent users in hot climates, making it the best choice for athletes and those seeking top-notch cooling performance.<br><br><\/p>\n<p><em>All Chiller Models Feature:<\/em><\/p>\n<ul>\n<li>Microcomputer control system for convenience.<\/li>\n<li>Digital temp-controlling technology for accuracy.<\/li>\n<li>High efficiency and energy-saving operation.<\/li>\n<li>Adopts eco-friendly R134a refrigerating system.<\/li>\n<li>Anti-corrosive titanium evaporator for freshwater and seawater.<\/li>\n<li>Auto over-current power-off protection system.<\/li>\n<li>Temperature memory system for safety.<\/li>\n<\/ul>\n<p><strong><br><span style=\"color: #33cccc;\">1 HP Chiller (The Powerhouse):<\/span><\/strong><\/p>\n<ul>\n<li>Ideal for <strong>frequent users<\/strong> and <strong>hot climates<\/strong> (above 85°F \/ 30°C).<\/li>\n<li>Cools water down to a refreshing 37°F.<\/li>\n<li>Weighs 69 lbs and provides a powerful <strong>1800W<\/strong> cooling capacity (1 HP).<\/li>\n<li>Maintains consistent water temperature for a refreshing plunge.<\/li>\n<li>User-friendly controls for precise temperature adjustments.<\/li>\n<li>Low noise operation ensures a tranquil experience.<\/li>\n<li>Portable and effortless setup.<\/li>\n<li>\n<strong>Recommended Flow Rate:<\/strong> 396 - 1057 gal\/h.<\/li>\n<\/ul>\n<p><span style=\"color: #33cccc;\"><strong>1\/2 HP Chiller (The Performance Pro):<\/strong><\/span><\/p>\n<ul>\n<li>Perfect for <strong>professional athletes<\/strong> and <strong>hot climates<\/strong> (above 77°F \/ 25°C).<\/li>\n<li>Offers enhanced cooling performance, lowering water temperature to an invigorating 38°F - 40°F.<\/li>\n<li>Consistently maintains water temperature.<\/li>\n<li>Weighs 48 lbs with increased <strong>790W<\/strong> cooling power (1\/2 HP).<\/li>\n<li>Boasts superior durability for high-performance usage.<\/li>\n<li>Low noise operation for a peaceful cold plunge experience.<\/li>\n<li>User-friendly controls for temperature adjustments.<\/li>\n<li>Portable and easy to set up.<\/li>\n<li>\n<strong>Recommended Flow Rate:<\/strong> 317-793 gal\/h.<\/li>\n<\/ul>\n<p><span style=\"color: #33cccc;\"><strong>1\/4 HP Chiller (The New User's Choice):<\/strong><\/span><\/p>\n<ul>\n<li>Ideal for <strong>beginners and recreational<\/strong> users.<\/li>\n<li>Suitable for medium to low-temperature climates.<\/li>\n<li>Capable of cooling water down to 55°F - 60°F. Weighs 41 lbs ( with a <strong>300W<\/strong> cooling power (1\/4 HP).<\/li>\n<li>Offers consistent water temperature maintenance. User-friendly controls for temperature adjustments.<\/li>\n<li>Low noise operation for a peaceful experience.<\/li>\n<li>Portable and easy to set up.<\/li>\n<li>\n<strong>Recommended Flow Rate:<\/strong> 132 - 660 gal\/h.<\/li>\n<\/ul>\n<p> <\/p>\n<p><strong>Note: Pump, filter, and hoses are not included with the chiller purchase.<\/strong><\/p>\n<p><span style=\"color: #008080;\">The 1 HP Chiller is the powerhouse solution, ensuring the most refreshing cold plunge in hot conditions. The 1\/2 HP Chiller is a top performer, perfect for athletes and warm climates. For beginners and ultimate portability, the 1\/4 HP Chiller is the choice for you. Make the right move towards invigorating cold therapy!<\/span><\/p>",
+            "question5": "Return Policy",
+            "answer5": "<p>Take advantage of our 30-day return window for any concerns. Learn more about our <a href=\"https:\/\/deepdivewellness.com\/pages\/return-policy\" target=\"_new\">return and refund policy<\/a>. Once we receive your returned item at our warehouse, expect your refund to be processed within 5 business days.<\/p>\n<p>Please reach out to us at support@deepdivewellness.com for further inquiries.<\/p>"
+          }
         }
       },
-      "loox-product-reviews-app-section": {
-        "type": "apps",
-        "blocks": {
-          "loox-product-reviews": {
-            "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-            "settings": {
-              "only_photos": false,
-              "aggregated": false,
-              "hide_thumbnails": false,
-              "maxwidth": 1080
-            }
-          }
-        },
-        "block_order": [
-          "loox-product-reviews"
-        ],
-        "settings": {
-          "include_margins": false
-        }
+      "block_order": [
+        "vendor",
+        "title",
+        "2c3d12cd-1b51-45d6-bd99-739de2a7238f",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "60b135fd-db28-42c9-bf54-98188390070c",
+        "e86338cd-ea72-42cb-bfd8-c355fe991a38",
+        "00b89dca-8d4d-4c3f-b6f8-db5a4b6d71d4"
+      ],
+      "settings": {
+        "visible_quantity": true,
+        "background_color": "#f0fbfb",
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
-    "order": [
-      "main",
-      "loox-product-reviews-app-section"
-    ]
-  }
+    "1be8b667-400d-48f3-923c-3e5b985a991f": {
+      "type": "DDW-icon",
+      "blocks": {
+        "0222ee31-e74e-4915-90fb-6745e42fe8ca": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/As_Seen_On.png"
+          }
+        },
+        "eac99214-127a-48eb-9aa6-c8cce247d0d6": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2684.png"
+          }
+        },
+        "1aa044fb-237d-4767-9a39-2ace8ad4e50b": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2682.png"
+          }
+        },
+        "e2b7a4c4-ee3a-4b03-97d1-e4ffe970df34": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2683.png"
+          }
+        },
+        "cafb5180-17fa-44aa-9785-da12ae9f30c9": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2685.png"
+          }
+        },
+        "8d2b4f76-3a7f-49b2-874e-4f735fa73cc6": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2686.png"
+          }
+        }
+      },
+      "block_order": [
+        "0222ee31-e74e-4915-90fb-6745e42fe8ca",
+        "eac99214-127a-48eb-9aa6-c8cce247d0d6",
+        "1aa044fb-237d-4767-9a39-2ace8ad4e50b",
+        "e2b7a4c4-ee3a-4b03-97d1-e4ffe970df34",
+        "cafb5180-17fa-44aa-9785-da12ae9f30c9",
+        "8d2b4f76-3a7f-49b2-874e-4f735fa73cc6"
+      ],
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "0c3f5dbc-aced-48f6-b862-4510df905e0c": {
+      "type": "DDW-image-width-text",
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Designed for Both <br\/>Ice Bath Enthusiasts <br\/><strong>and Professional Athletes<\/strong><\/p>",
+        "text": "<p>Experience the perfect blend of relaxation and performance with our <strong>XL Plunge Bath<\/strong>. Designed for both <strong>ice bath enthusiasts<\/strong> and <strong>professional athletes<\/strong>, it offers an exhilarating plunge into the world of <strong>cold water therapy<\/strong>.<\/p>",
+        "background_color": "",
+        "section_image": "shopify:\/\/shop_images\/Rectangle_75_1.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "",
+        "button_link": "",
+        "layout": "left_image",
+        "layout_width": "half_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "0ec113e1-26d8-429c-b43e-01d6d3ac1818": {
+      "type": "DDW-image-width-text",
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Provides Ample Space for <strong>Up to Two People<\/strong><\/p>",
+        "text": "<p>Our <strong>XL Plunge Bath<\/strong> from Deep Dive Wellness is designed to accommodate the ultimate plunge experience for both individuals and companions. Share the rejuvenating benefits with a partner or indulge in a relaxing solo session.<\/p>",
+        "background_color": "#f0fbfb",
+        "section_image": "shopify:\/\/shop_images\/Rectangle_77.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "",
+        "button_link": "",
+        "layout": "right_image",
+        "layout_width": "half_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "0a484972-8fc8-4569-a619-e6d8602f1695": {
+      "type": "DDW-image-width-text",
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Available with Built-in<strong> ozone disinfection system<\/strong><\/p>",
+        "text": "<p>Equipped with a cutting-edge built-in <strong>ozone disinfection system<\/strong>, it ensures a thoroughly sanitized and hygienic environment for your cold water therapy sessions. <br\/><br\/>The ozone disinfection system effectively eliminates bacteria, viruses, and impurities, providing you with peace of mind and an enhanced bathing experience.<\/p>",
+        "background_color": "",
+        "section_image": "shopify:\/\/shop_images\/Rectangle_77.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "",
+        "button_link": "",
+        "layout": "left_image",
+        "layout_width": "half_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "e246a11c-507a-438a-af3b-9039e5c73b9d": {
+      "type": "DDW-image-with-cards",
+      "blocks": {
+        "42b5451e-1057-4359-8229-3bf6e000675f": {
+          "type": "card",
+          "settings": {
+            "title": "Feature",
+            "text": "Small, portable & foldable. Only weighs 7lb (3kg).",
+            "icon": "shopify:\/\/shop_images\/Group_3029.png",
+            "layout": "left_card"
+          }
+        },
+        "43c630a1-e499-4f47-85fb-f8ddc28a1f36": {
+          "type": "card",
+          "settings": {
+            "title": "Affordable",
+            "text": "Full range cold water therapy at a low the cost.",
+            "icon": "shopify:\/\/shop_images\/Group_3031.png",
+            "layout": "left_card"
+          }
+        },
+        "e36ea624-df96-4578-9f25-b4a189666c99": {
+          "type": "card",
+          "settings": {
+            "title": "User-Friendly",
+            "text": "Making cold plunges an easy part of your routine.",
+            "icon": "shopify:\/\/shop_images\/Group_3030.png",
+            "layout": "left_card"
+          }
+        },
+        "69ce0f7c-d647-482f-a4b0-8b4676653776": {
+          "type": "card",
+          "settings": {
+            "title": "Energy-Efficient",
+            "text": "Save energy without compromising on benefits.",
+            "icon": "shopify:\/\/shop_images\/Group_3032.png",
+            "layout": "right_card"
+          }
+        },
+        "8f7800a6-0a88-4090-b27a-6b4adac51e95": {
+          "type": "card",
+          "settings": {
+            "title": "Durable",
+            "text": "Built for longevity, with enhanced insulation.",
+            "icon": "shopify:\/\/shop_images\/Group_3033.png",
+            "layout": "right_card"
+          }
+        },
+        "524c0292-2fa9-43e9-bb2a-91cb120c681e": {
+          "type": "card",
+          "settings": {
+            "title": "Fits Your Space",
+            "text": "Functional design that keeps aesthetics in mind.",
+            "icon": "shopify:\/\/shop_images\/Layer_48.png",
+            "layout": "right_card"
+          }
+        }
+      },
+      "block_order": [
+        "42b5451e-1057-4359-8229-3bf6e000675f",
+        "43c630a1-e499-4f47-85fb-f8ddc28a1f36",
+        "e36ea624-df96-4578-9f25-b4a189666c99",
+        "69ce0f7c-d647-482f-a4b0-8b4676653776",
+        "8f7800a6-0a88-4090-b27a-6b4adac51e95",
+        "524c0292-2fa9-43e9-bb2a-91cb120c681e"
+      ],
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/1_0b8c47f3-cc05-42b6-b7d5-4343a27bea1b.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/2_a802e1f3-0af3-4027-b3be-0147e0c5ef3d.png",
+        "main_image": "shopify:\/\/shop_images\/Group_2797_23fa8e37-667e-4eb8-98d2-73180eb966dc.png",
+        "subtitle": "LEARN MORE",
+        "title": "<p>Premium Quality, <br\/>For a Premium Lifestyle<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "padding_top": 130,
+        "padding_bottom": 170
+      }
+    },
+    "6f124f69-7716-49bf-ac27-6ebf8d917749": {
+      "type": "DDW-table",
+      "blocks": {
+        "78166e77-b573-44c2-a7f8-dafd6f8c9285": {
+          "type": "cell",
+          "settings": {
+            "title1": "Portable Design",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "52994ebb-7ba8-44bc-839c-b6559413276f": {
+          "type": "cell",
+          "settings": {
+            "title1": "Easy to Use & Maintain",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "44b597eb-53df-4681-9503-ea17c86c8d33": {
+          "type": "cell",
+          "settings": {
+            "title1": "Enhanced Insulation",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "570b1871-137d-4c88-9df6-847e48d0e46c": {
+          "type": "cell",
+          "settings": {
+            "title1": "Lightweight",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "2e391332-810f-48f5-8f33-6d55ad692eae": {
+          "type": "cell",
+          "settings": {
+            "title1": "FREE Insured Shipping",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "d0118036-16ea-4eab-a53a-1fe337eb9bf2": {
+          "type": "cell",
+          "settings": {
+            "title1": "5-star Customer Support",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "8068ef1b-a7aa-4342-8531-5a7b69ffb191": {
+          "type": "cell",
+          "settings": {
+            "title1": "30-Day Guarantee",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        }
+      },
+      "block_order": [
+        "78166e77-b573-44c2-a7f8-dafd6f8c9285",
+        "52994ebb-7ba8-44bc-839c-b6559413276f",
+        "44b597eb-53df-4681-9503-ea17c86c8d33",
+        "570b1871-137d-4c88-9df6-847e48d0e46c",
+        "2e391332-810f-48f5-8f33-6d55ad692eae",
+        "d0118036-16ea-4eab-a53a-1fe337eb9bf2",
+        "8068ef1b-a7aa-4342-8531-5a7b69ffb191"
+      ],
+      "settings": {
+        "heading": "<p>See Why Thousands Choose Our XL Cold Plunge Bath<\/p>",
+        "subtitle": "<p>Compare the differences between our  portable, convenient solution<br\/>vs. expensive, bulky ice baths.<\/p>",
+        "background_color": "#eafeff",
+        "image1": "shopify:\/\/shop_images\/image_1.png",
+        "image2": "shopify:\/\/shop_images\/vs.png",
+        "image3": "shopify:\/\/shop_images\/Other_Brands.png",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "547e2de4-9109-49ad-a1f8-a9baa6a58928": {
+      "type": "DDW-full-width-image-grid",
+      "blocks": {
+        "b7847db3-6401-4c1a-81cc-b775716bda3d": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_71.png"
+          }
+        },
+        "0144eaf1-7ac5-49c4-939e-915a5c8b2bb1": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_74.png"
+          }
+        },
+        "cc8d69d7-8cfa-4b30-96bb-9e840c92609c": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_73.png"
+          }
+        },
+        "6b84aa48-32a5-4c84-b657-3011ad74aff0": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_76.png"
+          }
+        },
+        "e286ae26-9e5b-4063-899a-2de776e21864": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_72.png"
+          }
+        },
+        "8166e13b-e4bf-49a9-9356-eec791d157e0": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_75.png"
+          }
+        }
+      },
+      "block_order": [
+        "b7847db3-6401-4c1a-81cc-b775716bda3d",
+        "0144eaf1-7ac5-49c4-939e-915a5c8b2bb1",
+        "cc8d69d7-8cfa-4b30-96bb-9e840c92609c",
+        "6b84aa48-32a5-4c84-b657-3011ad74aff0",
+        "e286ae26-9e5b-4063-899a-2de776e21864",
+        "8166e13b-e4bf-49a9-9356-eec791d157e0"
+      ],
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/left.png",
+        "left_title": "100% Satisfaction Guarantee",
+        "left_text": "If you're not happy with your XL Plunge Bath for any reason, simply return it within 30 days for a full refund (unused condition). Your happiness is our priority!",
+        "right_image": "shopify:\/\/shop_images\/right.png",
+        "right_title": "1 Year Warranty",
+        "right_text": "The Water Chiller is backed by a 1-year manufacturer's warranty included with your purchase. Additionally, you have the option to purchase an extended warranty when adding the product to your cart."
+      }
+    },
+    "88b316a8-0ab5-49cb-86d4-23aad6ce3501": {
+      "type": "DDW-app",
+      "settings": {
+        "heading": "<p>Read the Reviews<\/p>",
+        "subtitle": "<p>Can you feel the love?<\/p>",
+        "background_color": "#f0fbfb",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "b4adb375-a4d8-4f5a-92c6-9cda3bf3e300": {
+      "type": "DDW-faq",
+      "blocks": {
+        "f0b3c886-b661-472e-838f-c0dac146cb3d": {
+          "type": "faq",
+          "settings": {
+            "question": "Can the XL Plunge Bath accommodate two people?",
+            "answer": "Yes, it can! The XL Plunge Bath is designed to comfortably accommodate two individuals at the same time. With ample space and thoughtful design, you and a partner can enjoy the benefits of cold water therapy together. The dimensions of the XL Plunge Bath are 1.5 m x 0.8 m x 0.6 m, providing ample room for a shared experience.",
+            "color_scheme": "background-1"
+          }
+        },
+        "2e26b588-b6c3-415c-ba6d-4a74cc30a509": {
+          "type": "faq",
+          "settings": {
+            "question": "What are the benefits of cold plunge bathing?",
+            "answer": "Cold plunge bathing has been shown to provide benefits such as reduced pain, improved circulation, reduced stress, increased mental clarity, and improved immune function.",
+            "color_scheme": "background-1"
+          }
+        },
+        "23cb0f6e-b52b-4745-b61d-3f53a333cfea": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath outdoors?",
+            "answer": "Yes, you can use a cold plunge bath outdoors, but it is important to protect the tub from weather elements",
+            "color_scheme": "background-1"
+          }
+        },
+        "2dd6d84e-dc79-49b7-83c0-3bae33402d42": {
+          "type": "faq",
+          "settings": {
+            "question": "What temperature should the water be for a cold plunge bath?",
+            "answer": "The temperature of the water for a cold plunge bath typically ranges from 50-60°F.",
+            "color_scheme": "background-1"
+          }
+        },
+        "600f8eb6-7952-40d9-8491-41cf3bf9a1a0": {
+          "type": "faq",
+          "settings": {
+            "question": "How long should I stay in the cold plunge bath?",
+            "answer": "The length of time you should stay in the cold plunge bath will depend on your individual tolerance. It is recommended to start with short durations (1-3 minutes) and gradually increase as your body becomes accustomed to the therapy.",
+            "color_scheme": "background-1"
+          }
+        },
+        "94bb9133-bd9c-4cae-a975-1a6032836c35": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I wear during a cold plunge bath?",
+            "answer": "It is recommended to wear a swimsuit or other appropriate clothing during a cold plunge bath.",
+            "color_scheme": "background-1"
+          }
+        },
+        "3e71bc0f-dec8-4e8c-8fec-d5b1ce31e0d2": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath if I have sensitive skin?",
+            "answer": "Cold water therapy may not be appropriate for individuals with sensitive skin. It is always best to consult with a healthcare professional to determine if this therapy is right for you.",
+            "color_scheme": "background-1"
+          }
+        },
+        "641fb891-c75f-426c-a0a3-8291f76219c1": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my cold plunge bath?",
+            "answer": "It is important to keep your cold plunge bath clean and well-maintained to ensure the best possible experience and to prevent the growth of harmful bacteria. Regular cleaning and proper storage can help extend the life of your tub.",
+            "color_scheme": "background-1"
+          }
+        },
+        "35f0fdd2-8781-4e43-8245-b8b3427211ee": {
+          "type": "faq",
+          "settings": {
+            "question": "Does the DD Chiller keep the water clean?",
+            "answer": "Absolutely! The DD Chiller is equipped with a state-of-the-art built-in ozone disinfection system. It effectively eliminates bacteria, viruses, and impurities, providing you with the cleanest and most hygienic ice bath experience. Say goodbye to worries about contaminants as the ozone disinfection system ensures the water in your plunge bath is purified to perfection. Enjoy the ultimate peace of mind and rejuvenation with our DD Chiller's advanced built-in ozone disinfection system.",
+            "color_scheme": "background-1"
+          }
+        },
+        "b07b525d-7d3f-4a12-9eca-95f8d3d1cd44": {
+          "type": "faq",
+          "settings": {
+            "question": "Does the DD Chiller need to be left on?",
+            "answer": "It is recommended to leave the DD Chiller on when the ice bath is not in use. This allows the chiller to continuously filter the water, ensuring its freshness and cleanliness. However, remember to switch off the chiller during an actual ice bath session.",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "f0b3c886-b661-472e-838f-c0dac146cb3d",
+        "2e26b588-b6c3-415c-ba6d-4a74cc30a509",
+        "23cb0f6e-b52b-4745-b61d-3f53a333cfea",
+        "2dd6d84e-dc79-49b7-83c0-3bae33402d42",
+        "600f8eb6-7952-40d9-8491-41cf3bf9a1a0",
+        "94bb9133-bd9c-4cae-a975-1a6032836c35",
+        "3e71bc0f-dec8-4e8c-8fec-d5b1ce31e0d2",
+        "641fb891-c75f-426c-a0a3-8291f76219c1",
+        "35f0fdd2-8781-4e43-8245-b8b3427211ee",
+        "b07b525d-7d3f-4a12-9eca-95f8d3d1cd44"
+      ],
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/d.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/m.png",
+        "title": "Frequently Asked Questions",
+        "subtitle": "<p>New to cold water therapy? It might seem a little chilly at first, but <br\/>we're here to answer all your questions and help you get started.<\/p>",
+        "bottom_text": "<p>Still got questions? Email us:<br\/><strong>support@deepdivewellness.com<\/strong><br\/>Our customer service team is always ready to help!<\/p>",
+        "color_scheme": "background-1",
+        "padding_top": 160,
+        "padding_bottom": 80
+      }
+    },
+    "82a7a191-126f-4e6c-8650-20398d7412ee": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Others Also Liked",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "collection3",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16869400174ecaf4ea": {
+      "type": "apps",
+      "blocks": {
+        "9c438c54-cc5a-4d3c-bae9-0689e6890777": {
+          "type": "shopify:\/\/apps\/ultimate-delivery-date-range\/blocks\/ddr_phrase\/06a5e0ea-a85f-42f8-95ff-50fc43429315",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "9c438c54-cc5a-4d3c-bae9-0689e6890777"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1be8b667-400d-48f3-923c-3e5b985a991f",
+    "0c3f5dbc-aced-48f6-b862-4510df905e0c",
+    "0ec113e1-26d8-429c-b43e-01d6d3ac1818",
+    "0a484972-8fc8-4569-a619-e6d8602f1695",
+    "e246a11c-507a-438a-af3b-9039e5c73b9d",
+    "6f124f69-7716-49bf-ac27-6ebf8d917749",
+    "547e2de4-9109-49ad-a1f8-a9baa6a58928",
+    "88b316a8-0ab5-49cb-86d4-23aad6ce3501",
+    "loox-product-reviews-app-section",
+    "b4adb375-a4d8-4f5a-92c6-9cda3bf3e300",
+    "82a7a191-126f-4e6c-8650-20398d7412ee",
+    "16869400174ecaf4ea"
+  ]
+}

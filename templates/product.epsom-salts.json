@@ -1,0 +1,732 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "“Game changer, keeps the water cold at all times”",
+            "text_style": "subtitle"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "product_title": ""
+          }
+        },
+        "da046c69-a6a1-413e-95f8-7198918a1c6e": {
+          "type": "loox-rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "1064281b-92fa-45c7-a931-39a92508da4e": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "epsom-recovery-salt"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "text1": "1000+ Positive Reviews",
+            "text2": " 30-Day Satisfaction Guarantee",
+            "text3": "Free & Fast Shipping"
+          }
+        },
+        "cf729f3b-dd44-4889-bce1-dfb63ceaa42e": {
+          "type": "pdp-ddr-text",
+          "settings": {}
+        },
+        "89421efa-a70b-4fef-a267-421c8c497af7": {
+          "type": "description",
+          "settings": {}
+        },
+        "03fe2167-42d5-45aa-a219-36b1c058f8d5": {
+          "type": "tab-description",
+          "disabled": true,
+          "settings": {
+            "title1": "Description",
+            "text1": "<p>Introducing the Deep Dive Wellness Water Chiller: your ultimate compact and cost-effective ice bath solution. Rapidly cool water to an invigorating 41°F (5°C) <strong>without ice<\/strong>. Perfect for indoor and outdoor use, our <strong>energy-efficient chiller (280 watts)<\/strong> enhances your cold plunge experience. Elevate your wellness journey with the <strong>superior convenience and performance<\/strong> of the Deep Dive Wellness Water Chiller.<\/p>",
+            "title2": "Specifications",
+            "text2": "<h3><span style=\"color: #33cccc;\"><strong>STANDARD<\/strong><\/span><\/h3>\n<p><strong>Power:<\/strong> Ultra-efficient 1\/3 HP compressor, consuming only 280W for optimal energy savings.<\/p>\n<p><strong>Temperature: <\/strong>Precisely cools water to a revitalizing 41 °F (5 °C) for the ultimate ice bath experience.<\/p>\n<p><strong>Weight:<\/strong> A lightweight 40lbs (18 kg), making it easy to transport and position.<br><br><strong>Filter: <\/strong>External filter.<\/p>\n<p><strong>Water pump:<\/strong> External Pump.<br><strong><br>Dimensions:<\/strong> Measuring 12x12x13in (29x29x32cm), our chiller is designed for effortless mobility and placement.<\/p>\n<p><strong>Eco-friendly:<\/strong> Consumes a mere $0.5\/day or 1.4 kWh per day (24-hour usage), reducing your energy costs.<\/p>\n<p><strong>Coating:<\/strong> Matte black corrosion resistant paint on a steel box & frame.<\/p>\n<p><strong>Indoor\/Outdoor use:<\/strong> Both, the chiller can also be used outdoors, but we recommend covering it, so it doesn't get dirt, water etc. on it.<\/p>\n<h3>\n<br><span style=\"color: #33cccc;\"><strong>PREMIUM<\/strong><\/span>\n<\/h3>\n<p><strong>Power:<\/strong> Ultra-efficient 1\/2 HP compressor, consuming only 370W .<br><br><strong>Temperature:<\/strong> Precisely cools water to a revitalizing 39 °F (4 °C) for the ultimate ice bath experience.<br><br><strong>Weight:<\/strong> A lightweight 62lbs (28 kg), making it easy to transport and position.<br><br><strong>Filter<\/strong>: External filter.<br><br><strong>Water pump: <\/strong>External Pump.<br><br><strong>Dimensions: <\/strong>Measuring 13x13x15in (34x34x37cm), our chiller is designed for effortless mobility and placement.<br><br><strong>Eco-friendly:<\/strong> Consumes a mere $0.9\/day<\/p>\n<p><span style=\"color: #33cccc;\"><em><strong>(Plunge bath Specifications)<\/strong><\/em><\/span><br><br><strong>Spacious Design:<\/strong> 32in (80 cm) diameter and 29in (72 cm) height for optimal comfort during use.<br>Ultra-lightweight: Weighs only 7lb (3 kg) for hassle-free relocation.<br><br><strong>High Capacity:<\/strong> Holds up to 79gal (300L) for an immersive cold plunge experience.<br><br><strong>Inclusive Sizing: <\/strong>Designed to accommodate users up to 6'9ft (2.1 m) in height.<\/p>"
+          }
+        },
+        "531aeeee-b371-4ddb-a419-d189f96c9468": {
+          "type": "faq",
+          "settings": {
+            "question1": "How to Use in Your Ice Bath",
+            "answer1": "<ol>\n<li>\n<p><strong>Prepare Your Ice Bath:<\/strong> Fill your ice bath with cold water and add ice to reach your desired temperature. Make sure the water level is appropriate for your bath.<\/p>\n<\/li>\n<li>\n<p><strong>Add Epsom Salt Soak:<\/strong> Pour 1-2 cups of Deep Dive Wellness Epsom Salt Soak into your ice bath. The amount may vary based on your bath's size and preference.<\/p>\n<\/li>\n<li>\n<p><strong>Stir and Dissolve:<\/strong> Gently stir the water to help dissolve the Epsom Salt Soak effectively. Ensure the product is evenly distributed in your ice bath.<\/p>\n<\/li>\n<li>\n<p><strong>Submerge and Soak:<\/strong> Once the Epsom salt is fully dissolved, immerse yourself in the ice bath. Relax and soak for at least 20 minutes to experience the refreshing and rejuvenating effects.<\/p>\n<\/li>\n<li>\n<p><strong>Enjoy the Benefits:<\/strong> During your soak, the Epsom salt will work to soothe your muscles and joints while enhancing your recovery process.<\/p>\n<\/li>\n<\/ol>",
+            "question2": "Product Type",
+            "answer2": "Epsom Salt Soak",
+            "question3": "Package Dimensions",
+            "answer3": "10.79 x 7.32 x 3.31 inches; 3 Pounds",
+            "question4": "Shipping Info",
+            "answer4": "<p><strong>We ship Worldwide with USPS, UPS or FedEx.<\/strong><\/p>\n<p>See the average delivery times below:<\/p>\n<p><strong>Shipping Options:<\/strong><\/p>\n<ul>\n<li>\n<strong>Standard Shipping:<\/strong> Arrives in 5-7 business days (currently complimentary for a limited time).<\/li>\n<li>\n<strong>Expedited Shipping:<\/strong> Expected delivery within 3-5 business days.<\/li>\n<li>\n<strong>Priority Shipping:<\/strong> Anticipated delivery within 1-2 business days.<\/li>\n<\/ul>\n<p><span style=\"font-weight: 400;\">All orders are dispatched from our USA & EU Warehouse center. You will receive tracking information for your order, usually within 2-5 days after placing the order. It's important to note that we cannot guarantee delivery dates and time frames since these are subject to FedEx & USPS operations. The estimated times provided above and at checkout are based on estimates from the courier. Consequently, we are unable to issue shipping cost refunds for delayed parcels. If your parcel is delayed, we advise you to contact the respective shipping company for resolution.<\/span> <span style=\"color: #33cccc;\"><a style=\"color: #33cccc;\" href=\"https:\/\/deepdivewellness.com\/policies\/shipping-policy\">See shipping details<\/a>.<\/span><\/p>",
+            "question5": "Return Policy",
+            "answer5": "<p>We want you to be completely satisfied with your purchase of our Deep Dive Wellness products. If for any reason you're not happy with your product, you can return it for a <strong>full refund<\/strong> within 30 days of purchase. Please note that you'll need to cover the cost of shipping the product back to us. For the Chiller, the estimated return cost is $40.<\/p>\n<p>Once we receive your returned item at our warehouse, we will issue your refund within 5 business days.<br><br>Please reach out to us at support@deepdivewellness.com for further inquiries.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "da046c69-a6a1-413e-95f8-7198918a1c6e",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "1064281b-92fa-45c7-a931-39a92508da4e",
+        "buy_buttons",
+        "cf729f3b-dd44-4889-bce1-dfb63ceaa42e",
+        "89421efa-a70b-4fef-a267-421c8c497af7",
+        "03fe2167-42d5-45aa-a219-36b1c058f8d5",
+        "531aeeee-b371-4ddb-a419-d189f96c9468"
+      ],
+      "settings": {
+        "visible_quantity": true,
+        "background_color": "#f0fbfb",
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 60,
+        "padding_bottom": 52
+      }
+    },
+    "1686939115e9285c6a": {
+      "type": "apps",
+      "blocks": {
+        "3e7cba51-adfc-4427-b362-66a6bf55af25": {
+          "type": "shopify:\/\/apps\/ultimate-delivery-date-range\/blocks\/ddr_phrase\/06a5e0ea-a85f-42f8-95ff-50fc43429315",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "3e7cba51-adfc-4427-b362-66a6bf55af25"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "6e274c2c-495f-4bb1-9019-e80f36f031ce": {
+      "type": "DDW-icon",
+      "blocks": {
+        "8afde77f-3605-4b75-a977-66f0ca95e7f5": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/As_Seen_On.png"
+          }
+        },
+        "cb89c387-b585-4014-b4f9-692ba87e1192": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2684.png"
+          }
+        },
+        "dd01295f-df1b-4d99-8718-a5e864f8dd86": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2682.png"
+          }
+        },
+        "deb07b47-7558-4fa7-90fd-8bee29727147": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2683.png"
+          }
+        },
+        "57072d61-9c33-453a-a160-ef64bcf5ff82": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2685.png"
+          }
+        },
+        "8faefca4-dc3d-486a-89ad-8f24a6a58900": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2686.png"
+          }
+        }
+      },
+      "block_order": [
+        "8afde77f-3605-4b75-a977-66f0ca95e7f5",
+        "cb89c387-b585-4014-b4f9-692ba87e1192",
+        "dd01295f-df1b-4d99-8718-a5e864f8dd86",
+        "deb07b47-7558-4fa7-90fd-8bee29727147",
+        "57072d61-9c33-453a-a160-ef64bcf5ff82",
+        "8faefca4-dc3d-486a-89ad-8f24a6a58900"
+      ],
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "5f82815a-c256-4142-af93-0234b34f6ab2": {
+      "type": "DDW-image-width-text",
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Rapidly Cool Water to an <strong>invigorating 41°F (5°C)<\/strong><\/p>",
+        "text": "<p>Experience the invigorating power of the Deep Dive Wellness Water Chiller. Rapidly cool water to an invigorating 41 °F (5 °C). Perfect for <strong>athletes<\/strong> and <strong>wellness enthusiasts<\/strong> seeking optimal cold water therapy. Embrace the icy coolness and elevate your wellness journey with the Deep Dive Wellness Water Chiller.<\/p>",
+        "background_color": "",
+        "section_image": "shopify:\/\/shop_images\/Rectangle_75_c504595d-f1f0-4c98-87e2-335053d8bbe7.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "",
+        "button_link": "",
+        "layout": "left_image",
+        "layout_width": "half_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "3ddad587-69be-4476-81d8-1969722417b1": {
+      "type": "DDW-image-width-text",
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Perfect for <strong>Indoor <br\/>and Outdoor Use<\/strong><\/p>",
+        "text": "<p>Unlock the versatility of the <strong>Deep Dive Wellness Water Chiller<\/strong>, designed for both <strong>indoor and outdoor use<\/strong>. Whether you prefer to indulge in a revitalizing ice bath session in the comfort of your home or take your cold water therapy outdoors to embrace nature's serenity, our water chiller is the perfect companion. Experience the freedom to enjoy the benefits of cold water therapy wherever you desire. <\/p>",
+        "background_color": "#f0fbfb",
+        "section_image": "shopify:\/\/shop_images\/Rectangle_75_c504595d-f1f0-4c98-87e2-335053d8bbe7.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "",
+        "button_link": "",
+        "layout": "right_image",
+        "layout_width": "half_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "1ccadb0f-caab-4ae4-90fe-e7264d59d793": {
+      "type": "DDW-image-width-text",
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Elevate Your Wellness Journey with the <strong>Perfect Combination<\/strong><\/p>",
+        "text": "<p>Experience the ultimate synergy of cold water therapy with the <strong>Deep Dive Wellness Water Chiller<\/strong>. Paired with our <strong>Plunge Bath<\/strong>, this powerful combo takes your wellness journey to new heights.<\/p><p>Rapidly cool water to an invigorating <strong>41°F (5°C)<\/strong>, creating the perfect temperature for an unforgettable plunge bath experience.<\/p><p>Enjoy the convenience and performance of this dynamic duo, both indoors and outdoors. The <strong>Deep Dive Wellness Water Chiller<\/strong> and <strong>Plunge Bath<\/strong> work harmoniously to provide an unmatched wellness experience that refreshes and revitalizes.<\/p><p>Unleash the full potential of this extraordinary combo and embark on a transformative wellness journey for your body, mind, and soul.<\/p>",
+        "background_color": "",
+        "section_image": "shopify:\/\/shop_images\/Rectangle_75_c504595d-f1f0-4c98-87e2-335053d8bbe7.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "",
+        "button_link": "",
+        "layout": "left_image",
+        "layout_width": "half_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "380d53f2-feff-4cd5-9d36-55442165afd6": {
+      "type": "DDW-multicolumn",
+      "blocks": {
+        "46a2b5c9-3b0e-49b5-8d39-e3e57538244d": {
+          "type": "block_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_71_e460f6f4-a46b-446a-a7d3-2cc9163abdac.png",
+            "title": "Step 1: Install Water Connections",
+            "text": "<ul><li>Attach the water pipe connections to the input and output attachments on the water chiller.<\/li><\/ul>"
+          }
+        },
+        "8b9cd1f8-4d4a-4d17-a579-c095c5b43ad1": {
+          "type": "block_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_71_e460f6f4-a46b-446a-a7d3-2cc9163abdac.png",
+            "title": "Step 2: Connect Hoses and Filter",
+            "text": "<ul><li>Connect the smaller hoses to the water filter and water pump.<\/li><li>Use hose clamps to secure the connections.<\/li><\/ul>"
+          }
+        },
+        "88ab0288-0f97-439a-b291-90bb6058e304": {
+          "type": "block_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_71_e460f6f4-a46b-446a-a7d3-2cc9163abdac.png",
+            "title": "Step 3: Connect to Plunge Bath or Tub",
+            "text": "<ul><li>For Plunge Bath Pro: Attach the hose to the bottom and top inlets of the bath.<\/li><li>For other ice baths with a drainage valve below: Insert the inlet hose from above and connect the outlet hose to the bottom drainage valve.<\/li><li>Portable Cold Plunge Bath or tub: Insert the hose into the bath until the bottom.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "46a2b5c9-3b0e-49b5-8d39-e3e57538244d",
+        "8b9cd1f8-4d4a-4d17-a579-c095c5b43ad1",
+        "88ab0288-0f97-439a-b291-90bb6058e304"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<p>How Does It Work<\/p>",
+        "subtitle": "<p>learn more<\/p>",
+        "background_color": "#f0fbfb",
+        "button_text": "Add to Cart",
+        "button_link": "#",
+        "text1": "400+ Positive Reviews",
+        "text2": "30-Day Risk-Free Trial",
+        "text3": "FREE & Fast Shipping",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "02669466-3a51-4027-a4ab-9e8737d63407": {
+      "type": "DDW-image-with-cards",
+      "blocks": {
+        "fbafa872-370d-4e8b-bea5-73e4a6a49fb6": {
+          "type": "card",
+          "settings": {
+            "title": "Feature",
+            "text": "Only weighs 40lbs (18 kg).",
+            "icon": "shopify:\/\/shop_images\/Group_3029.png",
+            "layout": "left_card"
+          }
+        },
+        "b366e482-d457-45ec-a1a3-bab7b839006c": {
+          "type": "card",
+          "settings": {
+            "title": "Affordable",
+            "text": "Starting from $899",
+            "icon": "shopify:\/\/shop_images\/Group_3030.png",
+            "layout": "left_card"
+          }
+        },
+        "e36514fb-48c8-4232-b1f6-4a8fdd513324": {
+          "type": "card",
+          "settings": {
+            "title": "User-Friendly",
+            "text": "Making cold plunges an easy part of your routine.",
+            "icon": "shopify:\/\/shop_images\/Group_3031.png",
+            "layout": "left_card"
+          }
+        },
+        "fb4f9e62-c289-49ea-86a8-a5aa32b09660": {
+          "type": "card",
+          "settings": {
+            "title": "Energy-Efficient",
+            "text": "Save energy without compromising on benefits.",
+            "icon": "shopify:\/\/shop_images\/Group_3032.png",
+            "layout": "right_card"
+          }
+        },
+        "814ec1dd-b1fe-4803-964f-2e662f6ffc27": {
+          "type": "card",
+          "settings": {
+            "title": "Durable",
+            "text": "Built for longevity, with enhanced insulation.",
+            "icon": "shopify:\/\/shop_images\/Group_3033.png",
+            "layout": "right_card"
+          }
+        },
+        "248650a3-e5af-4426-9aab-b2fd48d9c2a0": {
+          "type": "card",
+          "settings": {
+            "title": "Fits Your Space",
+            "text": "Functional design that keeps aesthetics in mind.",
+            "icon": "shopify:\/\/shop_images\/Layer_48.png",
+            "layout": "right_card"
+          }
+        }
+      },
+      "block_order": [
+        "fbafa872-370d-4e8b-bea5-73e4a6a49fb6",
+        "b366e482-d457-45ec-a1a3-bab7b839006c",
+        "e36514fb-48c8-4232-b1f6-4a8fdd513324",
+        "fb4f9e62-c289-49ea-86a8-a5aa32b09660",
+        "814ec1dd-b1fe-4803-964f-2e662f6ffc27",
+        "248650a3-e5af-4426-9aab-b2fd48d9c2a0"
+      ],
+      "disabled": true,
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/1_0b8c47f3-cc05-42b6-b7d5-4343a27bea1b.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/2_a802e1f3-0af3-4027-b3be-0147e0c5ef3d.png",
+        "main_image": "shopify:\/\/shop_images\/Group_3053.png",
+        "subtitle": "LEARN MORE",
+        "title": "<p>The Chiller’s Amazing<br\/>Features<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "padding_top": 130,
+        "padding_bottom": 170
+      }
+    },
+    "93450a80-8887-49e6-9ef4-9da4c4a8cd91": {
+      "type": "DDW-table",
+      "blocks": {
+        "f57a347d-1a0d-4e0f-a78d-caa40a9d1bfe": {
+          "type": "cell",
+          "settings": {
+            "title1": "Price",
+            "title2": "From $899",
+            "title3": "$3000+ (not including costly shipping)"
+          }
+        },
+        "58c97710-69de-4a11-8a03-9ae138cab9a2": {
+          "type": "cell",
+          "settings": {
+            "title1": "Portable Design",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "aae80025-c688-451b-8f92-23e6edbffa22": {
+          "type": "cell",
+          "settings": {
+            "title1": "Easy to Use & Maintain",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "5668fc88-7672-433e-9ee8-e283ace01b5f": {
+          "type": "cell",
+          "disabled": true,
+          "settings": {
+            "title1": "Enhanced Insulation",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "347700ff-2dec-42be-95c5-3b63450786f8": {
+          "type": "cell",
+          "settings": {
+            "title1": "Lightweight",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "5a9bf258-23dd-45ca-b018-9fac48e40a15": {
+          "type": "cell",
+          "settings": {
+            "title1": "FREE Insured Shipping",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "29124510-806f-4d8e-8288-294146573bed": {
+          "type": "cell",
+          "settings": {
+            "title1": "5-star Customer Support",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "7b48a36d-c489-4e3e-bd77-24444dcf36ac": {
+          "type": "cell",
+          "settings": {
+            "title1": "30-Day Guarantee",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        }
+      },
+      "block_order": [
+        "f57a347d-1a0d-4e0f-a78d-caa40a9d1bfe",
+        "58c97710-69de-4a11-8a03-9ae138cab9a2",
+        "aae80025-c688-451b-8f92-23e6edbffa22",
+        "5668fc88-7672-433e-9ee8-e283ace01b5f",
+        "347700ff-2dec-42be-95c5-3b63450786f8",
+        "5a9bf258-23dd-45ca-b018-9fac48e40a15",
+        "29124510-806f-4d8e-8288-294146573bed",
+        "7b48a36d-c489-4e3e-bd77-24444dcf36ac"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<p>See Why Thousands Choose Our Cold Plunge Chiller<\/p>",
+        "subtitle": "<p>Compare the differences between our portable, convenient solution<br\/>vs. expensive, bulky ice baths.<\/p>",
+        "background_color": "#eafeff",
+        "image1": "shopify:\/\/shop_images\/image_1.png",
+        "image2": "shopify:\/\/shop_images\/vs.png",
+        "image3": "shopify:\/\/shop_images\/Other_Brands.png",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "d3bc6ce8-dc68-4cc4-8ffa-0568aa3c6dd3": {
+      "type": "DDW-full-width-image-grid",
+      "blocks": {
+        "54511d43-73e7-4e55-aa7d-2464528d6711": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_71.png"
+          }
+        },
+        "7c9fac32-e5ec-4fcc-9e22-cfa8c12cc595": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_74.png"
+          }
+        },
+        "45947f6f-9a6e-4d0a-9b77-f4739e699def": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_73.png"
+          }
+        },
+        "baf3ea71-2d19-4019-94bb-914f78c6b889": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_76.png"
+          }
+        },
+        "58eeedce-9d7a-4b66-b35d-c50bce3f429f": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_74.png"
+          }
+        },
+        "f53433de-0982-46bc-8f1c-593b464dcdcd": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_75.png"
+          }
+        }
+      },
+      "block_order": [
+        "54511d43-73e7-4e55-aa7d-2464528d6711",
+        "7c9fac32-e5ec-4fcc-9e22-cfa8c12cc595",
+        "45947f6f-9a6e-4d0a-9b77-f4739e699def",
+        "baf3ea71-2d19-4019-94bb-914f78c6b889",
+        "58eeedce-9d7a-4b66-b35d-c50bce3f429f",
+        "f53433de-0982-46bc-8f1c-593b464dcdcd"
+      ],
+      "disabled": true,
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/left.png",
+        "left_title": "100% Satisfaction Guarantee",
+        "left_text": "Or Your Money Back + 30 Day No Hassle Returns\n\nWe believe you’ll love your product, just like our 1.9 million customers. In case you aren’t satisfied, our returns are easy and 100% free ! ",
+        "right_image": "shopify:\/\/shop_images\/right.png",
+        "right_title": "1 Year Warranty",
+        "right_text": "The Water Chiller is backed by a 1-year manufacturer's warranty included with your purchase. Additionally, you have the option to purchase an extended warranty when adding the product to your cart."
+      }
+    },
+    "1553a6e7-f009-46d8-bb36-3b3b2e51a1da": {
+      "type": "DDW-app",
+      "settings": {
+        "heading": "<p>Read the Reviews<\/p>",
+        "subtitle": "<p>Read the Reviews<\/p>",
+        "background_color": "#eafeff",
+        "padding_top": 90,
+        "padding_bottom": 80
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "96b8e10c-9695-46c1-9c66-05ff7ab8c581": {
+      "type": "DDW-faq",
+      "blocks": {
+        "c2f7970f-0d1e-49aa-abca-0763a4ead94d": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the chiller going to increase my electricity bill?",
+            "answer": "No! The power usage is just 280 watts, similar to your home freezer. For example, with a room temperature of 77°F (25°C) and the chiller set at 46°F (8°C), it consumes about 1.4-1.8 kWh per day (every 24 hours). Considering the average kWh cost in the USA is $0.35, the daily electricity cost for running the Deep Dive Wellness Chiller 24\/7 is approximately $0.6.",
+            "color_scheme": "background-1"
+          }
+        },
+        "81127bc9-d7c4-4271-8def-8c4509409d9e": {
+          "type": "faq",
+          "settings": {
+            "question": "How much will I save on ice by using the chiller?",
+            "answer": "Assuming 3 ice baths\/week requiring 10-20lbs of ice, the chiller's cost is recouped in about 6–9 months. This makes it a wise financial and time-saving investment for your regular cold plunge sessions.",
+            "color_scheme": "background-1"
+          }
+        },
+        "78440698-4018-4c97-8f43-ff1b4fdd07a7": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath outdoors?",
+            "answer": "Yes, you can use a cold plunge bath outdoors, but it is important to protect the tub from weather elements",
+            "color_scheme": "background-1"
+          }
+        },
+        "6c92ce7f-9030-4df9-ad4a-98adc904ba79": {
+          "type": "faq",
+          "settings": {
+            "question": "What temperature should the water be for a cold plunge bath?",
+            "answer": "The temperature of the water for a cold plunge bath typically ranges from 50-60°F.",
+            "color_scheme": "background-1"
+          }
+        },
+        "e8a23255-9411-436b-8464-3b811a52b794": {
+          "type": "faq",
+          "settings": {
+            "question": "How long should I stay in the cold plunge bath?",
+            "answer": "The length of time you should stay in the cold plunge bath will depend on your individual tolerance. It is recommended to start with short durations (1-3 minutes) and gradually increase as your body becomes accustomed to the therapy.",
+            "color_scheme": "background-1"
+          }
+        },
+        "a85aa47d-3f96-454d-b062-e7b2e6a32536": {
+          "type": "faq",
+          "settings": {
+            "question": "Does the water chiller come with a warranty?",
+            "answer": "Yes, the Deep Dive Wellness Water Chiller comes with a 1-year warranty from the date of purchase.",
+            "color_scheme": "background-1"
+          }
+        },
+        "369fdb4c-7e32-4756-ad08-ac2d7a2000d5": {
+          "type": "faq",
+          "settings": {
+            "question": "How often should I clean the water filter?",
+            "answer": "We recommend cleaning the water filter attached to the chiller once a month.",
+            "color_scheme": "background-1"
+          }
+        },
+        "feae9b1f-e69e-4f8e-892f-adefc57b6a7a": {
+          "type": "faq",
+          "settings": {
+            "question": "How does the Water Chiller work?",
+            "answer": "The Deep Dive Wellness Water Chiller works by using a refrigeration system to cool the water inside the chiller.",
+            "color_scheme": "background-1"
+          }
+        },
+        "9bf8aac4-fd30-4e1d-bf6d-25d3797305a1": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my cold plunge bath?",
+            "answer": "It is important to keep your cold plunge bath clean and well-maintained to ensure the best possible experience and to prevent the growth of harmful bacteria. Regular cleaning and proper storage can help extend the life of your tub.",
+            "color_scheme": "background-1"
+          }
+        },
+        "085e7207-2c75-4c7c-b53e-ea52bee30662": {
+          "type": "faq",
+          "settings": {
+            "question": "Will the salt interfere with the chiller?",
+            "answer": "We used titanium tube, so it is ok to use salt seawater.",
+            "color_scheme": "background-1"
+          }
+        },
+        "1f1efbb1-2fb3-41e7-a350-b386558142f0": {
+          "type": "faq",
+          "settings": {
+            "question": "How cold can the chiller make the water?",
+            "answer": "Indoors, with a 77 °F (25 °C) room temperature, the chiller can efficiently lower the plunge bath water temperature to 41 °F (5 °C).",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "c2f7970f-0d1e-49aa-abca-0763a4ead94d",
+        "81127bc9-d7c4-4271-8def-8c4509409d9e",
+        "78440698-4018-4c97-8f43-ff1b4fdd07a7",
+        "6c92ce7f-9030-4df9-ad4a-98adc904ba79",
+        "e8a23255-9411-436b-8464-3b811a52b794",
+        "a85aa47d-3f96-454d-b062-e7b2e6a32536",
+        "369fdb4c-7e32-4756-ad08-ac2d7a2000d5",
+        "feae9b1f-e69e-4f8e-892f-adefc57b6a7a",
+        "9bf8aac4-fd30-4e1d-bf6d-25d3797305a1",
+        "085e7207-2c75-4c7c-b53e-ea52bee30662",
+        "1f1efbb1-2fb3-41e7-a350-b386558142f0"
+      ],
+      "disabled": true,
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/1_b90752ae-7dd9-41d9-99db-18bb2158df61.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/Untitled-1_c2eeca6c-c175-420a-9446-b504ba515d94.png",
+        "title": "Frequently Asked Questions",
+        "subtitle": "<p>New to cold water therapy? It might seem a little chilly at first, but <br\/>we're here to answer all your questions and help you get started.<\/p>",
+        "bottom_text": "<p>Still got questions? Email us:<br\/><strong>support@deepdivewellness.com<\/strong><br\/>Our customer service team is always ready to help!<\/p>",
+        "color_scheme": "background-1",
+        "padding_top": 150,
+        "padding_bottom": 100
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "93880967-fa67-41e6-af67-af5d8166d546": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Others Also Liked",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "collection2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1686939115e9285c6a",
+    "6e274c2c-495f-4bb1-9019-e80f36f031ce",
+    "5f82815a-c256-4142-af93-0234b34f6ab2",
+    "3ddad587-69be-4476-81d8-1969722417b1",
+    "1ccadb0f-caab-4ae4-90fe-e7264d59d793",
+    "380d53f2-feff-4cd5-9d36-55442165afd6",
+    "02669466-3a51-4027-a4ab-9e8737d63407",
+    "93450a80-8887-49e6-9ef4-9da4c4a8cd91",
+    "d3bc6ce8-dc68-4cc4-8ffa-0568aa3c6dd3",
+    "1553a6e7-f009-46d8-bb36-3b3b2e51a1da",
+    "loox-product-reviews-app-section",
+    "96b8e10c-9695-46c1-9c66-05ff7ab8c581",
+    "related-products",
+    "93880967-fa67-41e6-af67-af5d8166d546"
+  ]
+}

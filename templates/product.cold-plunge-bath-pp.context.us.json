@@ -1,0 +1,7 @@
+{
+  "parent": "product.cold-plunge-bath-pp.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {}
+}

@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "169850030375a34f1d": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "7d5d6c61-1d35-41f4-9870-89daa3160018": {
+      "type": "newsletter",
+      "blocks": {
+        "template--21390745207076__7d5d6c61-1d35-41f4-9870-89daa3160018-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Exclusive BFCM Early Access.<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--21390745207076__7d5d6c61-1d35-41f4-9870-89daa3160018-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><strong>Revive with Up to 50% Off Cold Therapy! ❄️<br\/>Join the List for Black Friday & Cyber Monday Access<\/strong><\/p>"
+          }
+        },
+        "template--21390745207076__7d5d6c61-1d35-41f4-9870-89daa3160018-email_form-1": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--21390745207076__7d5d6c61-1d35-41f4-9870-89daa3160018-heading-1",
+        "template--21390745207076__7d5d6c61-1d35-41f4-9870-89daa3160018-paragraph-1",
+        "template--21390745207076__7d5d6c61-1d35-41f4-9870-89daa3160018-email_form-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "99a62e6b-4682-4c76-a28c-bd19149c1414": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/P1167987_2fdece2d-8303-446f-8179-864f2b772082.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1698503964856e68d9": {
+      "type": "apps",
+      "blocks": {
+        "9e0faee4-bf27-4a71-872e-f2521df15bbe": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 8,
+            "itemsPerView": 5,
+            "maxNumberOfCharacters": 100,
+            "imageRatio": "0.72",
+            "reviewerNameColor": "#000000",
+            "textColor": "#000000",
+            "itemBackgroundColor": "#ffffff",
+            "starsColor": "",
+            "starsBackgroundColor": "#ffffff",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": "deepdive-wellness-portable-cold-plunge-bath"
+          }
+        }
+      },
+      "block_order": [
+        "9e0faee4-bf27-4a71-872e-f2521df15bbe"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "169850030375a34f1d",
+    "7d5d6c61-1d35-41f4-9870-89daa3160018",
+    "99a62e6b-4682-4c76-a28c-bd19149c1414",
+    "1698503964856e68d9"
+  ]
+}

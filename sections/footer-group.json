@@ -2,15 +2,71 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "1698604733762d377f": {
+      "type": "apps",
+      "blocks": {
+        "99262b77-6b7b-4af7-aaa1-58f4f982d68d": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        }
+      },
+      "block_order": [
+        "99262b77-6b7b-4af7-aaa1-58f4f982d68d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "01a5c3b5-c2ef-4b0c-94e7-4eea28f9d5fb": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Navigation",
+            "menu": "footer"
+          }
+        },
+        "8136e353-5b73-41e4-8e8d-aec38b3d0aa7": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "navigation"
+          }
+        },
+        "bf166fe1-cf7a-4d67-b67c-cfba8397e2ae": {
+          "type": "link_list",
+          "settings": {
+            "heading": "We would love to hear from you!",
+            "menu": "footer-link2"
+          }
+        },
+        "8647e9ea-9180-49e8-b305-3f3537fda9f3": {
+          "type": "text",
+          "settings": {
+            "heading": "Our Commitment",
+            "subtext": "<p>We are committed to providing our customers with the highest quality cold plunge bath experience possible. Our products are designed with your health and wellness in mind, and we strive to make the cold plunge process as accessible, safe, and enjoyable as possible.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "01a5c3b5-c2ef-4b0c-94e7-4eea28f9d5fb",
+        "8136e353-5b73-41e4-8e8d-aec38b3d0aa7",
+        "bf166fe1-cf7a-4d67-b67c-cfba8397e2ae",
+        "8647e9ea-9180-49e8-b305-3f3537fda9f3"
+      ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "site-main-background",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
+        "newsletter_heading1": "Join the mailing list for",
+        "newsletter_heading2": "10% off Your First Order",
+        "subtext": "We promise to respect your inbox and only send you relevant information that will enhance your cold plunge bath experience.",
+        "newsletter_button_text": "Claim Discount",
+        "enable_follow_on_shop": false,
         "show_social": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": false,
@@ -21,6 +77,7 @@
     }
   },
   "order": [
+    "1698604733762d377f",
     "footer"
   ]
 }

@@ -2,10 +2,1061 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "padding_top": 92,
+        "padding_bottom": 80
+      }
+    },
+    "105dc544-8494-497f-9436-69b00d0dcaf6": {
+      "type": "DDW-image-width-text",
+      "blocks": {
+        "ecd64452-59cd-4412-b596-0d939c3112f5": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "1000+ Positive Reviews"
+          }
+        },
+        "bb970202-53b4-4236-9792-1eedbb19aaaf": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "30-Day Satisfaction Guarantee"
+          }
+        },
+        "d4c28096-18da-4ca6-86d2-39aef7e335c5": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "FREE & Fast Shipping"
+          }
+        }
+      },
+      "block_order": [
+        "ecd64452-59cd-4412-b596-0d939c3112f5",
+        "bb970202-53b4-4236-9792-1eedbb19aaaf",
+        "d4c28096-18da-4ca6-86d2-39aef7e335c5"
+      ],
+      "settings": {
+        "top_heading": "<p>COLD PLUNGE EXPERIENCES PRAISED BY <strong>OVER 10,000+ HAPPY PLUNGERS<\/strong><\/p>",
+        "top_heading_image": "shopify:\/\/shop_images\/Group_2701.png",
+        "heading": "<p>We Make <strong>Cold Water Benefits<\/strong><br\/> Accessible to Everybody<\/p>",
+        "text": "<p>Experience the rejuvenating benefits of cold plunge therapy - without the<br\/>high price tag or space requirement.<\/p>",
+        "heading_image": "shopify:\/\/shop_images\/Group_2707.png",
+        "heading_mob_image": "shopify:\/\/shop_images\/Group_2707_3f778de7-0890-45bb-bacf-1ec8e753feba.png",
+        "background_color": "#eafeff",
+        "section_image": "shopify:\/\/shop_images\/Group_63_0d8224a7-3f51-4c79-aec4-540b2bfc2875.png",
+        "section_mob_image": "shopify:\/\/shop_images\/Group_63_06891099-a391-459f-930a-1b319118f613.png",
+        "review_text": "<p>“Perfect way to start my day and gives me a burst of <br\/>energy. The water is always refreshingly cool and I feel <br\/>better after every use.”<\/p>",
+        "customer_name": "- Juve F.",
+        "button_text": "Get Started Today",
+        "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+        "layout": "right_image",
+        "layout_width": "auto_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "f7101156-cf6f-4bc8-bad6-4417c7de715b": {
+      "type": "DDW-icon",
+      "blocks": {
+        "14b8f695-ea61-4bdc-a00a-2854be016807": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Trusted_by_athletes_in_300_x_40_px_146_x_90_px_1.png"
+          }
+        },
+        "2f53629d-330f-454c-bfcc-63c22cc585ce": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/1_3e3d9b4b-5ac4-4044-94e0-47433e70e319.png"
+          }
+        },
+        "002558c7-760a-4ac9-a363-9f4c8dfea743": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/2_0d8009f9-0028-4a5a-b1a6-87e8d230ea03.png"
+          }
+        },
+        "2b8d2f47-0b3e-427c-9628-0e1a03385825": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/3_620c4a14-3aad-4356-a11b-4880883f6b37.png"
+          }
+        },
+        "340bb82b-6840-42ff-b692-ba58c6028af1": {
+          "type": "block_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Trusted_by_athletes_in_300_x_40_px_146_x_90_px_2.png"
+          }
+        },
+        "c5626941-8651-46bc-b0d6-9ab1060cee3b": {
+          "type": "block_icon",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2686.png"
+          }
+        }
+      },
+      "block_order": [
+        "14b8f695-ea61-4bdc-a00a-2854be016807",
+        "2f53629d-330f-454c-bfcc-63c22cc585ce",
+        "002558c7-760a-4ac9-a363-9f4c8dfea743",
+        "2b8d2f47-0b3e-427c-9628-0e1a03385825",
+        "340bb82b-6840-42ff-b692-ba58c6028af1",
+        "c5626941-8651-46bc-b0d6-9ab1060cee3b"
+      ],
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "b7c82cac-94a6-4b40-9eaf-da50a6fbac42": {
+      "type": "DDW-image-with-cards",
+      "blocks": {
+        "059f883e-e0c7-4c8a-b272-36e2d8ae217d": {
+          "type": "card",
+          "settings": {
+            "title": "For Your Body",
+            "text": "Reduce muscle soreness and inflammation.",
+            "icon": "shopify:\/\/shop_images\/Group_2732.png",
+            "layout": "left_card"
+          }
+        },
+        "d2931897-41bc-4789-9369-59f70627a404": {
+          "type": "card",
+          "settings": {
+            "title": "For Your Digestion",
+            "text": "Stimulate the metabolism and aid in weight loss.",
+            "icon": "shopify:\/\/shop_images\/Group_2733.png",
+            "layout": "left_card"
+          }
+        },
+        "14a1c466-5950-4866-9e88-10db906f76cd": {
+          "type": "card",
+          "settings": {
+            "title": "For Your Skin",
+            "text": "Help reduce the appearance of wrinkles.",
+            "icon": "shopify:\/\/shop_images\/Group_2734.png",
+            "layout": "left_card"
+          }
+        },
+        "9210ec13-d801-423f-8423-975aa220d603": {
+          "type": "card",
+          "settings": {
+            "title": "For Your Immunity",
+            "text": "Improve circulation and boost the immune system.",
+            "icon": "shopify:\/\/shop_images\/Group_2736.png",
+            "layout": "right_card"
+          }
+        },
+        "a0b620b1-7928-4f19-80a6-9de163e66a53": {
+          "type": "card",
+          "settings": {
+            "title": "For Your Mind",
+            "text": "Increase mental clarity and alertness.",
+            "icon": "shopify:\/\/shop_images\/Group_2735.png",
+            "layout": "right_card"
+          }
+        }
+      },
+      "block_order": [
+        "059f883e-e0c7-4c8a-b272-36e2d8ae217d",
+        "d2931897-41bc-4789-9369-59f70627a404",
+        "14a1c466-5950-4866-9e88-10db906f76cd",
+        "9210ec13-d801-423f-8423-975aa220d603",
+        "a0b620b1-7928-4f19-80a6-9de163e66a53"
+      ],
+      "disabled": true,
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/1_0b8c47f3-cc05-42b6-b7d5-4343a27bea1b.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/1_64b478fe-c056-4856-ae6c-8787e46524e8.png",
+        "main_image": "shopify:\/\/shop_images\/111.png",
+        "subtitle": "THE BENEFITS",
+        "title": "<p>One Plunge a Day, Every Day<\/p>",
+        "button_text": "And More...",
+        "button_link": "#",
+        "padding_top": 120,
+        "padding_bottom": 170
+      }
+    },
+    "ed3a6195-1923-4ffc-b944-48ecac504f24": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Discover Our Products",
+        "heading_size": "h0",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "home-page",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "915849dc-5a2d-4e46-89a5-c105c6935326": {
+      "type": "DDW-image-width-text",
+      "blocks": {
+        "20bb58bb-68a7-4ddc-bea7-1883de82d367": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "400+ Positive Reviews"
+          }
+        },
+        "5b052d68-d289-40fc-bf8c-be50ab2fa42c": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "30-Day Risk-Free Trial"
+          }
+        },
+        "0b778be7-48e4-4c5e-99e0-bc254fb8010a": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "FREE & Fast Shipping"
+          }
+        }
+      },
+      "block_order": [
+        "20bb58bb-68a7-4ddc-bea7-1883de82d367",
+        "5b052d68-d289-40fc-bf8c-be50ab2fa42c",
+        "0b778be7-48e4-4c5e-99e0-bc254fb8010a"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Don’t Like Cold Water?<br\/><strong>Neither Did He<\/strong><\/p>",
+        "text": "<p>Cold water might seem daunting at first, but <strong>it's the first step towards a healthier you.<\/strong> Wim Hof, or 'The Iceman,' started from the same point, transforming his health through the power of cold exposure. Our cold plunge baths are your doorway to this journey of health optimization.<br\/><br\/>Regular cold exposure is like resilience training for your body. Just like regular workouts strengthen your muscles, <strong>consistent cold exposure trains your body to handle stress better, leading to numerous health benefits.<\/strong><\/p>",
+        "background_color": "#ffffff",
+        "section_image": "shopify:\/\/shop_images\/123_1b3ad7fc-aaa4-4ed7-aa8f-6f0056040001.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "Try It Risk-Free",
+        "button_link": "#",
+        "layout": "left_image",
+        "layout_width": "half_width",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "98fd393c-f62e-4fbc-866e-7bf0508f5f79": {
+      "type": "DDW-custom-review",
+      "blocks": {
+        "9a188c8c-5dd5-437a-be77-7bac85d35e04": {
+          "type": "client_review",
+          "settings": {
+            "client_name": "Craig M.",
+            "review_text": "Excellent product!! Couldn't be happier. Helping my vascular blood flow.",
+            "client_photo": "shopify:\/\/shop_images\/Rectangle_72_ebd68132-1bd6-447d-bde1-57cdbb5681b2.png"
+          }
+        },
+        "9072e40c-066c-4886-b49e-298211ee63e2": {
+          "type": "client_review",
+          "settings": {
+            "client_name": "Sarah E.",
+            "review_text": "I love this! My puppy chewed up the first one so I actually ordered two, but it's amazing. I'm in Vegas so it's very hot here but the water actually stays pretty cool! And I love how easy it is to set up and is portable. This has changed my life! I completely quit caffeine after 4 days of cold plunging. Highly recommend this!",
+            "client_photo": "shopify:\/\/shop_images\/Rectangle_71_37235dc9-c3ab-4c3e-83b4-3d4d46e1ac61.png"
+          }
+        },
+        "9fc4e27c-2cef-4467-98b3-e1f8a551359c": {
+          "type": "client_review",
+          "settings": {
+            "client_name": "Benny S.",
+            "review_text": "We just put it together today and my son and 3 of his HS buddies took the plunge today as well. Thanks and we love the product.",
+            "client_photo": "shopify:\/\/shop_images\/Rectangle_74_8845134d-1a01-4250-82ee-00ebdbd0dcf4.png"
+          }
+        },
+        "e4b6fd5e-2854-4dec-bee6-5d646a392f65": {
+          "type": "client_review",
+          "settings": {
+            "client_name": "Kyle J.",
+            "review_text": "Great product, switched this routine for Coffee, quick response from customer service, I love the process already",
+            "client_photo": "shopify:\/\/shop_images\/Rectangle_73_f7a57aac-6c9e-4e15-a884-f738dc1e0519.png"
+          }
+        },
+        "e501c076-6d73-41fb-9d08-157ace788ebb": {
+          "type": "client_review",
+          "settings": {
+            "client_name": "",
+            "review_text": "",
+            "client_photo": "shopify:\/\/shop_images\/Rectangle_76_a45fa0e0-26ed-4b8f-b592-c25353b892f4.png"
+          }
+        },
+        "72653957-232a-4694-9f60-83e56518be98": {
+          "type": "client_review",
+          "settings": {
+            "client_name": "",
+            "review_text": "",
+            "client_photo": "shopify:\/\/shop_images\/Rectangle_75_28cd9bd9-1247-470b-8d8a-6f2dd6763334.png"
+          }
+        }
+      },
+      "block_order": [
+        "9a188c8c-5dd5-437a-be77-7bac85d35e04",
+        "9072e40c-066c-4886-b49e-298211ee63e2",
+        "9fc4e27c-2cef-4467-98b3-e1f8a551359c",
+        "e4b6fd5e-2854-4dec-bee6-5d646a392f65",
+        "e501c076-6d73-41fb-9d08-157ace788ebb",
+        "72653957-232a-4694-9f60-83e56518be98"
+      ],
+      "settings": {
+        "heading": "<p>Now Everybody’s Doing It!<\/p>",
+        "subtitle": "<p>OVER 10,000+  RAVING FANS<\/p>",
+        "background_color": "#eafeff",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "366868b5-d2ad-41f1-b7aa-78ecf20e6d5b": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-0": {
+          "type": "text",
+          "settings": {
+            "text": "order today and",
+            "text1": "SAVE 20% + FREE SHIPPING",
+            "text_style": "uppercase"
+          }
+        },
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-2": {
+          "type": "price",
+          "settings": {}
+        },
+        "b7304337-9c8e-473d-a14b-31976f11308c": {
+          "type": "description",
+          "settings": {
+            "description": "<p>The most portable Cold Plunge Bath. Experience the rejuvenating benefits of cold water therapy anytime, anywhere.<\/p>"
+          }
+        },
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "c7f4b2fc-9b26-4a9d-814a-0e2cce79d6f5": {
+          "type": "quantity_selector",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-0",
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-1",
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-2",
+        "b7304337-9c8e-473d-a14b-31976f11308c",
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-3",
+        "template--19251761152292__366868b5-d2ad-41f1-b7aa-78ecf20e6d5b-1686315140737e4f9e-5",
+        "c7f4b2fc-9b26-4a9d-814a-0e2cce79d6f5"
+      ],
+      "settings": {
+        "btn_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+        "btn_text": "Learn More",
+        "text1": "600+ Positive Reviews",
+        "text2": "30-Day Satisfaction Guarantee",
+        "text3": "FREE & Fast Shipping",
+        "product": "deepdive-wellness-portable-cold-plunge-bath",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "10d3d431-5e65-47d0-9479-73f70fcca1c8": {
+      "type": "DDW-video",
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/d.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/m.png",
+        "heading": "<p>What’s So Special About<br\/>Cold Water?<\/p>",
+        "top_title": "THE SCIENCE",
+        "cover_image": "shopify:\/\/shop_images\/CloudsConvert_maxresdefault-1687532455.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=lJEL9T0hMX4",
+        "padding_top": 150,
+        "padding_bottom": 150
+      }
+    },
+    "3078b674-5760-4592-9c8a-a2b3a6b93263": {
+      "type": "DDW-table",
+      "blocks": {
+        "5e6eafac-f43e-4acc-9611-4b5876023d1f": {
+          "type": "cell",
+          "settings": {
+            "title1": "Price",
+            "title2": "$119",
+            "title3": "$999"
+          }
+        },
+        "2fb0e14b-6949-48bc-920b-448acb4211cc": {
+          "type": "cell",
+          "settings": {
+            "title1": "Portable Design",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "69e9ba49-608e-4f80-ba80-176172fb9c01": {
+          "type": "cell",
+          "settings": {
+            "title1": "Easy to Use & Maintain",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "a35bddf1-55b5-4050-a34c-99ec3fba7cb7": {
+          "type": "cell",
+          "settings": {
+            "title1": "Enhanced Insulation",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "18d1d040-22ad-4497-8397-ebe5678e0f24": {
+          "type": "cell",
+          "settings": {
+            "title1": "Lightweight",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "fc009792-9c20-4025-a936-de96a18777c1": {
+          "type": "cell",
+          "settings": {
+            "title1": "FREE Insured Shipping",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "d8b34c5a-3ac8-4b46-b568-ac0daafdf3a5": {
+          "type": "cell",
+          "settings": {
+            "title1": "5-star Customer Support",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9379 0H17.0627C17.1627 0.0212479 17.2614 0.0474954 17.3621 0.0624939C18.0189 0.159359 18.6844 0.218104 19.3331 0.356215C22.0668 0.927173 24.5969 2.2222 26.6586 4.10585C29.4784 6.6606 31.2138 9.81842 31.8125 13.5862C31.8838 14.0355 31.9375 14.4873 32 14.9379V17.0627C31.9788 17.1627 31.9525 17.2614 31.9375 17.3621C31.8406 18.0189 31.7819 18.6844 31.6438 19.3331C31.0728 22.0668 29.7778 24.5969 27.8942 26.6586C25.3394 29.4784 22.1816 31.2138 18.4138 31.8125C17.9645 31.8838 17.5127 31.9375 17.0621 32H14.9373C14.8373 31.9788 14.7386 31.9525 14.6379 31.9375C13.9811 31.8406 13.3156 31.7819 12.6669 31.6438C9.93319 31.0728 7.40314 29.7778 5.34136 27.8941C2.52163 25.3394 0.786173 22.1816 0.187482 18.4138C0.116239 17.9645 0.0624939 17.5127 0 17.0621V14.936C0.0212479 14.8361 0.0474954 14.7373 0.0624939 14.6367C0.159359 13.9799 0.218104 13.3143 0.356216 12.6656C0.927174 9.93194 2.2222 7.40189 4.10585 5.3401C6.6606 2.52038 9.81842 0.784924 13.5862 0.186232C14.0355 0.114989 14.4873 0.0624939 14.9379 0ZM23.9077 10.739L21.2279 8.06171L15.9659 13.3249L10.739 8.09671L8.06359 10.7708L13.3287 16.0353L8.09484 21.2579L10.7727 23.9352L16.0372 18.6694L21.2592 23.9027L23.937 21.2261L18.6719 15.9622L23.9077 10.739Z\" fill=\"#DA2E2E\"><\/path>\n<\/svg>"
+          }
+        },
+        "c3552e4d-b691-45ef-af3e-5ebff2afe792": {
+          "type": "cell",
+          "settings": {
+            "title1": "30-Day Guarantee",
+            "title2": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>",
+            "title3": "<svg width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0706 0H16.9464C17.4821 0.0676826 18.0203 0.116564 18.5522 0.206181C21.8847 0.770203 24.7875 2.21159 27.1789 4.59615C30.7765 8.18646 32.3841 12.5432 31.9293 17.6106C31.6473 20.7397 30.492 23.5604 28.4884 25.9801C24.842 30.3845 20.138 32.4024 14.4271 31.9336C11.7857 31.7181 9.35223 30.8163 7.15937 29.3178C3.40457 26.7484 1.07325 23.2277 0.246853 18.7368C0.137837 18.1452 0.0808225 17.5461 0 16.9476V15.0738C0.0250612 14.8582 0.05263 14.6426 0.0758116 14.427C0.358377 11.7899 1.20357 9.35085 2.70286 7.15743C5.27163 3.4023 8.79148 1.06976 13.2812 0.243156C13.8733 0.137872 14.4741 0.0808431 15.0706 0ZM14.0882 23.2797L25.7122 12.7087L23.1873 9.9343L14.1771 18.1245L9.72878 13.6788L7.1105 16.2971L14.0882 23.2797Z\" fill=\"#ABDA2E\"><\/path>\n<\/svg>"
+          }
+        }
+      },
+      "block_order": [
+        "5e6eafac-f43e-4acc-9611-4b5876023d1f",
+        "2fb0e14b-6949-48bc-920b-448acb4211cc",
+        "69e9ba49-608e-4f80-ba80-176172fb9c01",
+        "a35bddf1-55b5-4050-a34c-99ec3fba7cb7",
+        "18d1d040-22ad-4497-8397-ebe5678e0f24",
+        "fc009792-9c20-4025-a936-de96a18777c1",
+        "d8b34c5a-3ac8-4b46-b568-ac0daafdf3a5",
+        "c3552e4d-b691-45ef-af3e-5ebff2afe792"
+      ],
+      "settings": {
+        "heading": "<p>See Why Thousands Choose <br\/>Our Portable Cold Plunge Bath<\/p>",
+        "subtitle": "<p>Compare the differences between our portable, convenient solution<br\/>vs. expensive, bulky ice baths.<\/p>",
+        "background_color": "#eafeff",
+        "image1": "shopify:\/\/shop_images\/image_1.png",
+        "image2": "shopify:\/\/shop_images\/vs.png",
+        "image3": "shopify:\/\/shop_images\/Other_Brands.png",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "fba6695f-041c-4d6a-a54f-1a2386deee53": {
+      "type": "DDW-image-with-textlist",
+      "blocks": {
+        "b5e1bf0b-0dfa-4ec3-a0d3-351031955c72": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "<p><strong>Diameter:<\/strong> 75cm (30 inches)<\/p>"
+          }
+        },
+        "e8a6705c-a6f6-4d85-8582-177d3286391b": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "<p><strong>Height:<\/strong> 75cm (30 inches)<\/p>"
+          }
+        },
+        "31e119f9-05e3-452e-bb4e-0d468c46eca8": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "<p><strong>Weight:<\/strong> 3.5 kg (8 lb)<\/p>"
+          }
+        },
+        "ca17aab6-cc7e-49de-9cb6-38cfc6d2e511": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "<p><strong>Capacity:<\/strong> 300 L (80 GL)<\/p>"
+          }
+        },
+        "5787a27b-b8d5-4a70-87c3-d81ab3d91fd6": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "<p>Suitable for heights up to 2.1m (6′9 foot)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b5e1bf0b-0dfa-4ec3-a0d3-351031955c72",
+        "e8a6705c-a6f6-4d85-8582-177d3286391b",
+        "31e119f9-05e3-452e-bb4e-0d468c46eca8",
+        "ca17aab6-cc7e-49de-9cb6-38cfc6d2e511",
+        "5787a27b-b8d5-4a70-87c3-d81ab3d91fd6"
+      ],
+      "settings": {
+        "heading": "<p>Perfectly Fits Into Your <br\/><strong>Daily Routine<\/strong><\/p>",
+        "heading_image": "shopify:\/\/shop_images\/Group_2806.png",
+        "text1": "600+ Positive Reviews",
+        "text2": "30-Day Satisfaction Guarantee",
+        "text3": "FREE & Fast Shipping",
+        "section_image": "shopify:\/\/shop_images\/Rectangle_84.png",
+        "button_text": "Try It Risk-Free",
+        "button_link": "#",
+        "layout": "left_image",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "22e2dde3-0510-49c5-a9d2-0640efca8212": {
+      "type": "DDW-image-with-cards",
+      "blocks": {
+        "841c12ea-ec30-48e5-87eb-bcae85cc594a": {
+          "type": "card",
+          "settings": {
+            "title": "Portable Design",
+            "text": "Small, portable & foldable. Only weighs 7lb (3kg).",
+            "icon": "shopify:\/\/shop_images\/Group_3029.png",
+            "layout": "left_card"
+          }
+        },
+        "935dbe29-dcac-48a9-81a1-c653a647f1fd": {
+          "type": "card",
+          "settings": {
+            "title": "Affordable",
+            "text": "Full range cold water therapy at a low the cost.",
+            "icon": "shopify:\/\/shop_images\/Group_3030.png",
+            "layout": "left_card"
+          }
+        },
+        "ed0dd024-1397-4e2b-92fe-58d95cfc8fb9": {
+          "type": "card",
+          "settings": {
+            "title": "User-Friendly",
+            "text": "Making cold plunges an easy part of your routine.",
+            "icon": "shopify:\/\/shop_images\/Group_3031.png",
+            "layout": "left_card"
+          }
+        },
+        "a8b469f0-f906-4d48-9827-1f42fcbfe4d4": {
+          "type": "card",
+          "settings": {
+            "title": "Energy-Efficient",
+            "text": "Save energy without compromising on benefits.",
+            "icon": "shopify:\/\/shop_images\/Group_3032.png",
+            "layout": "right_card"
+          }
+        },
+        "730203e8-2a0e-4c9b-ac6a-2a67ee344f78": {
+          "type": "card",
+          "settings": {
+            "title": "Durable",
+            "text": "Built for longevity, with enhanced insulation.",
+            "icon": "shopify:\/\/shop_images\/Group_3033.png",
+            "layout": "right_card"
+          }
+        },
+        "4c96ef4a-801b-4737-8bc5-2891c881ab71": {
+          "type": "card",
+          "settings": {
+            "title": "Fits Your Space",
+            "text": "Functional design that keeps aesthetics in mind.",
+            "icon": "shopify:\/\/shop_images\/Layer_48.png",
+            "layout": "right_card"
+          }
+        }
+      },
+      "block_order": [
+        "841c12ea-ec30-48e5-87eb-bcae85cc594a",
+        "935dbe29-dcac-48a9-81a1-c653a647f1fd",
+        "ed0dd024-1397-4e2b-92fe-58d95cfc8fb9",
+        "a8b469f0-f906-4d48-9827-1f42fcbfe4d4",
+        "730203e8-2a0e-4c9b-ac6a-2a67ee344f78",
+        "4c96ef4a-801b-4737-8bc5-2891c881ab71"
+      ],
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/1_0b8c47f3-cc05-42b6-b7d5-4343a27bea1b.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/2_a802e1f3-0af3-4027-b3be-0147e0c5ef3d.png",
+        "main_image": "shopify:\/\/shop_images\/Group_2797_02645252-f18b-4396-9aa6-856f992a2c87.png",
+        "subtitle": "LEARN MORE",
+        "title": "<p>Premium Quality, <br\/>For a Premium Lifestyle<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "padding_top": 60,
+        "padding_bottom": 160
+      }
+    },
+    "6d194195-358e-47fd-a439-a85783fa2faa": {
+      "type": "DDW-icon-grid",
+      "blocks": {
+        "9edc99d8-ec45-4249-a3fd-2a185174916c": {
+          "type": "block_text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/1_aafdcb33-cca4-455b-a918-874131df2ddc.png",
+            "text": "<p>30-Day<br\/>Satisfaction Guarantee<\/p>"
+          }
+        },
+        "e90964c7-4d04-42ea-9ba0-299bd818e299": {
+          "type": "block_text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/4.png",
+            "text": "<p>5-Star Customer<br\/>Service<\/p>"
+          }
+        },
+        "40d67642-3006-45f3-9671-c1d45db89c9b": {
+          "type": "block_text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/3_cd34a499-e34d-41ac-b6a7-cb08e795a984.png",
+            "text": "<p>FREE Insured<br\/>Shipping<\/p>"
+          }
+        },
+        "2b46f0b6-714f-4b0a-b4e6-4b3e97461540": {
+          "type": "block_text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/2_6eb24e79-7b40-49e3-8767-f0d00257d51b.png",
+            "text": "<p>Thousands of <br\/>Happy Customers<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9edc99d8-ec45-4249-a3fd-2a185174916c",
+        "e90964c7-4d04-42ea-9ba0-299bd818e299",
+        "40d67642-3006-45f3-9671-c1d45db89c9b",
+        "2b46f0b6-714f-4b0a-b4e6-4b3e97461540"
+      ],
+      "settings": {
+        "heading": "Why Deep Dive Wellness",
+        "top_title": "PLUNGERS LOVE US!",
+        "text": "<p>We're changing the game with cleverly designed, affordable products <br\/>that boost your everyday health. Experience enhanced vitality and mood <br\/>so you can make the most of every moment.<\/p>",
+        "background_color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "d39b135a-c9b4-4bda-afb5-facbbdb33e02": {
+      "type": "ss-video-socials",
+      "blocks": {
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-1": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/MTX_DDW_v7 (1).mp4",
+            "text": "“We had our fun last night.”",
+            "icon_type": "tiktok"
+          }
+        },
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-2": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/324103838_256003643501495_3374651960382584969_n.mp4",
+            "text": "“This will change your love life...seriously”",
+            "icon_type": "reels"
+          }
+        },
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-3": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/MTX_DDW_v2_NoText.mp4",
+            "text": "“It made our night so incredible”",
+            "icon_type": "shorts"
+          }
+        },
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-4": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/MTX_DDW_v5_NoText.mp4",
+            "text": "“It definitely increased the sensation”",
+            "icon_type": "shorts"
+          }
+        }
+      },
+      "block_order": [
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-1",
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-2",
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-3",
+        "template--19251761152292__d39b135a-c9b4-4bda-afb5-facbbdb33e02-video-4"
+      ],
+      "settings": {
+        "heading": "FOLLOW US ON OUR SOCIALS @deepdivewellness",
+        "heading_custom": false,
+        "heading_font": "poppins_n4",
+        "heading_size": 24,
+        "heading_height": 100,
+        "heading_align": "center",
+        "items_mt": 36,
+        "items_type": "columns",
+        "items_type_mobile": "slider",
+        "columns_row": 4,
+        "columns_row_mobile": 2,
+        "columns_gap": 24,
+        "columns_gap_mobile": 24,
+        "slider_nav": "buttons",
+        "slider_nav_mobile": "pagination",
+        "slider_nav_size": 40,
+        "slider_nav_size_mobile": 30,
+        "slider_pagination_size": 15,
+        "slider_pagination_size_mobile": 10,
+        "item_radius": 12,
+        "item_border_thickness": 0,
+        "item_padding_horizontal": 0,
+        "item_padding_vertical": 0,
+        "video_size": "medium",
+        "video_size_mobile": "medium",
+        "icon_size": 60,
+        "icon_padding": 15,
+        "content_padding_horizontal": 16,
+        "content_padding_vertical": 20,
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "link_custom": false,
+        "link_font": "assistant_n4",
+        "link_size": 18,
+        "link_height": 130,
+        "link_align": "center",
+        "link_mt": 36,
+        "link_radius": 12,
+        "link_border_thickness": 2,
+        "link_padding_horizontal": 50,
+        "link_padding_vertical": 16,
+        "hide_arrow": false,
+        "heading_color": "#120A0A",
+        "item_bg_color": "#FFFFFF",
+        "item_border_color": "#120A0A",
+        "icon_bg_color": "#E0C053",
+        "icon_color": "#FFFFFF",
+        "text_color": "#120A0A",
+        "slider_nav_btn_bg": "#FFFFFF",
+        "slider_nav_btn_hover_bg": "#E0C053",
+        "slider_nav_border": "#E0C053",
+        "slider_nav_border_hover": "#E0C053",
+        "slider_nav_icon": "#E0C053",
+        "slider_nav_hover_icon": "#FFFFFF",
+        "slider_pagination_color": "#E0C053",
+        "slider_pagination_hover_color": "#E0C053",
+        "link_text_color": "#120A0A",
+        "link_text_hover_color": "#FFFFFF",
+        "link_bg_color": "#FFFFFF",
+        "link_bg_hover_color": "#120A0A",
+        "link_border_color": "#120A0A",
+        "link_border_hover_color": "#120A0A",
+        "background_color": "#F4F4F4",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "lazy": false
+      }
+    },
+    "df947dcf-2087-406b-b1bc-b2e545b92a0d": {
+      "type": "DDW-full-width-image-grid",
+      "blocks": {
+        "726ec4de-36f9-42e9-9760-3685a6c14e76": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_71.png"
+          }
+        },
+        "236fcb58-7358-45a5-9a68-a48945d05835": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_74.png"
+          }
+        },
+        "879c0771-8470-4399-8012-a59e78c93944": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_73.png"
+          }
+        },
+        "f218f856-e9a4-448e-81fb-8bddff7bdf63": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_76.png"
+          }
+        },
+        "38148e6b-2bed-49ba-9043-f18a45ce64de": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_72.png"
+          }
+        },
+        "c142c15e-1bdc-4090-9561-07b838c91f5b": {
+          "type": "block_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_75.png"
+          }
+        }
+      },
+      "block_order": [
+        "726ec4de-36f9-42e9-9760-3685a6c14e76",
+        "236fcb58-7358-45a5-9a68-a48945d05835",
+        "879c0771-8470-4399-8012-a59e78c93944",
+        "f218f856-e9a4-448e-81fb-8bddff7bdf63",
+        "38148e6b-2bed-49ba-9043-f18a45ce64de",
+        "c142c15e-1bdc-4090-9561-07b838c91f5b"
+      ],
+      "settings": {
+        "left_title": "",
+        "left_text": "",
+        "right_title": "",
+        "right_text": ""
+      }
+    },
+    "aa2253eb-b102-4016-b901-22a46b7650b2": {
+      "type": "DDW-image-width-text",
+      "blocks": {
+        "8fb06e1a-de95-4478-a0a4-236e31996514": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "400+ Positive Reviews"
+          }
+        },
+        "14940bd1-b2c2-4dc7-b820-709f5026c9c7": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "30-Day Risk-Free Trial"
+          }
+        },
+        "1f96ad4e-8a26-4686-8859-4e4304d8f53c": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "FREE & Fast Shipping"
+          }
+        }
+      },
+      "block_order": [
+        "8fb06e1a-de95-4478-a0a4-236e31996514",
+        "14940bd1-b2c2-4dc7-b820-709f5026c9c7",
+        "1f96ad4e-8a26-4686-8859-4e4304d8f53c"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_heading": "",
+        "heading": "<p>Meet Our Heartwarming <br\/><strong>Cold Plunge Community<\/strong><\/p>",
+        "text": "<p>Our products are loved by individuals across all age groups and fitness levels. Join us to embark on a wellness journey that is both transformative and fun!<\/p>",
+        "background_color": "#eafeff",
+        "section_image": "shopify:\/\/shop_images\/Group_2793.png",
+        "review_text": "",
+        "customer_name": "",
+        "button_text": "Get Started Today",
+        "button_link": "shopify:\/\/products\/deepdive-wellness-portable-cold-plunge-bath",
+        "layout": "right_image",
+        "layout_width": "half_width",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "e06c0c24-c938-49b7-97f3-e65a5f884932": {
+      "type": "DDW-faq",
+      "blocks": {
+        "a29d2c29-169e-4e1f-8a80-6085d6ea02ea": {
+          "type": "faq",
+          "settings": {
+            "question": "What is a cold plunge bath?",
+            "answer": "A cold plunge bath is a shallow bath filled with cold water, typically used for the practice of cold water therapy or hydrotherapy.",
+            "color_scheme": "background-1"
+          }
+        },
+        "ba337592-17f0-422f-af50-e480155eeced": {
+          "type": "faq",
+          "settings": {
+            "question": "What are the benefits of cold plunge bathing?",
+            "answer": "Cold plunge bathing has been shown to provide benefits such as reduced pain, improved circulation, reduced stress, increased mental clarity, and improved immune function.",
+            "color_scheme": "background-1"
+          }
+        },
+        "5be7a6f2-6e39-43f5-a981-2976c30bc921": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath outdoors?",
+            "answer": "Yes, you can use a cold plunge bath outdoors, but it is important to protect the tub from weather elements",
+            "color_scheme": "background-1"
+          }
+        },
+        "a3424aa8-abbf-4936-8062-66f7dd7734d6": {
+          "type": "faq",
+          "settings": {
+            "question": "What temperature should the water be for a cold plunge bath?",
+            "answer": "The temperature of the water for a cold plunge bath typically ranges from 50-60°F.",
+            "color_scheme": "background-1"
+          }
+        },
+        "3a9fe55a-6585-467a-b6d7-a64bee38b4bb": {
+          "type": "faq",
+          "settings": {
+            "question": "How long should I stay in the cold plunge bath?",
+            "answer": "The length of time you should stay in the cold plunge bath will depend on your individual tolerance. It is recommended to start with short durations (1-3 minutes) and gradually increase as your body becomes accustomed to the therapy.",
+            "color_scheme": "background-1"
+          }
+        },
+        "aa023cb5-e2c4-42aa-9ccd-bcf99171cc66": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I do after a cold plunge bath?",
+            "answer": "After a cold plunge bath, it is recommended to warm up gradually by showering with warm water or covering yourself with warm blankets. It is also recommended to drink plenty of water to replace fluids lost during the therapy.",
+            "color_scheme": "background-1"
+          }
+        },
+        "ed5ea3fd-5090-4a4d-a770-d4851ea70e30": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I wear during a cold plunge bath?",
+            "answer": "It is recommended to wear a swimsuit or other appropriate clothing during a cold plunge bath.",
+            "color_scheme": "background-1"
+          }
+        },
+        "e1741733-c3c6-42e3-bb90-9506eb91bbe9": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath if I have sensitive skin?",
+            "answer": "Cold water therapy may not be appropriate for individuals with sensitive skin. It is always best to consult with a healthcare professional to determine if this therapy is right for you.",
+            "color_scheme": "background-1"
+          }
+        },
+        "e5e25e3c-0c12-41a5-a40c-ba7d2a39af5a": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my cold plunge bath?",
+            "answer": "It is important to keep your cold plunge bath clean and well-maintained to ensure the best possible experience and to prevent the growth of harmful bacteria. Regular cleaning and proper storage can help extend the life of your tub.",
+            "color_scheme": "background-1"
+          }
+        },
+        "d288a49b-d0fb-4fcb-819f-a5f1eadfa1ce": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use a cold plunge bath outdoors?",
+            "answer": "Yes, you can use a cold plunge bath outdoors, but it is important to protect the tub from weather elements",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "a29d2c29-169e-4e1f-8a80-6085d6ea02ea",
+        "ba337592-17f0-422f-af50-e480155eeced",
+        "5be7a6f2-6e39-43f5-a981-2976c30bc921",
+        "a3424aa8-abbf-4936-8062-66f7dd7734d6",
+        "3a9fe55a-6585-467a-b6d7-a64bee38b4bb",
+        "aa023cb5-e2c4-42aa-9ccd-bcf99171cc66",
+        "ed5ea3fd-5090-4a4d-a770-d4851ea70e30",
+        "e1741733-c3c6-42e3-bb90-9506eb91bbe9",
+        "e5e25e3c-0c12-41a5-a40c-ba7d2a39af5a",
+        "d288a49b-d0fb-4fcb-819f-a5f1eadfa1ce"
+      ],
+      "settings": {
+        "bck_image": "shopify:\/\/shop_images\/1_b90752ae-7dd9-41d9-99db-18bb2158df61.png",
+        "mob_bck_image": "shopify:\/\/shop_images\/2_f77a64b7-bed3-4461-b70c-a778e9379294.png",
+        "title": "Frequently Asked Questions",
+        "subtitle": "<p>New to cold water therapy? It might seem a little chilly at first, but <br\/>we're here to answer all your questions and help you get started.<\/p>",
+        "bottom_text": "<p>Still got questions? Email us:<br\/><strong>support@deepdivewellness.com<\/strong><br\/>Our customer service team is always ready to help!<\/p>",
+        "color_scheme": "background-1",
+        "padding_top": 150,
+        "padding_bottom": 40
+      }
+    },
+    "49e7564c-5cb1-4051-9f2b-1b5f97acfbb4": {
+      "type": "DDW-shop-link",
+      "blocks": {
+        "1c8ea6e6-85a1-4554-9ea1-7fa84a40e706": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "600+ Positive Reviews"
+          }
+        },
+        "82d49687-e79e-45fe-846a-c299483ac3ab": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "30-Day Satisfaction Guarantee"
+          }
+        },
+        "48889249-ed9a-4816-bed2-de97d1d132ce": {
+          "type": "block_text",
+          "settings": {
+            "block_text": "FREE & Fast Shipping"
+          }
+        }
+      },
+      "block_order": [
+        "1c8ea6e6-85a1-4554-9ea1-7fa84a40e706",
+        "82d49687-e79e-45fe-846a-c299483ac3ab",
+        "48889249-ed9a-4816-bed2-de97d1d132ce"
+      ],
+      "settings": {
+        "heading": "<p>Ready to Say “YES” <br\/>to <strong>Cold Plunging?<\/strong><\/p>",
+        "click_image": "shopify:\/\/shop_images\/Untitled-1_53f0c084-282f-494e-bd3f-72458702646f.png",
+        "mobile_click_image": "shopify:\/\/shop_images\/1_07223d63-3664-43c2-b4d9-fb93b3d1da1f.png",
+        "button_text": "Shop Our Products",
+        "button_link": "shopify:\/\/collections\/all"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "105dc544-8494-497f-9436-69b00d0dcaf6",
+    "f7101156-cf6f-4bc8-bad6-4417c7de715b",
+    "b7c82cac-94a6-4b40-9eaf-da50a6fbac42",
+    "ed3a6195-1923-4ffc-b944-48ecac504f24",
+    "915849dc-5a2d-4e46-89a5-c105c6935326",
+    "98fd393c-f62e-4fbc-866e-7bf0508f5f79",
+    "366868b5-d2ad-41f1-b7aa-78ecf20e6d5b",
+    "10d3d431-5e65-47d0-9479-73f70fcca1c8",
+    "3078b674-5760-4592-9c8a-a2b3a6b93263",
+    "fba6695f-041c-4d6a-a54f-1a2386deee53",
+    "22e2dde3-0510-49c5-a9d2-0640efca8212",
+    "6d194195-358e-47fd-a439-a85783fa2faa",
+    "d39b135a-c9b4-4bda-afb5-facbbdb33e02",
+    "df947dcf-2087-406b-b1bc-b2e545b92a0d",
+    "aa2253eb-b102-4016-b901-22a46b7650b2",
+    "e06c0c24-c938-49b7-97f3-e65a5f884932",
+    "49e7564c-5cb1-4051-9f2b-1b5f97acfbb4"
   ]
 }

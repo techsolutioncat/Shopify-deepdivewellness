@@ -17,11 +17,22 @@
         "buttons": {
           "type": "buttons",
           "settings": {}
+        },
+        "a026818c-4022-4e43-9d98-0fdc4504caa8": {
+          "type": "shopify:\/\/apps\/guide\/blocks\/widget\/c6cf1173-746e-47eb-9f0f-26d2e4879742",
+          "settings": {
+            "checkbox_color": "#000000",
+            "text_color": "#000000",
+            "info_icon_color": "#ACAAB4",
+            "disclaimer_icon_color": "#58e0c8",
+            "disclaimer_text": "* By deselecting package protection, |SHOP_NAME| is not liable for lost, damaged, or stolen items"
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "a026818c-4022-4e43-9d98-0fdc4504caa8"
       ],
       "settings": {}
     }

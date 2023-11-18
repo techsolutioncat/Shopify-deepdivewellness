@@ -35,6 +35,10 @@ $(document).ready(function () {
         $('#section__maing-roduct .product-form__quantity input.quantity__input').val(q);
     });
 
+    $('button.product-form__submit').on('click', function() {
+        $(this).parents('form[data-type=add-to-cart-form]').submit();
+    });
+
     // FAQ custom script
     if ($('#section__maing-roduct .accordion__item__header').length > 0) {
         var active = 'active';

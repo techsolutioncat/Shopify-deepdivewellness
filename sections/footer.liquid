@@ -753,7 +753,9 @@
   }
 
   var mybtn = document.getElementsByClassName('testbtn')[0];
-  mybtn.click();
+  if (mybtn) {
+    mybtn.click();
+  }
 </script>
 
 <!-- jQuery -->
